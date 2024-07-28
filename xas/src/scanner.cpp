@@ -1,10 +1,32 @@
 #include "scanner.h"
 
 std::unordered_map<std::string, token_type> scanner::keywords = {
+    
+    // Instructions.
     {"NOP", token_type::INSTRUCTION},
     {"LD", token_type::INSTRUCTION},
     {"INC", token_type::INSTRUCTION},
-    // Add more instructions, directives, registers, etc.
+    {"DEC", token_type::INSTRUCTION},
+    {"HALT", token_type::INSTRUCTION},
+    {"JP", token_type::INSTRUCTION},
+    {"JR", token_type::INSTRUCTION},
+    {"CALL", token_type::INSTRUCTION},
+    {"RET", token_type::INSTRUCTION},
+    {"ADD", token_type::INSTRUCTION},
+    {"CP", token_type::INSTRUCTION},
+    
+    // Registers.
+    {"A", token_type::REGISTER},
+    {"B", token_type::REGISTER},
+    {"HL", token_type::REGISTER},
+    {"CP", token_type::REGISTER},
+    
+    // Conditions.
+    {"Z", token_type::CONDITION},
+
+    // Directives.
+    {"ORG", token_type::DIRECTIVE},
+    {"DB", token_type::DIRECTIVE}
 };
 
 std::vector<token> scanner::scan_tokens() {
