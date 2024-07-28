@@ -11,6 +11,8 @@ project(xc
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
+
 # Debug buld (for now)
 set(CMAKE_BUILD_TYPE "Debug")
 
@@ -19,10 +21,10 @@ set(EXECUTABLE_OUTPUT_PATH  ${PROJECT_SOURCE_DIR}/bin/)
 set(LIBRARY_OUTPUT_PATH  ${PROJECT_SOURCE_DIR}/bin/)
 
 include_directories(lib)
-#include_directories(src)
+include_directories(src)
 
 add_subdirectory(lib)
-#add_subdirectory(src)
+add_subdirectory(src)
 
 option(BUILD_TESTS "Whether or not to build tests." ON)
 if (BUILD_TESTS)
