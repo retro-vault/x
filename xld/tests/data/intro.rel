@@ -1,0 +1,1195 @@
+;!FILE /home/tomaz/Work/lunatik/build/intro.asm
+XL2
+H 9 areas 339 global symbols
+M intro
+O -mz80
+S _gputglyph Ref0000
+S _gcls Ref0000
+S _idp8x16_font Ref0000
+S _intro_drawstar Ref0000
+S .__.ABS. Def0000
+S _title_A Ref0000
+S _gputtext Ref0000
+S _title_I Ref0000
+S _title_K Ref0000
+S _title_L Ref0000
+S _title_N Ref0000
+S _kbhit Ref0000
+S _gsetcolor Ref0000
+S _title_T Ref0000
+S _title_U Ref0000
+A _CODE size 5C1 flags 0 addr 0
+S A$intro/tomaz/Work/lunatik/build/intro$950 Def04FF
+S A$intro/tomaz/Work/lunatik/build/intro$941 Def04EF
+S A$intro/tomaz/Work/lunatik/build/intro$923 Def04CC
+S A$intro/tomaz/Work/lunatik/build/intro$914 Def04B8
+S A$intro/tomaz/Work/lunatik/build/intro$905 Def049C
+S A$intro/tomaz/Work/lunatik/build/intro$860 Def043A
+S A$intro/tomaz/Work/lunatik/build/intro$851 Def042F
+S A$intro/tomaz/Work/lunatik/build/intro$842 Def0418
+S A$intro/tomaz/Work/lunatik/build/intro$833 Def0409
+S A$intro/tomaz/Work/lunatik/build/intro$824 Def03F8
+S A$intro/tomaz/Work/lunatik/build/intro$770 Def03CC
+S A$intro/tomaz/Work/lunatik/build/intro$752 Def03B5
+S A$intro/tomaz/Work/lunatik/build/intro$743 Def03AC
+S A$intro/tomaz/Work/lunatik/build/intro$734 Def03A0
+S A$intro/tomaz/Work/lunatik/build/intro$725 Def0398
+S A$intro/tomaz/Work/lunatik/build/intro$716 Def038F
+S A$intro/tomaz/Work/lunatik/build/intro$707 Def037F
+S A$intro/tomaz/Work/lunatik/build/intro$680 Def036E
+S A$intro/tomaz/Work/lunatik/build/intro$671 Def035F
+S A$intro/tomaz/Work/lunatik/build/intro$662 Def034E
+S A$intro/tomaz/Work/lunatik/build/intro$653 Def033F
+S A$intro/tomaz/Work/lunatik/build/intro$644 Def0336
+S A$intro/tomaz/Work/lunatik/build/intro$635 Def032D
+S A$intro/tomaz/Work/lunatik/build/intro$626 Def0323
+S A$intro/tomaz/Work/lunatik/build/intro$617 Def0314
+S A$intro/tomaz/Work/lunatik/build/intro$590 Def0309
+S A$intro/tomaz/Work/lunatik/build/intro$563 Def02E7
+S A$intro/tomaz/Work/lunatik/build/intro$545 Def02CC
+S A$intro/tomaz/Work/lunatik/build/intro$536 Def02BE
+S A$intro/tomaz/Work/lunatik/build/intro$527 Def02AD
+S A$intro/tomaz/Work/lunatik/build/intro$518 Def0298
+S A$intro/tomaz/Work/lunatik/build/intro$509 Def028D
+S A$intro/tomaz/Work/lunatik/build/intro$491 Def027A
+S A$intro/tomaz/Work/lunatik/build/intro$482 Def026A
+S A$intro/tomaz/Work/lunatik/build/intro$455 Def0240
+S A$intro/tomaz/Work/lunatik/build/intro$446 Def022F
+S A$intro/tomaz/Work/lunatik/build/intro$428 Def0215
+S A$intro/tomaz/Work/lunatik/build/intro$419 Def0204
+S A$intro/tomaz/Work/lunatik/build/intro$392 Def01D8
+S A$intro/tomaz/Work/lunatik/build/intro$383 Def01CB
+S A$intro/tomaz/Work/lunatik/build/intro$338 Def0170
+S A$intro/tomaz/Work/lunatik/build/intro$329 Def0163
+S A$intro/tomaz/Work/lunatik/build/intro$293 Def012A
+S A$intro/tomaz/Work/lunatik/build/intro$284 Def011E
+S A$intro/tomaz/Work/lunatik/build/intro$275 Def010B
+S A$intro/tomaz/Work/lunatik/build/intro$266 Def00F4
+S A$intro/tomaz/Work/lunatik/build/intro$257 Def00EA
+S A$intro/tomaz/Work/lunatik/build/intro$248 Def00DD
+S A$intro/tomaz/Work/lunatik/build/intro$239 Def00D1
+S A$intro/tomaz/Work/lunatik/build/intro$158 Def005E
+S A$intro/tomaz/Work/lunatik/build/intro$149 Def0055
+S G$intro_title$0$0 Def0000
+S A$intro/tomaz/Work/lunatik/build/intro$960 Def0516
+S A$intro/tomaz/Work/lunatik/build/intro$951 Def0501
+S A$intro/tomaz/Work/lunatik/build/intro$942 Def04F0
+S A$intro/tomaz/Work/lunatik/build/intro$924 Def04CF
+S A$intro/tomaz/Work/lunatik/build/intro$915 Def04BA
+S A$intro/tomaz/Work/lunatik/build/intro$906 Def049F
+S A$intro/tomaz/Work/lunatik/build/intro$870 Def044C
+S A$intro/tomaz/Work/lunatik/build/intro$861 Def043D
+S A$intro/tomaz/Work/lunatik/build/intro$852 Def0432
+S A$intro/tomaz/Work/lunatik/build/intro$843 Def041B
+S A$intro/tomaz/Work/lunatik/build/intro$834 Def040A
+S A$intro/tomaz/Work/lunatik/build/intro$825 Def03F9
+S A$intro/tomaz/Work/lunatik/build/intro$771 Def03CF
+S A$intro/tomaz/Work/lunatik/build/intro$753 Def03B6
+S A$intro/tomaz/Work/lunatik/build/intro$726 Def0399
+S A$intro/tomaz/Work/lunatik/build/intro$708 Def0381
+S A$intro/tomaz/Work/lunatik/build/intro$681 Def036F
+S A$intro/tomaz/Work/lunatik/build/intro$672 Def0362
+S A$intro/tomaz/Work/lunatik/build/intro$663 Def0350
+S A$intro/tomaz/Work/lunatik/build/intro$654 Def0340
+S A$intro/tomaz/Work/lunatik/build/intro$618 Def0316
+S A$intro/tomaz/Work/lunatik/build/intro$591 Def030A
+S A$intro/tomaz/Work/lunatik/build/intro$564 Def02E8
+S A$intro/tomaz/Work/lunatik/build/intro$555 Def02D3
+S A$intro/tomaz/Work/lunatik/build/intro$546 Def02CD
+S A$intro/tomaz/Work/lunatik/build/intro$537 Def02C0
+S A$intro/tomaz/Work/lunatik/build/intro$528 Def02B0
+S A$intro/tomaz/Work/lunatik/build/intro$519 Def029B
+S A$intro/tomaz/Work/lunatik/build/intro$483 Def026D
+S A$intro/tomaz/Work/lunatik/build/intro$474 Def025C
+S A$intro/tomaz/Work/lunatik/build/intro$456 Def0242
+S A$intro/tomaz/Work/lunatik/build/intro$447 Def0232
+S A$intro/tomaz/Work/lunatik/build/intro$393 Def01DB
+S A$intro/tomaz/Work/lunatik/build/intro$384 Def01CD
+S A$intro/tomaz/Work/lunatik/build/intro$339 Def0173
+S A$intro/tomaz/Work/lunatik/build/intro$294 Def012D
+S A$intro/tomaz/Work/lunatik/build/intro$285 Def011F
+S A$intro/tomaz/Work/lunatik/build/intro$276 Def010E
+S A$intro/tomaz/Work/lunatik/build/intro$267 Def00F7
+S A$intro/tomaz/Work/lunatik/build/intro$258 Def00ED
+S A$intro/tomaz/Work/lunatik/build/intro$249 Def00DE
+S A$intro/tomaz/Work/lunatik/build/intro$168 Def006E
+S A$intro/tomaz/Work/lunatik/build/intro$159 Def0061
+S XG$intro_draw_starfield$0$0 Def03E2
+S A$intro/tomaz/Work/lunatik/build/intro$961 Def0519
+S A$intro/tomaz/Work/lunatik/build/intro$952 Def0504
+S A$intro/tomaz/Work/lunatik/build/intro$943 Def04F3
+S A$intro/tomaz/Work/lunatik/build/intro$925 Def04D2
+S A$intro/tomaz/Work/lunatik/build/intro$916 Def04BD
+S A$intro/tomaz/Work/lunatik/build/intro$907 Def04A2
+S A$intro/tomaz/Work/lunatik/build/intro$880 Def0468
+S A$intro/tomaz/Work/lunatik/build/intro$871 Def044E
+S A$intro/tomaz/Work/lunatik/build/intro$862 Def0440
+S A$intro/tomaz/Work/lunatik/build/intro$853 Def0433
+S A$intro/tomaz/Work/lunatik/build/intro$844 Def041F
+S A$intro/tomaz/Work/lunatik/build/intro$835 Def040C
+S A$intro/tomaz/Work/lunatik/build/intro$826 Def03FC
+S A$intro/tomaz/Work/lunatik/build/intro$817 Def03F0
+S A$intro/tomaz/Work/lunatik/build/intro$808 Def03E3
+S A$intro/tomaz/Work/lunatik/build/intro$781 Def03DA
+S A$intro/tomaz/Work/lunatik/build/intro$772 Def03D0
+S A$intro/tomaz/Work/lunatik/build/intro$754 Def03B9
+S A$intro/tomaz/Work/lunatik/build/intro$736 Def03A3
+S A$intro/tomaz/Work/lunatik/build/intro$727 Def039A
+S A$intro/tomaz/Work/lunatik/build/intro$709 Def0385
+S A$intro/tomaz/Work/lunatik/build/intro$691 Def037A
+S A$intro/tomaz/Work/lunatik/build/intro$682 Def0370
+S A$intro/tomaz/Work/lunatik/build/intro$673 Def0363
+S A$intro/tomaz/Work/lunatik/build/intro$664 Def0352
+S A$intro/tomaz/Work/lunatik/build/intro$655 Def0341
+S A$intro/tomaz/Work/lunatik/build/intro$619 Def031A
+S A$intro/tomaz/Work/lunatik/build/intro$583 Def02FE
+S A$intro/tomaz/Work/lunatik/build/intro$565 Def02E9
+S A$intro/tomaz/Work/lunatik/build/intro$556 Def02D6
+S A$intro/tomaz/Work/lunatik/build/intro$547 Def02CE
+S A$intro/tomaz/Work/lunatik/build/intro$484 Def026F
+S A$intro/tomaz/Work/lunatik/build/intro$475 Def025F
+S A$intro/tomaz/Work/lunatik/build/intro$448 Def0235
+S A$intro/tomaz/Work/lunatik/build/intro$439 Def0223
+S A$intro/tomaz/Work/lunatik/build/intro$385 Def01D0
+S A$intro/tomaz/Work/lunatik/build/intro$295 Def012E
+S A$intro/tomaz/Work/lunatik/build/intro$277 Def010F
+S A$intro/tomaz/Work/lunatik/build/intro$268 Def00FA
+S A$intro/tomaz/Work/lunatik/build/intro$259 Def00F0
+S A$intro/tomaz/Work/lunatik/build/intro$169 Def006F
+S A$intro/tomaz/Work/lunatik/build/intro$980 Def052D
+S A$intro/tomaz/Work/lunatik/build/intro$962 Def051A
+S A$intro/tomaz/Work/lunatik/build/intro$953 Def0505
+S A$intro/tomaz/Work/lunatik/build/intro$944 Def04F4
+S A$intro/tomaz/Work/lunatik/build/intro$935 Def04E3
+S A$intro/tomaz/Work/lunatik/build/intro$926 Def04D5
+S A$intro/tomaz/Work/lunatik/build/intro$917 Def04C0
+S A$intro/tomaz/Work/lunatik/build/intro$908 Def04A5
+S A$intro/tomaz/Work/lunatik/build/intro$890 Def0480
+S A$intro/tomaz/Work/lunatik/build/intro$881 Def046B
+S A$intro/tomaz/Work/lunatik/build/intro$872 Def0451
+S A$intro/tomaz/Work/lunatik/build/intro$863 Def0441
+S A$intro/tomaz/Work/lunatik/build/intro$854 Def0434
+S A$intro/tomaz/Work/lunatik/build/intro$845 Def0423
+S A$intro/tomaz/Work/lunatik/build/intro$818 Def03F3
+S A$intro/tomaz/Work/lunatik/build/intro$809 Def03E5
+S A$intro/tomaz/Work/lunatik/build/intro$782 Def03DB
+S A$intro/tomaz/Work/lunatik/build/intro$773 Def03D3
+S A$intro/tomaz/Work/lunatik/build/intro$764 Def03C4
+S A$intro/tomaz/Work/lunatik/build/intro$755 Def03BA
+S A$intro/tomaz/Work/lunatik/build/intro$737 Def03A4
+S A$intro/tomaz/Work/lunatik/build/intro$728 Def039B
+S A$intro/tomaz/Work/lunatik/build/intro$692 Def037C
+S A$intro/tomaz/Work/lunatik/build/intro$683 Def0371
+S A$intro/tomaz/Work/lunatik/build/intro$674 Def0364
+S A$intro/tomaz/Work/lunatik/build/intro$665 Def0353
+S A$intro/tomaz/Work/lunatik/build/intro$656 Def0342
+S A$intro/tomaz/Work/lunatik/build/intro$584 Def02FF
+S A$intro/tomaz/Work/lunatik/build/intro$575 Def02F4
+S A$intro/tomaz/Work/lunatik/build/intro$566 Def02EA
+S A$intro/tomaz/Work/lunatik/build/intro$557 Def02D7
+S A$intro/tomaz/Work/lunatik/build/intro$548 Def02CF
+S A$intro/tomaz/Work/lunatik/build/intro$476 Def0262
+S A$intro/tomaz/Work/lunatik/build/intro$467 Def0250
+S A$intro/tomaz/Work/lunatik/build/intro$449 Def0237
+S A$intro/tomaz/Work/lunatik/build/intro$386 Def01D1
+S A$intro/tomaz/Work/lunatik/build/intro$296 Def012F
+S A$intro/tomaz/Work/lunatik/build/intro$278 Def0112
+S A$intro/tomaz/Work/lunatik/build/intro$269 Def00FD
+S A$intro/tomaz/Work/lunatik/build/intro$197 Def007F
+S A$intro/tomaz/Work/lunatik/build/intro$990 Def053A
+S A$intro/tomaz/Work/lunatik/build/intro$981 Def0530
+S A$intro/tomaz/Work/lunatik/build/intro$972 Def0521
+S A$intro/tomaz/Work/lunatik/build/intro$963 Def051B
+S A$intro/tomaz/Work/lunatik/build/intro$954 Def0506
+S A$intro/tomaz/Work/lunatik/build/intro$945 Def04F5
+S A$intro/tomaz/Work/lunatik/build/intro$936 Def04E5
+S A$intro/tomaz/Work/lunatik/build/intro$927 Def04D8
+S A$intro/tomaz/Work/lunatik/build/intro$918 Def04C3
+S A$intro/tomaz/Work/lunatik/build/intro$909 Def04A8
+S A$intro/tomaz/Work/lunatik/build/intro$891 Def0482
+S A$intro/tomaz/Work/lunatik/build/intro$882 Def046E
+S A$intro/tomaz/Work/lunatik/build/intro$873 Def0454
+S A$intro/tomaz/Work/lunatik/build/intro$864 Def0442
+S A$intro/tomaz/Work/lunatik/build/intro$855 Def0435
+S A$intro/tomaz/Work/lunatik/build/intro$846 Def0424
+S A$intro/tomaz/Work/lunatik/build/intro$828 Def03FF
+S A$intro/tomaz/Work/lunatik/build/intro$819 Def03F4
+S A$intro/tomaz/Work/lunatik/build/intro$774 Def03D6
+S A$intro/tomaz/Work/lunatik/build/intro$765 Def03C5
+S A$intro/tomaz/Work/lunatik/build/intro$756 Def03BD
+S A$intro/tomaz/Work/lunatik/build/intro$747 Def03AE
+S A$intro/tomaz/Work/lunatik/build/intro$738 Def03A6
+S A$intro/tomaz/Work/lunatik/build/intro$729 Def039C
+S A$intro/tomaz/Work/lunatik/build/intro$684 Def0372
+S A$intro/tomaz/Work/lunatik/build/intro$675 Def0365
+S A$intro/tomaz/Work/lunatik/build/intro$666 Def0354
+S A$intro/tomaz/Work/lunatik/build/intro$657 Def0343
+S A$intro/tomaz/Work/lunatik/build/intro$585 Def0300
+S A$intro/tomaz/Work/lunatik/build/intro$576 Def02F7
+S A$intro/tomaz/Work/lunatik/build/intro$567 Def02EB
+S A$intro/tomaz/Work/lunatik/build/intro$558 Def02DA
+S A$intro/tomaz/Work/lunatik/build/intro$549 Def02D0
+S A$intro/tomaz/Work/lunatik/build/intro$495 Def027D
+S A$intro/tomaz/Work/lunatik/build/intro$477 Def0265
+S A$intro/tomaz/Work/lunatik/build/intro$468 Def0253
+S A$intro/tomaz/Work/lunatik/build/intro$297 Def0132
+S A$intro/tomaz/Work/lunatik/build/intro$279 Def0113
+S A$intro/tomaz/Work/lunatik/build/intro$198 Def0082
+S A$intro/tomaz/Work/lunatik/build/intro$991 Def053D
+S A$intro/tomaz/Work/lunatik/build/intro$973 Def0524
+S A$intro/tomaz/Work/lunatik/build/intro$964 Def051C
+S A$intro/tomaz/Work/lunatik/build/intro$955 Def0509
+S A$intro/tomaz/Work/lunatik/build/intro$946 Def04F8
+S A$intro/tomaz/Work/lunatik/build/intro$937 Def04E8
+S A$intro/tomaz/Work/lunatik/build/intro$928 Def04DB
+S A$intro/tomaz/Work/lunatik/build/intro$919 Def04C6
+S A$intro/tomaz/Work/lunatik/build/intro$892 Def0485
+S A$intro/tomaz/Work/lunatik/build/intro$883 Def0471
+S A$intro/tomaz/Work/lunatik/build/intro$874 Def0456
+S A$intro/tomaz/Work/lunatik/build/intro$865 Def0443
+S A$intro/tomaz/Work/lunatik/build/intro$856 Def0437
+S A$intro/tomaz/Work/lunatik/build/intro$847 Def0427
+S A$intro/tomaz/Work/lunatik/build/intro$829 Def0402
+S A$intro/tomaz/Work/lunatik/build/intro$793 Def03E0
+S A$intro/tomaz/Work/lunatik/build/intro$775 Def03D7
+S A$intro/tomaz/Work/lunatik/build/intro$766 Def03C6
+S A$intro/tomaz/Work/lunatik/build/intro$757 Def03C0
+S A$intro/tomaz/Work/lunatik/build/intro$748 Def03AF
+S A$intro/tomaz/Work/lunatik/build/intro$739 Def03A7
+S A$intro/tomaz/Work/lunatik/build/intro$685 Def0375
+S A$intro/tomaz/Work/lunatik/build/intro$676 Def0366
+S A$intro/tomaz/Work/lunatik/build/intro$667 Def0357
+S A$intro/tomaz/Work/lunatik/build/intro$658 Def0344
+S A$intro/tomaz/Work/lunatik/build/intro$649 Def0337
+S A$intro/tomaz/Work/lunatik/build/intro$595 Def030B
+S A$intro/tomaz/Work/lunatik/build/intro$586 Def0302
+S A$intro/tomaz/Work/lunatik/build/intro$577 Def02F9
+S A$intro/tomaz/Work/lunatik/build/intro$568 Def02EE
+S A$intro/tomaz/Work/lunatik/build/intro$559 Def02DD
+S A$intro/tomaz/Work/lunatik/build/intro$469 Def0256
+S A$intro/tomaz/Work/lunatik/build/intro$397 Def01DE
+S A$intro/tomaz/Work/lunatik/build/intro$298 Def0133
+S A$intro/tomaz/Work/lunatik/build/intro$289 Def0120
+S A$intro/tomaz/Work/lunatik/build/intro$199 Def0085
+S A$intro/tomaz/Work/lunatik/build/intro$992 Def053E
+S A$intro/tomaz/Work/lunatik/build/intro$983 Def0532
+S A$intro/tomaz/Work/lunatik/build/intro$974 Def0527
+S A$intro/tomaz/Work/lunatik/build/intro$965 Def051D
+S A$intro/tomaz/Work/lunatik/build/intro$956 Def050C
+S A$intro/tomaz/Work/lunatik/build/intro$947 Def04F9
+S A$intro/tomaz/Work/lunatik/build/intro$938 Def04E9
+S A$intro/tomaz/Work/lunatik/build/intro$929 Def04DE
+S A$intro/tomaz/Work/lunatik/build/intro$893 Def0488
+S A$intro/tomaz/Work/lunatik/build/intro$884 Def0474
+S A$intro/tomaz/Work/lunatik/build/intro$875 Def0459
+S A$intro/tomaz/Work/lunatik/build/intro$866 Def0444
+S A$intro/tomaz/Work/lunatik/build/intro$839 Def040F
+S A$intro/tomaz/Work/lunatik/build/intro$776 Def03D8
+S A$intro/tomaz/Work/lunatik/build/intro$767 Def03C9
+S A$intro/tomaz/Work/lunatik/build/intro$758 Def03C1
+S A$intro/tomaz/Work/lunatik/build/intro$749 Def03B0
+S A$intro/tomaz/Work/lunatik/build/intro$686 Def0378
+S A$intro/tomaz/Work/lunatik/build/intro$677 Def0367
+S A$intro/tomaz/Work/lunatik/build/intro$668 Def0358
+S A$intro/tomaz/Work/lunatik/build/intro$659 Def0347
+S A$intro/tomaz/Work/lunatik/build/intro$596 Def030C
+S A$intro/tomaz/Work/lunatik/build/intro$587 Def0304
+S A$intro/tomaz/Work/lunatik/build/intro$578 Def02FC
+S A$intro/tomaz/Work/lunatik/build/intro$569 Def02F1
+S A$intro/tomaz/Work/lunatik/build/intro$497 Def0280
+S A$intro/tomaz/Work/lunatik/build/intro$488 Def0272
+S A$intro/tomaz/Work/lunatik/build/intro$398 Def01E0
+S A$intro/tomaz/Work/lunatik/build/intro$299 Def0134
+S A$intro/tomaz/Work/lunatik/build/intro$993 Def053F
+S A$intro/tomaz/Work/lunatik/build/intro$975 Def0528
+S A$intro/tomaz/Work/lunatik/build/intro$966 Def051E
+S A$intro/tomaz/Work/lunatik/build/intro$957 Def050D
+S A$intro/tomaz/Work/lunatik/build/intro$948 Def04FB
+S A$intro/tomaz/Work/lunatik/build/intro$939 Def04EB
+S A$intro/tomaz/Work/lunatik/build/intro$894 Def048A
+S A$intro/tomaz/Work/lunatik/build/intro$885 Def0475
+S A$intro/tomaz/Work/lunatik/build/intro$876 Def045C
+S A$intro/tomaz/Work/lunatik/build/intro$867 Def0445
+S A$intro/tomaz/Work/lunatik/build/intro$849 Def042A
+S A$intro/tomaz/Work/lunatik/build/intro$777 Def03D9
+S A$intro/tomaz/Work/lunatik/build/intro$768 Def03CA
+S A$intro/tomaz/Work/lunatik/build/intro$759 Def03C2
+S A$intro/tomaz/Work/lunatik/build/intro$687 Def0379
+S A$intro/tomaz/Work/lunatik/build/intro$678 Def036A
+S A$intro/tomaz/Work/lunatik/build/intro$669 Def0359
+S A$intro/tomaz/Work/lunatik/build/intro$588 Def0307
+S A$intro/tomaz/Work/lunatik/build/intro$498 Def0281
+S A$intro/tomaz/Work/lunatik/build/intro$489 Def0275
+S A$intro/tomaz/Work/lunatik/build/intro$399 Def01E3
+S XG$intro_init_starfield$0$0 Def0313
+S A$intro/tomaz/Work/lunatik/build/intro$994 Def0540
+S A$intro/tomaz/Work/lunatik/build/intro$976 Def0529
+S A$intro/tomaz/Work/lunatik/build/intro$967 Def051F
+S A$intro/tomaz/Work/lunatik/build/intro$958 Def0510
+S A$intro/tomaz/Work/lunatik/build/intro$949 Def04FE
+S A$intro/tomaz/Work/lunatik/build/intro$895 Def048D
+S A$intro/tomaz/Work/lunatik/build/intro$886 Def0478
+S A$intro/tomaz/Work/lunatik/build/intro$877 Def045F
+S A$intro/tomaz/Work/lunatik/build/intro$868 Def0446
+S A$intro/tomaz/Work/lunatik/build/intro$787 Def03DD
+S A$intro/tomaz/Work/lunatik/build/intro$769 Def03CB
+S A$intro/tomaz/Work/lunatik/build/intro$697 Def037E
+S A$intro/tomaz/Work/lunatik/build/intro$679 Def036D
+S A$intro/tomaz/Work/lunatik/build/intro$589 Def0308
+S A$intro/tomaz/Work/lunatik/build/intro$499 Def0283
+S A$intro/tomaz/Work/lunatik/build/intro$977 Def052A
+S A$intro/tomaz/Work/lunatik/build/intro$968 Def0520
+S A$intro/tomaz/Work/lunatik/build/intro$959 Def0513
+S A$intro/tomaz/Work/lunatik/build/intro$896 Def0490
+S A$intro/tomaz/Work/lunatik/build/intro$887 Def0479
+S A$intro/tomaz/Work/lunatik/build/intro$878 Def0462
+S A$intro/tomaz/Work/lunatik/build/intro$869 Def0449
+S A$intro/tomaz/Work/lunatik/build/intro$788 Def03DE
+S A$intro/tomaz/Work/lunatik/build/intro$987 Def0535
+S A$intro/tomaz/Work/lunatik/build/intro$978 Def052B
+S A$intro/tomaz/Work/lunatik/build/intro$897 Def0493
+S A$intro/tomaz/Work/lunatik/build/intro$888 Def047A
+S A$intro/tomaz/Work/lunatik/build/intro$879 Def0465
+S A$intro/tomaz/Work/lunatik/build/intro$798 Def03E2
+S G$intro_subtitle$0$0 Def0076
+S A$intro/tomaz/Work/lunatik/build/intro$988 Def0536
+S A$intro/tomaz/Work/lunatik/build/intro$979 Def052C
+S A$intro/tomaz/Work/lunatik/build/intro$898 Def0496
+S A$intro/tomaz/Work/lunatik/build/intro$889 Def047D
+S XG$intro_run$0$0 Def05BF
+S A$intro/tomaz/Work/lunatik/build/intro$989 Def0537
+S A$intro/tomaz/Work/lunatik/build/intro$899 Def0497
+S A$intro/tomaz/Work/lunatik/build/intro$91 Def000C
+S A$intro/tomaz/Work/lunatik/build/intro$82 Def0000
+S C$intro.c$104$1_0$43 Def03F0
+S C$intro.c$103$2_0$43 Def03E3
+S _intro_title Def0000
+S A$intro/tomaz/Work/lunatik/build/intro$999 Def0542
+S A$intro/tomaz/Work/lunatik/build/intro$92 Def000D
+S A$intro/tomaz/Work/lunatik/build/intro$83 Def0002
+S A$intro/tomaz/Work/lunatik/build/intro$93 Def000F
+S A$intro/tomaz/Work/lunatik/build/intro$84 Def0006
+S C$intro.c$100$2_0$39 Def03E2
+S A$intro/tomaz/Work/lunatik/build/intro$94 Def0010
+S A$intro/tomaz/Work/lunatik/build/intro$85 Def0008
+S C$intro.c$105$2_0$44 Def0563
+S A$intro/tomaz/Work/lunatik/build/intro$95 Def0011
+S A$intro/tomaz/Work/lunatik/build/intro$96 Def0012
+S C$intro.c$131$1_0$48 Def057E
+S C$intro.c$108$2_0$43 Def043A
+S A$intro/tomaz/Work/lunatik/build/intro$97 Def0013
+S C$intro.c$132$1_0$48 Def058F
+S C$intro.c$122$2_0$48 Def0574
+S C$intro.c$106$3_0$45 Def0557
+S C$intro.c$111$5_0$47 Def04E3
+S A$intro/tomaz/Work/lunatik/build/intro$98 Def0015
+S A$intro/tomaz/Work/lunatik/build/intro$89 Def0009
+S C$intro.c$140$2_0$49 Def05B8
+S C$intro.c$119$2_0$43 Def0573
+S C$intro.c$112$5_0$47 Def0521
+S C$intro.c$143$1_0$48 Def05BF
+S C$intro.c$141$2_0$49 Def05BC
+S C$intro.c$125$1_0$48 Def0574
+S C$intro.c$113$5_0$47 Def0535
+S C$intro.c$106$4_0$46 Def040F
+S C$intro.c$135$1_0$48 Def05A8
+S C$intro.c$105$5_0$47 Def03F8
+S C$intro.c$115$5_0$47 Def0542
+S C$intro.c$30$1_0$30 Def007F
+S _intro_subtitle Def0076
+S C$intro.c$128$1_0$48 Def0577
+S C$intro.c$116$5_0$47 Def054D
+S C$intro.c$109$4_0$46 Def049C
+S C$intro.c$40$1_0$30 Def017C
+S C$intro.c$136$2_0$49 Def05A8
+S C$intro.c$32$1_0$30 Def009D
+S XG$intro_title$0$0 Def0075
+S C$intro.c$137$2_0$49 Def05AC
+S C$intro.c$33$1_0$30 Def00AF
+S C$intro.c$138$2_0$49 Def05B0
+S C$intro.c$60$1_0$31 Def020C
+S C$intro.c$34$1_0$30 Def00D7
+S C$intro.c$139$2_0$49 Def05B4
+S C$intro.c$70$1_0$31 Def0268
+S C$intro.c$61$1_0$31 Def0218
+S C$intro.c$35$1_0$30 Def00F4
+S C$intro.c$71$1_0$31 Def0272
+S C$intro.c$62$1_0$31 Def0223
+S C$intro.c$53$1_0$31 Def01D2
+S C$intro.c$63$1_0$31 Def022F
+S C$intro.c$54$1_0$31 Def01DE
+S C$intro.c$37$1_0$30 Def0120
+S C$intro.c$81$2_0$31 Def0313
+S C$intro.c$64$1_0$31 Def023A
+S C$intro.c$55$1_0$31 Def01E9
+S C$intro.c$38$1_0$30 Def0150
+S C$intro.c$28$2_0$30 Def0076
+S C$intro.c$20$3_0$28 Def0049
+S C$intro.c$15$0_0$27 Def0000
+S C$intro.c$56$1_0$31 Def01F5
+S C$intro.c$21$3_0$28 Def004D
+S C$intro.c$57$1_0$31 Def0201
+S C$intro.c$48$1_0$31 Def01C5
+S C$intro.c$22$3_0$28 Def004F
+S G$intro_move_stars$0$0 Def03E3
+S C$intro.c$74$2_0$32 Def030B
+S C$intro.c$67$1_0$31 Def0245
+S C$intro.c$25$2_0$27 Def0075
+S C$intro.c$23$3_0$28 Def0059
+S C$intro.c$68$1_0$31 Def0250
+S XG$intro_subtitle$0$0 Def017C
+S A$intro/tomaz/Work/lunatik/build/intro$1000 Def0545
+S C$intro.c$95$2_0$40 Def03DD
+S C$intro.c$90$1_0$37 Def037E
+S C$intro.c$69$1_0$31 Def025C
+S C$intro.c$18$2_0$27 Def006E
+S A$intro/tomaz/Work/lunatik/build/intro$1010 Def0553
+S A$intro/tomaz/Work/lunatik/build/intro$1001 Def0548
+S A$intro/tomaz/Work/lunatik/build/intro$1020 Def055D
+S A$intro/tomaz/Work/lunatik/build/intro$1011 Def0554
+S A$intro/tomaz/Work/lunatik/build/intro$1002 Def054A
+S G$intro_draw_star$0$0 Def0314
+S C$intro.c$18$3_0$28 Def0009
+S A$intro/tomaz/Work/lunatik/build/intro$1120 Def05BB
+S A$intro/tomaz/Work/lunatik/build/intro$1021 Def0560
+S A$intro/tomaz/Work/lunatik/build/intro$1012 Def0555
+S A$intro/tomaz/Work/lunatik/build/intro$1003 Def054B
+S C$intro.c$96$3_0$41 Def03DA
+S C$intro.c$75$4_0$34 Def02F4
+S C$intro.c$19$3_0$28 Def0017
+S A$intro/tomaz/Work/lunatik/build/intro$1103 Def05AC
+S A$intro/tomaz/Work/lunatik/build/intro$1040 Def0573
+S A$intro/tomaz/Work/lunatik/build/intro$1013 Def0556
+S C$intro.c$85$1_0$37 Def031D
+S C$intro.c$84$2_0$37 Def0314
+S C$intro.c$74$5_0$35 Def027D
+S A$intro/tomaz/Work/lunatik/build/intro$1104 Def05AE
+S C$intro.c$93$1_0$39 Def037F
+S C$intro.c$86$1_0$37 Def0325
+S C$intro.c$79$3_0$33 Def02FE
+S C$intro.c$75$5_0$35 Def028C
+S A$intro/tomaz/Work/lunatik/build/intro$1114 Def05B4
+S C$intro.c$97$4_0$42 Def03AE
+S C$intro.c$94$1_0$39 Def0387
+S G$intro_draw_starfield$0$0 Def037F
+S C$intro.c$76$5_0$35 Def02C2
+S A$intro/tomaz/Work/lunatik/build/intro$1133 Def05BF
+S A$intro/tomaz/Work/lunatik/build/intro$1115 Def05B6
+S A$intro/tomaz/Work/lunatik/build/intro$1070 Def0589
+S A$intro/tomaz/Work/lunatik/build/intro$1034 Def056F
+S C$intro.c$98$4_0$42 Def03C4
+S C$intro.c$88$1_0$37 Def032F
+S C$intro.c$77$5_0$35 Def02D3
+S A$intro/tomaz/Work/lunatik/build/intro$1125 Def05BC
+S A$intro/tomaz/Work/lunatik/build/intro$1080 Def0595
+S A$intro/tomaz/Work/lunatik/build/intro$1071 Def058C
+S A$intro/tomaz/Work/lunatik/build/intro$1053 Def0574
+S A$intro/tomaz/Work/lunatik/build/intro$1035 Def0571
+S A$intro/tomaz/Work/lunatik/build/intro$1026 Def0563
+S A$intro/tomaz/Work/lunatik/build/intro$1008 Def054D
+S C$intro.c$95$2_0$39 Def0392
+S C$intro.c$89$1_0$37 Def0337
+S A$intro/tomaz/Work/lunatik/build/intro$1108 Def05B0
+S A$intro/tomaz/Work/lunatik/build/intro$1090 Def05A7
+S A$intro/tomaz/Work/lunatik/build/intro$1081 Def0596
+S A$intro/tomaz/Work/lunatik/build/intro$1072 Def058D
+S A$intro/tomaz/Work/lunatik/build/intro$1063 Def057E
+S A$intro/tomaz/Work/lunatik/build/intro$1027 Def0566
+S A$intro/tomaz/Work/lunatik/build/intro$1018 Def0557
+S A$intro/tomaz/Work/lunatik/build/intro$1009 Def0550
+S C$intro.c$96$2_0$39 Def03A0
+S A$intro/tomaz/Work/lunatik/build/intro$1109 Def05B3
+S A$intro/tomaz/Work/lunatik/build/intro$1082 Def0598
+S A$intro/tomaz/Work/lunatik/build/intro$1073 Def058E
+S A$intro/tomaz/Work/lunatik/build/intro$1064 Def0580
+S A$intro/tomaz/Work/lunatik/build/intro$1028 Def0569
+S A$intro/tomaz/Work/lunatik/build/intro$1019 Def055A
+S _intro_move_stars Def03E3
+S A$intro/tomaz/Work/lunatik/build/intro$1119 Def05B8
+S A$intro/tomaz/Work/lunatik/build/intro$1083 Def0599
+S A$intro/tomaz/Work/lunatik/build/intro$1065 Def0581
+S A$intro/tomaz/Work/lunatik/build/intro$1029 Def056C
+S A$intro/tomaz/Work/lunatik/build/intro$1084 Def059C
+S A$intro/tomaz/Work/lunatik/build/intro$1066 Def0582
+S A$intro/tomaz/Work/lunatik/build/intro$1057 Def0577
+S G$intro_init_starfield$0$0 Def01C5
+S A$intro/tomaz/Work/lunatik/build/intro$1085 Def059D
+S A$intro/tomaz/Work/lunatik/build/intro$1067 Def0585
+S A$intro/tomaz/Work/lunatik/build/intro$1058 Def057A
+S A$intro/tomaz/Work/lunatik/build/intro$1086 Def059F
+S A$intro/tomaz/Work/lunatik/build/intro$1077 Def058F
+S A$intro/tomaz/Work/lunatik/build/intro$1068 Def0586
+S A$intro/tomaz/Work/lunatik/build/intro$1059 Def057B
+S _intro_draw_star Def0314
+S A$intro/tomaz/Work/lunatik/build/intro$1087 Def05A0
+S A$intro/tomaz/Work/lunatik/build/intro$1078 Def0592
+S A$intro/tomaz/Work/lunatik/build/intro$1069 Def0588
+S A$intro/tomaz/Work/lunatik/build/intro$1088 Def05A3
+S A$intro/tomaz/Work/lunatik/build/intro$1079 Def0593
+S G$intro_run$0$0 Def0574
+S Fintro$__str_0$0_0$0 Def017D
+S A$intro/tomaz/Work/lunatik/build/intro$1098 Def05A8
+S A$intro/tomaz/Work/lunatik/build/intro$1089 Def05A6
+S A$intro/tomaz/Work/lunatik/build/intro$200 Def0086
+S A$intro/tomaz/Work/lunatik/build/intro$110 Def0023
+S Fintro$__str_1$0_0$0 Def019F
+S A$intro/tomaz/Work/lunatik/build/intro$1099 Def05AB
+S A$intro/tomaz/Work/lunatik/build/intro$300 Def0135
+S A$intro/tomaz/Work/lunatik/build/intro$210 Def009C
+S A$intro/tomaz/Work/lunatik/build/intro$201 Def0089
+S A$intro/tomaz/Work/lunatik/build/intro$120 Def0037
+S A$intro/tomaz/Work/lunatik/build/intro$111 Def0024
+S A$intro/tomaz/Work/lunatik/build/intro$102 Def0017
+S Fintro$__str_2$0_0$0 Def01A9
+S _intro_draw_starfield Def037F
+S A$intro/tomaz/Work/lunatik/build/intro$400 Def01E6
+S A$intro/tomaz/Work/lunatik/build/intro$310 Def0149
+S A$intro/tomaz/Work/lunatik/build/intro$301 Def0136
+S A$intro/tomaz/Work/lunatik/build/intro$202 Def008C
+S A$intro/tomaz/Work/lunatik/build/intro$121 Def0038
+S A$intro/tomaz/Work/lunatik/build/intro$112 Def0027
+S A$intro/tomaz/Work/lunatik/build/intro$103 Def0018
+S Fintro$__str_3$0_0$0 Def01B2
+S A$intro/tomaz/Work/lunatik/build/intro$500 Def0284
+S A$intro/tomaz/Work/lunatik/build/intro$320 Def0152
+S A$intro/tomaz/Work/lunatik/build/intro$311 Def014C
+S A$intro/tomaz/Work/lunatik/build/intro$302 Def0137
+S A$intro/tomaz/Work/lunatik/build/intro$230 Def00BE
+S A$intro/tomaz/Work/lunatik/build/intro$203 Def008D
+S A$intro/tomaz/Work/lunatik/build/intro$140 Def004D
+S A$intro/tomaz/Work/lunatik/build/intro$122 Def003B
+S A$intro/tomaz/Work/lunatik/build/intro$113 Def0028
+S A$intro/tomaz/Work/lunatik/build/intro$104 Def0019
+S Fintro$__str_4$0_0$0 Def01BB
+S A$intro/tomaz/Work/lunatik/build/intro$510 Def028E
+S A$intro/tomaz/Work/lunatik/build/intro$501 Def0285
+S A$intro/tomaz/Work/lunatik/build/intro$420 Def0207
+S A$intro/tomaz/Work/lunatik/build/intro$411 Def01F5
+S A$intro/tomaz/Work/lunatik/build/intro$330 Def0164
+S A$intro/tomaz/Work/lunatik/build/intro$321 Def0153
+S A$intro/tomaz/Work/lunatik/build/intro$312 Def014D
+S A$intro/tomaz/Work/lunatik/build/intro$303 Def013A
+S A$intro/tomaz/Work/lunatik/build/intro$240 Def00D4
+S A$intro/tomaz/Work/lunatik/build/intro$231 Def00BF
+S A$intro/tomaz/Work/lunatik/build/intro$204 Def0090
+S A$intro/tomaz/Work/lunatik/build/intro$150 Def0056
+S A$intro/tomaz/Work/lunatik/build/intro$141 Def004E
+S A$intro/tomaz/Work/lunatik/build/intro$123 Def003E
+S A$intro/tomaz/Work/lunatik/build/intro$114 Def0029
+S A$intro/tomaz/Work/lunatik/build/intro$105 Def001A
+S A$intro/tomaz/Work/lunatik/build/intro$601 Def030F
+S A$intro/tomaz/Work/lunatik/build/intro$520 Def029C
+S A$intro/tomaz/Work/lunatik/build/intro$511 Def028F
+S A$intro/tomaz/Work/lunatik/build/intro$502 Def0286
+S A$intro/tomaz/Work/lunatik/build/intro$421 Def0209
+S A$intro/tomaz/Work/lunatik/build/intro$412 Def01F8
+S A$intro/tomaz/Work/lunatik/build/intro$340 Def0176
+S A$intro/tomaz/Work/lunatik/build/intro$331 Def0165
+S A$intro/tomaz/Work/lunatik/build/intro$322 Def0156
+S A$intro/tomaz/Work/lunatik/build/intro$313 Def014E
+S A$intro/tomaz/Work/lunatik/build/intro$304 Def013D
+S A$intro/tomaz/Work/lunatik/build/intro$250 Def00DF
+S A$intro/tomaz/Work/lunatik/build/intro$241 Def00D5
+S A$intro/tomaz/Work/lunatik/build/intro$232 Def00C2
+S A$intro/tomaz/Work/lunatik/build/intro$223 Def00AF
+S A$intro/tomaz/Work/lunatik/build/intro$214 Def009D
+S A$intro/tomaz/Work/lunatik/build/intro$205 Def0091
+S A$intro/tomaz/Work/lunatik/build/intro$160 Def0062
+S A$intro/tomaz/Work/lunatik/build/intro$151 Def0058
+S A$intro/tomaz/Work/lunatik/build/intro$133 Def0049
+S A$intro/tomaz/Work/lunatik/build/intro$124 Def003F
+S A$intro/tomaz/Work/lunatik/build/intro$115 Def002A
+S A$intro/tomaz/Work/lunatik/build/intro$106 Def001D
+S XG$intro_move_stars$0$0 Def0573
+S A$intro/tomaz/Work/lunatik/build/intro$620 Def031C
+S A$intro/tomaz/Work/lunatik/build/intro$602 Def0311
+S A$intro/tomaz/Work/lunatik/build/intro$530 Def02B3
+S A$intro/tomaz/Work/lunatik/build/intro$521 Def029F
+S A$intro/tomaz/Work/lunatik/build/intro$512 Def0290
+S A$intro/tomaz/Work/lunatik/build/intro$503 Def0287
+S A$intro/tomaz/Work/lunatik/build/intro$440 Def0226
+S A$intro/tomaz/Work/lunatik/build/intro$413 Def01FB
+S A$intro/tomaz/Work/lunatik/build/intro$404 Def01E9
+S A$intro/tomaz/Work/lunatik/build/intro$341 Def0177
+S A$intro/tomaz/Work/lunatik/build/intro$332 Def0166
+S A$intro/tomaz/Work/lunatik/build/intro$323 Def0157
+S A$intro/tomaz/Work/lunatik/build/intro$314 Def014F
+S A$intro/tomaz/Work/lunatik/build/intro$305 Def013E
+S A$intro/tomaz/Work/lunatik/build/intro$260 Def00F1
+S A$intro/tomaz/Work/lunatik/build/intro$251 Def00E0
+S A$intro/tomaz/Work/lunatik/build/intro$242 Def00D6
+S A$intro/tomaz/Work/lunatik/build/intro$233 Def00C5
+S A$intro/tomaz/Work/lunatik/build/intro$224 Def00B2
+S A$intro/tomaz/Work/lunatik/build/intro$215 Def00A0
+S A$intro/tomaz/Work/lunatik/build/intro$206 Def0094
+S A$intro/tomaz/Work/lunatik/build/intro$161 Def0065
+S A$intro/tomaz/Work/lunatik/build/intro$134 Def004A
+S A$intro/tomaz/Work/lunatik/build/intro$125 Def0042
+S A$intro/tomaz/Work/lunatik/build/intro$116 Def002D
+S A$intro/tomaz/Work/lunatik/build/intro$107 Def001E
+S A$intro/tomaz/Work/lunatik/build/intro$900 Def0498
+S A$intro/tomaz/Work/lunatik/build/intro$810 Def03E9
+S A$intro/tomaz/Work/lunatik/build/intro$630 Def0325
+S A$intro/tomaz/Work/lunatik/build/intro$531 Def02B6
+S A$intro/tomaz/Work/lunatik/build/intro$522 Def02A2
+S A$intro/tomaz/Work/lunatik/build/intro$513 Def0291
+S A$intro/tomaz/Work/lunatik/build/intro$504 Def0289
+S A$intro/tomaz/Work/lunatik/build/intro$441 Def0229
+S A$intro/tomaz/Work/lunatik/build/intro$432 Def0218
+S A$intro/tomaz/Work/lunatik/build/intro$414 Def01FE
+S A$intro/tomaz/Work/lunatik/build/intro$405 Def01EC
+S A$intro/tomaz/Work/lunatik/build/intro$351 Def017C
+S A$intro/tomaz/Work/lunatik/build/intro$333 Def0167
+S A$intro/tomaz/Work/lunatik/build/intro$324 Def015A
+S A$intro/tomaz/Work/lunatik/build/intro$306 Def0141
+S A$intro/tomaz/Work/lunatik/build/intro$270 Def0100
+S A$intro/tomaz/Work/lunatik/build/intro$261 Def00F2
+S A$intro/tomaz/Work/lunatik/build/intro$252 Def00E1
+S A$intro/tomaz/Work/lunatik/build/intro$234 Def00C6
+S A$intro/tomaz/Work/lunatik/build/intro$225 Def00B5
+S A$intro/tomaz/Work/lunatik/build/intro$216 Def00A3
+S A$intro/tomaz/Work/lunatik/build/intro$207 Def0095
+S A$intro/tomaz/Work/lunatik/build/intro$180 Def0075
+S A$intro/tomaz/Work/lunatik/build/intro$162 Def0067
+S A$intro/tomaz/Work/lunatik/build/intro$135 Def004B
+S A$intro/tomaz/Work/lunatik/build/intro$126 Def0045
+S A$intro/tomaz/Work/lunatik/build/intro$117 Def0030
+S A$intro/tomaz/Work/lunatik/build/intro$108 Def001F
+S _intro_init_starfield Def01C5
+S A$intro/tomaz/Work/lunatik/build/intro$910 Def04AC
+S A$intro/tomaz/Work/lunatik/build/intro$901 Def049B
+S A$intro/tomaz/Work/lunatik/build/intro$820 Def03F7
+S A$intro/tomaz/Work/lunatik/build/intro$811 Def03EB
+S A$intro/tomaz/Work/lunatik/build/intro$730 Def039E
+S A$intro/tomaz/Work/lunatik/build/intro$721 Def0392
+S A$intro/tomaz/Work/lunatik/build/intro$640 Def032F
+S A$intro/tomaz/Work/lunatik/build/intro$631 Def0327
+S A$intro/tomaz/Work/lunatik/build/intro$550 Def02D1
+S A$intro/tomaz/Work/lunatik/build/intro$541 Def02C2
+S A$intro/tomaz/Work/lunatik/build/intro$532 Def02B8
+S A$intro/tomaz/Work/lunatik/build/intro$523 Def02A5
+S A$intro/tomaz/Work/lunatik/build/intro$514 Def0292
+S A$intro/tomaz/Work/lunatik/build/intro$460 Def0245
+S A$intro/tomaz/Work/lunatik/build/intro$442 Def022C
+S A$intro/tomaz/Work/lunatik/build/intro$433 Def021A
+S A$intro/tomaz/Work/lunatik/build/intro$406 Def01EF
+S A$intro/tomaz/Work/lunatik/build/intro$334 Def0168
+S A$intro/tomaz/Work/lunatik/build/intro$325 Def015B
+S A$intro/tomaz/Work/lunatik/build/intro$307 Def0142
+S A$intro/tomaz/Work/lunatik/build/intro$280 Def0116
+S A$intro/tomaz/Work/lunatik/build/intro$271 Def0103
+S A$intro/tomaz/Work/lunatik/build/intro$262 Def00F3
+S A$intro/tomaz/Work/lunatik/build/intro$253 Def00E2
+S A$intro/tomaz/Work/lunatik/build/intro$235 Def00C9
+S A$intro/tomaz/Work/lunatik/build/intro$226 Def00B6
+S A$intro/tomaz/Work/lunatik/build/intro$217 Def00A6
+S A$intro/tomaz/Work/lunatik/build/intro$208 Def0098
+S A$intro/tomaz/Work/lunatik/build/intro$190 Def0076
+S A$intro/tomaz/Work/lunatik/build/intro$163 Def0068
+S A$intro/tomaz/Work/lunatik/build/intro$145 Def004F
+S A$intro/tomaz/Work/lunatik/build/intro$136 Def004C
+S A$intro/tomaz/Work/lunatik/build/intro$127 Def0046
+S A$intro/tomaz/Work/lunatik/build/intro$118 Def0031
+S A$intro/tomaz/Work/lunatik/build/intro$109 Def0022
+S A$intro/tomaz/Work/lunatik/build/intro$920 Def04C7
+S A$intro/tomaz/Work/lunatik/build/intro$911 Def04B0
+S A$intro/tomaz/Work/lunatik/build/intro$830 Def0404
+S A$intro/tomaz/Work/lunatik/build/intro$812 Def03EE
+S A$intro/tomaz/Work/lunatik/build/intro$740 Def03A8
+S A$intro/tomaz/Work/lunatik/build/intro$713 Def0387
+S A$intro/tomaz/Work/lunatik/build/intro$650 Def033A
+S A$intro/tomaz/Work/lunatik/build/intro$641 Def0331
+S A$intro/tomaz/Work/lunatik/build/intro$632 Def0328
+S A$intro/tomaz/Work/lunatik/build/intro$560 Def02DE
+S A$intro/tomaz/Work/lunatik/build/intro$551 Def02D2
+S A$intro/tomaz/Work/lunatik/build/intro$542 Def02C5
+S A$intro/tomaz/Work/lunatik/build/intro$533 Def02BB
+S A$intro/tomaz/Work/lunatik/build/intro$524 Def02A6
+S A$intro/tomaz/Work/lunatik/build/intro$515 Def0293
+S A$intro/tomaz/Work/lunatik/build/intro$470 Def0259
+S A$intro/tomaz/Work/lunatik/build/intro$461 Def0247
+S A$intro/tomaz/Work/lunatik/build/intro$434 Def021D
+S A$intro/tomaz/Work/lunatik/build/intro$425 Def020C
+S A$intro/tomaz/Work/lunatik/build/intro$407 Def01F2
+S A$intro/tomaz/Work/lunatik/build/intro$335 Def016B
+S A$intro/tomaz/Work/lunatik/build/intro$326 Def015E
+S A$intro/tomaz/Work/lunatik/build/intro$308 Def0145
+S A$intro/tomaz/Work/lunatik/build/intro$290 Def0123
+S A$intro/tomaz/Work/lunatik/build/intro$281 Def0117
+S A$intro/tomaz/Work/lunatik/build/intro$272 Def0106
+S A$intro/tomaz/Work/lunatik/build/intro$254 Def00E5
+S A$intro/tomaz/Work/lunatik/build/intro$236 Def00CA
+S A$intro/tomaz/Work/lunatik/build/intro$227 Def00B9
+S A$intro/tomaz/Work/lunatik/build/intro$218 Def00A9
+S A$intro/tomaz/Work/lunatik/build/intro$209 Def009B
+S A$intro/tomaz/Work/lunatik/build/intro$191 Def0078
+S A$intro/tomaz/Work/lunatik/build/intro$164 Def006B
+S A$intro/tomaz/Work/lunatik/build/intro$146 Def0050
+S A$intro/tomaz/Work/lunatik/build/intro$128 Def0047
+S A$intro/tomaz/Work/lunatik/build/intro$119 Def0034
+S XG$intro_draw_star$0$0 Def037E
+S A$intro/tomaz/Work/lunatik/build/intro$921 Def04CA
+S A$intro/tomaz/Work/lunatik/build/intro$912 Def04B2
+S A$intro/tomaz/Work/lunatik/build/intro$840 Def0412
+S A$intro/tomaz/Work/lunatik/build/intro$831 Def0407
+S A$intro/tomaz/Work/lunatik/build/intro$813 Def03EF
+S A$intro/tomaz/Work/lunatik/build/intro$750 Def03B3
+S A$intro/tomaz/Work/lunatik/build/intro$741 Def03A9
+S A$intro/tomaz/Work/lunatik/build/intro$723 Def0395
+S A$intro/tomaz/Work/lunatik/build/intro$714 Def038A
+S A$intro/tomaz/Work/lunatik/build/intro$660 Def0348
+S A$intro/tomaz/Work/lunatik/build/intro$651 Def033D
+S A$intro/tomaz/Work/lunatik/build/intro$642 Def0332
+S A$intro/tomaz/Work/lunatik/build/intro$633 Def0329
+S A$intro/tomaz/Work/lunatik/build/intro$624 Def031D
+S A$intro/tomaz/Work/lunatik/build/intro$570 Def02F2
+S A$intro/tomaz/Work/lunatik/build/intro$561 Def02E1
+S A$intro/tomaz/Work/lunatik/build/intro$543 Def02C8
+S A$intro/tomaz/Work/lunatik/build/intro$534 Def02BC
+S A$intro/tomaz/Work/lunatik/build/intro$525 Def02A9
+S A$intro/tomaz/Work/lunatik/build/intro$516 Def0296
+S A$intro/tomaz/Work/lunatik/build/intro$462 Def024A
+S A$intro/tomaz/Work/lunatik/build/intro$453 Def023A
+S A$intro/tomaz/Work/lunatik/build/intro$435 Def0220
+S A$intro/tomaz/Work/lunatik/build/intro$426 Def020F
+S A$intro/tomaz/Work/lunatik/build/intro$390 Def01D2
+S A$intro/tomaz/Work/lunatik/build/intro$381 Def01C5
+S A$intro/tomaz/Work/lunatik/build/intro$345 Def0178
+S A$intro/tomaz/Work/lunatik/build/intro$336 Def016C
+S A$intro/tomaz/Work/lunatik/build/intro$327 Def0161
+S A$intro/tomaz/Work/lunatik/build/intro$318 Def0150
+S A$intro/tomaz/Work/lunatik/build/intro$309 Def0146
+S A$intro/tomaz/Work/lunatik/build/intro$291 Def0126
+S A$intro/tomaz/Work/lunatik/build/intro$282 Def011A
+S A$intro/tomaz/Work/lunatik/build/intro$273 Def0107
+S A$intro/tomaz/Work/lunatik/build/intro$255 Def00E6
+S A$intro/tomaz/Work/lunatik/build/intro$246 Def00D7
+S A$intro/tomaz/Work/lunatik/build/intro$237 Def00CD
+S A$intro/tomaz/Work/lunatik/build/intro$228 Def00BC
+S A$intro/tomaz/Work/lunatik/build/intro$219 Def00AC
+S A$intro/tomaz/Work/lunatik/build/intro$192 Def007C
+S A$intro/tomaz/Work/lunatik/build/intro$174 Def0071
+S A$intro/tomaz/Work/lunatik/build/intro$156 Def0059
+S A$intro/tomaz/Work/lunatik/build/intro$147 Def0052
+S A$intro/tomaz/Work/lunatik/build/intro$129 Def0048
+S A$intro/tomaz/Work/lunatik/build/intro$940 Def04EE
+S A$intro/tomaz/Work/lunatik/build/intro$931 Def04E0
+S A$intro/tomaz/Work/lunatik/build/intro$922 Def04CB
+S A$intro/tomaz/Work/lunatik/build/intro$913 Def04B5
+S A$intro/tomaz/Work/lunatik/build/intro$850 Def042D
+S A$intro/tomaz/Work/lunatik/build/intro$841 Def0415
+S A$intro/tomaz/Work/lunatik/build/intro$832 Def0408
+S A$intro/tomaz/Work/lunatik/build/intro$760 Def03C3
+S A$intro/tomaz/Work/lunatik/build/intro$751 Def03B4
+S A$intro/tomaz/Work/lunatik/build/intro$742 Def03AA
+S A$intro/tomaz/Work/lunatik/build/intro$724 Def0396
+S A$intro/tomaz/Work/lunatik/build/intro$715 Def038D
+S A$intro/tomaz/Work/lunatik/build/intro$670 Def035C
+S A$intro/tomaz/Work/lunatik/build/intro$661 Def034B
+S A$intro/tomaz/Work/lunatik/build/intro$652 Def033E
+S A$intro/tomaz/Work/lunatik/build/intro$643 Def0333
+S A$intro/tomaz/Work/lunatik/build/intro$634 Def032C
+S A$intro/tomaz/Work/lunatik/build/intro$625 Def0320
+S A$intro/tomaz/Work/lunatik/build/intro$607 Def0313
+S A$intro/tomaz/Work/lunatik/build/intro$571 Def02F3
+S A$intro/tomaz/Work/lunatik/build/intro$562 Def02E4
+S A$intro/tomaz/Work/lunatik/build/intro$544 Def02CA
+S A$intro/tomaz/Work/lunatik/build/intro$535 Def02BD
+S A$intro/tomaz/Work/lunatik/build/intro$526 Def02AC
+S A$intro/tomaz/Work/lunatik/build/intro$517 Def0297
+S A$intro/tomaz/Work/lunatik/build/intro$508 Def028C
+S A$intro/tomaz/Work/lunatik/build/intro$490 Def0278
+S A$intro/tomaz/Work/lunatik/build/intro$481 Def0268
+S A$intro/tomaz/Work/lunatik/build/intro$463 Def024D
+S A$intro/tomaz/Work/lunatik/build/intro$454 Def023D
+S A$intro/tomaz/Work/lunatik/build/intro$427 Def0212
+S A$intro/tomaz/Work/lunatik/build/intro$418 Def0201
+S A$intro/tomaz/Work/lunatik/build/intro$391 Def01D5
+S A$intro/tomaz/Work/lunatik/build/intro$382 Def01C7
+S A$intro/tomaz/Work/lunatik/build/intro$346 Def017A
+S A$intro/tomaz/Work/lunatik/build/intro$337 Def016F
+S A$intro/tomaz/Work/lunatik/build/intro$328 Def0162
+S A$intro/tomaz/Work/lunatik/build/intro$319 Def0151
+S A$intro/tomaz/Work/lunatik/build/intro$292 Def0128
+S A$intro/tomaz/Work/lunatik/build/intro$283 Def011D
+S A$intro/tomaz/Work/lunatik/build/intro$274 Def0108
+S A$intro/tomaz/Work/lunatik/build/intro$256 Def00E9
+S A$intro/tomaz/Work/lunatik/build/intro$247 Def00DA
+S A$intro/tomaz/Work/lunatik/build/intro$238 Def00CE
+S A$intro/tomaz/Work/lunatik/build/intro$229 Def00BD
+S A$intro/tomaz/Work/lunatik/build/intro$193 Def007E
+S A$intro/tomaz/Work/lunatik/build/intro$175 Def0073
+S A$intro/tomaz/Work/lunatik/build/intro$157 Def005B
+S A$intro/tomaz/Work/lunatik/build/intro$148 Def0053
+S _intro_run Def0574
+A _DATA size 7E flags 0 addr 0
+S Fintro$sclkmax$0_0$0 Def0078
+S Fintro$prevsx$0_0$0 Def001E
+S Fintro$sx$0_0$0 Def0000
+S Fintro$sy$0_0$0 Def003C
+S Fintro$sclk$0_0$0 Def005A
+A _INITIALIZED size E flags 0 addr 0
+S Fintro$letters$0_0$0 Def0000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size E flags 0 addr 0
+S Fintro$__xinit_letters$0_0$0 Def0000
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 01 00
+T 1E 00
+R 00 00 01 00
+T 1E 00
+R 00 00 01 00
+T 3C 00
+R 00 00 01 00
+T 3C 00
+R 00 00 01 00
+T 5A 00
+R 00 00 01 00
+T 5A 00
+R 00 00 01 00
+T 78 00
+R 00 00 01 00
+T 78 00
+R 00 00 01 00
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 F5 01 00 00
+R 00 00 00 00
+T 0C 00
+R 00 00 00 00
+T 0C 00 79 D6 07 78 17 3F 1F DE 80 30 5A 69 60 29
+R 00 00 00 00
+T 1A 00 11 00 00 19 7E DD 77 FE 23 7E DD 77 FF 2B
+R 00 00 00 00 00 03 02 00
+T 28 00 E5 C5 DD 5E 06 DD 56 07 D5 DD 5E 04 DD 56
+R 00 00 00 00
+T 36 00 05 D5 DD 5E FE DD 56 FF D5 CD 00 00 21
+R 00 00 00 00 02 0C 00 00
+T 43 00 06 00 39 F9 C1 E1 7E 23 66 6F 23 5E 79 D6
+R 00 00 00 00
+T 51 00 03 B0 20 04 7B C6 E0 5F
+R 00 00 00 00
+T 59 00
+R 00 00 00 00
+T 59 00 16 00 DD 6E 04 DD 66 05 19 DD 5E 08 16 00
+R 00 00 00 00
+T 67 00 19 DD 75 04 DD 74 05 03 18 9B
+R 00 00 00 00
+T 71 00
+R 00 00 00 00
+T 71 00 DD F9 DD E1 C9
+R 00 00 00 00
+T 76 00
+R 00 00 00 00
+T 76 00 DD E5 DD 21 00 00 DD 39 F5 DD 6E 06 DD 66
+R 00 00 00 00
+T 84 00 07 E5 DD 6E 04 DD 66 05 E5 21 7D 01 E5 21
+R 00 00 00 00 00 0C 00 00
+T 92 00 00 00 E5 CD 00 00 21 08 00 39 F9 DD 7E 04
+R 00 00 00 00 02 02 02 00 02 06 06 00
+T A0 00 DD 86 0A DD 77 04 DD 7E 05 DD 8E 0B DD 77
+R 00 00 00 00
+T AE 00 05 DD 7E 06 DD 86 08 4F DD 7E 07 DD 8E 09
+R 00 00 00 00
+T BC 00 47 C5 C5 DD 6E 04 DD 66 05 E5 21 9F 01 E5
+R 00 00 00 00 00 0D 00 00
+T CA 00 21 00 00 E5 CD 00 00 21 08 00 39 F9 C1 DD
+R 00 00 00 00 02 03 02 00 02 07 06 00
+T D8 00 5E 04 DD 56 05 13 C5 D5 C5 D5 21 9F 01 E5
+R 00 00 00 00 00 0D 00 00
+T E6 00 21 00 00 E5 CD 00 00 21 08 00 39 F9 D1 C1
+R 00 00 00 00 02 03 02 00 02 07 06 00
+T F4 00 DD 7E 04 DD 86 0C DD 77 FE DD 7E 05 DD 8E
+R 00 00 00 00
+T 02 01 0D DD 77 FF D5 C5 DD 6E FE DD 66 FF E5 21
+R 00 00 00 00
+T 10 01 A9 01 E5 21 00 00 E5 CD 00 00 21 08 00 39
+R 00 00 00 00 00 02 00 00 02 06 02 00 02 0A 06 00
+T 1E 01 F9 D1 DD 4E 08 DD 46 09 CB 21 CB 10 DD 7E
+R 00 00 00 00
+T 2C 01 06 81 4F DD 7E 07 88 47 C5 D5 C5 DD 6E 04
+R 00 00 00 00
+T 3A 01 DD 66 05 E5 21 B2 01 E5 21 00 00 E5 CD
+R 00 00 00 00 00 07 00 00 02 0B 02 00
+T 47 01 00 00 21 08 00 39 F9 D1 C1 C5 C5 D5 21
+R 00 00 00 00 02 02 06 00
+T 54 01 B2 01 E5 21 00 00 E5 CD 00 00 21 08 00 39
+R 00 00 00 00 00 02 00 00 02 06 02 00 02 0A 06 00
+T 62 01 F9 C1 E1 E5 C5 E5 21 BB 01 E5 21 00 00 E5
+R 00 00 00 00 00 09 00 00 02 0D 02 00
+T 70 01 CD 00 00 21 08 00 39 F9 DD F9 DD E1 C9
+R 00 00 00 00 02 03 06 00
+T 7D 01
+R 00 00 00 00
+T 7D 01 4B 61 70 69 74 61 6E 20 4C 55 4E 41 54 49
+R 00 00 00 00
+T 8B 01 4B 2C 20 70 6F 74 72 65 62 75 6A 65 6D 6F
+R 00 00 00 00
+T 99 01 20 76 61 73 21 00
+R 00 00 00 00
+T 9F 01
+R 00 00 00 00
+T 9F 01 50 52 45 53 4C 45 44 45 4B 00
+R 00 00 00 00
+T A9 01
+R 00 00 00 00
+T A9 01 7A 61 20 69 67 72 6F 2E 00
+R 00 00 00 00
+T B2 01
+R 00 00 00 00
+T B2 01 43 54 52 4C 20 2B 20 43 00
+R 00 00 00 00
+T BB 01
+R 00 00 00 00
+T BB 01 7A 61 20 6B 6F 6E 65 63 2E 00
+R 00 00 00 00
+T C5 01
+R 00 00 00 00
+T C5 01 DD E5 DD 21 00 00 DD 39 21 F6 FF 39 F9 21
+R 00 00 00 00
+T D3 01 00 02 22 00 00 21 14 00 22 3C 00 2E 80 22
+R 00 00 00 00 00 05 01 00 00 0B 01 00
+T E1 01 02 00 21 18 01 22 3E 00 21 BC 02 22 04 00
+R 00 00 00 00 00 02 01 00 00 08 01 00 00 0E 01 00
+T EF 01 21 59 01 22 40 00 21 46 00 22 06 00 21
+R 00 00 00 00 00 06 01 00 00 0C 01 00
+T FC 01 26 02 22 42 00 21 96 00 22 08 00 2E 87 22
+R 00 00 00 00 00 05 01 00 00 0B 01 00
+T 0A 02 44 00 21 00 01 22 0A 00 21 64 00 22 46 00
+R 00 00 00 00 00 02 01 00 00 08 01 00 00 0E 01 00
+T 18 02 2E 0A 22 0C 00 21 22 01 22 48 00 21 B6 03
+R 00 00 00 00 00 05 01 00 00 0B 01 00
+T 26 02 22 0E 00 21 90 01 22 4A 00 21 A0 00 22
+R 00 00 00 00 00 03 01 00 00 09 01 00
+T 33 02 10 00 2E AA 22 4C 00 21 40 01 22 12 00 2E
+R 00 00 00 00 00 02 01 00 00 07 01 00 00 0D 01 00
+T 41 02 D6 22 4E 00 2E 90 22 14 00 21 46 00 22
+R 00 00 00 00 00 04 01 00 00 09 01 00
+T 4E 02 50 00 21 58 02 22 16 00 21 8C 00 22 52 00
+R 00 00 00 00 00 02 01 00 00 08 01 00 00 0E 01 00
+T 5C 02 21 20 03 22 18 00 21 C2 01 22 54 00 2E 2C
+R 00 00 00 00 00 06 01 00 00 0C 01 00
+T 6A 02 22 1A 00 2E F4 22 56 00 21 C8 00 22 1C 00
+R 00 00 00 00 00 03 01 00 00 08 01 00 00 0E 01 00
+T 78 02 2E 78 22 58 00 01 00 00
+R 00 00 00 00 00 05 01 00
+T 80 02
+R 00 00 00 00
+T 80 02 79 D6 03 78 17 3F 1F DE 80 D2 0F 03 69 60
+R 00 00 00 00 00 0C 00 00
+T 8E 02 29 29 09 29 EB 21 5A 00 19 E3 21 1E 00 19
+R 00 00 00 00 00 08 01 00 00 0D 01 00
+T 9C 02 DD 75 F8 DD 74 F9 21 00 00 19 DD 75 FA DD
+R 00 00 00 00 00 09 01 00
+T AA 02 74 FB AF DD 77 FE DD 77 FF
+R 00 00 00 00
+T B3 02
+R 00 00 00 00
+T B3 02 DD 7E FE D6 05 DD 7E FF 17 3F 1F DE 80 30
+R 00 00 00 00
+T C1 02 3C DD 5E FE DD 56 FF CB 23 CB 12 E1 E5 19
+R 00 00 00 00
+T CF 02 AF 77 23 77 DD 7E F8 83 DD 77 FC DD 7E F9
+R 00 00 00 00
+T DD 02 8A DD 77 FD DD 6E FA DD 66 FB 19 5E 23 56
+R 00 00 00 00
+T EB 02 DD 6E FC DD 66 FD 73 23 72 DD 34 FE 20 BA
+R 00 00 00 00
+T F9 02 DD 34 FF 18 B5
+R 00 00 00 00
+T FE 02
+R 00 00 00 00
+T FE 02 59 50 CB 23 CB 12 21 78 00 19 73 23 72 03
+R 00 00 00 00 00 09 01 00
+T 0C 03 C3 80 02
+R 00 00 00 00 00 03 00 00
+T 0F 03
+R 00 00 00 00
+T 0F 03 DD F9 DD E1 C9
+R 00 00 00 00
+T 14 03
+R 00 00 00 00
+T 14 03 DD E5 DD 21 00 00 DD 39 F5 DD 7E 0B DD B6
+R 00 00 00 00
+T 22 03 0A 28 0A 3E 02 F5 33 CD 00 00 33 18 08
+R 00 00 00 00 02 0A 0C 00
+T 2F 03
+R 00 00 00 00
+T 2F 03 3E 01 F5 33 CD 00 00 33
+R 00 00 00 00 02 07 0C 00
+T 37 03
+R 00 00 00 00
+T 37 03 DD 4E 08 DD 46 09 69 60 29 29 09 29 EB 21
+R 00 00 00 00
+T 45 03 3C 00 19 DD 4E 06 DD 46 07 CB 21 CB 10 09
+R 00 00 00 00 00 02 01 00
+T 53 03 7E DD 77 FE 23 7E DD 77 FF DD 6E 04 DD 66
+R 00 00 00 00
+T 61 03 05 19 09 4E 23 46 DD 5E 08 DD 56 09 E1 E5
+R 00 00 00 00
+T 6F 03 D5 E5 C5 CD 00 00 21 06 00 39 F9 DD F9 DD
+R 00 00 00 00 02 06 03 00
+T 7D 03 E1 C9
+R 00 00 00 00
+T 7F 03
+R 00 00 00 00
+T 7F 03 DD E5 DD 21 00 00 DD 39 DD 7E 05 DD B6 04
+R 00 00 00 00
+T 8D 03 28 03 CD 00 00
+R 00 00 00 00 02 05 01 00
+T 92 03
+R 00 00 00 00
+T 92 03 01 00 00
+R 00 00 00 00
+T 95 03
+R 00 00 00 00
+T 95 03 79 D6 05 78 17 3F 1F DE 80 30 40 11 00 00
+R 00 00 00 00
+T A3 03
+R 00 00 00 00
+T A3 03 7B D6 03 7A 17 3F 1F DE 80 30 2F C5 D5 21
+R 00 00 00 00
+T B1 03 01 00 E5 D5 C5 21 1E 00 E5 CD 14 03 21
+R 00 00 00 00 00 08 01 00 00 0C 00 00
+T BE 03 08 00 39 F9 D1 C1 C5 D5 21 00 00 E5 D5 C5
+R 00 00 00 00
+T CC 03 21 00 00 E5 CD 14 03 21 08 00 39 F9 D1 C1
+R 00 00 00 00 00 03 01 00 00 07 00 00
+T DA 03 13 18 C6
+R 00 00 00 00
+T DD 03
+R 00 00 00 00
+T DD 03 03 18 B5
+R 00 00 00 00
+T E0 03
+R 00 00 00 00
+T E0 03 DD E1 C9
+R 00 00 00 00
+T E3 03
+R 00 00 00 00
+T E3 03 DD E5 DD 21 00 00 DD 39 21 F0 FF 39 F9 21
+R 00 00 00 00
+T F1 03 00 00 E5 CD 7F 03 F1 AF DD 77 FC DD 77 FD
+R 00 00 00 00 00 06 00 00
+T FF 03
+R 00 00 00 00
+T FF 03 DD 7E FC D6 05 DD 7E FD 17 3F 1F DE 80 D2
+R 00 00 00 00
+T 0D 04 6F 05 DD 7E FC DD 77 F2 DD 7E FD DD 77 F3
+R 00 00 00 00 00 02 00 00
+T 1B 04 DD CB F2 26 DD CB F3 16 AF DD 77 FE DD 77
+R 00 00 00 00
+T 29 04 FF
+R 00 00 00 00
+T 2A 04
+R 00 00 00 00
+T 2A 04 DD 7E FE D6 03 DD 7E FF 17 3F 1F DE 80 D2
+R 00 00 00 00
+T 38 04 63 05 DD 4E FE DD 46 FF 69 60 29 29 09 29
+R 00 00 00 00 00 02 00 00
+T 46 04 DD 75 F4 DD 74 F5 3E 5A 00 DD 86 F4 DD 77
+R 00 00 00 00 09 09 01 00
+T 53 04 FA 3E 5A 00 DD 8E F5 DD 77 FB DD 7E FA DD
+R 00 00 00 00 89 04 01 00
+T 60 04 86 F2 DD 77 F6 DD 7E FB DD 8E F3 DD 77 F7
+R 00 00 00 00
+T 6E 04 DD 6E F6 DD 66 F7 7E DD 77 FA 23 7E DD 77
+R 00 00 00 00
+T 7C 04 FB DD 7E FA C6 01 DD 77 F8 DD 7E FB CE 00
+R 00 00 00 00
+T 8A 04 DD 77 F9 DD 6E F6 DD 66 F7 DD 7E F8 77 23
+R 00 00 00 00
+T 98 04 DD 7E F9 77 DD 7E FE DD 77 F0 DD 7E FF DD
+R 00 00 00 00
+T A6 04 77 F1 DD CB F0 26 DD CB F1 16 3E 78 00 DD
+R 00 00 00 00 09 0D 01 00
+T B3 04 86 F0 DD 77 FA 3E 78 00 DD 8E F1 DD 77 FB
+R 00 00 00 00 89 08 01 00
+T C0 04 DD 6E FA DD 66 FB 7E DD 77 FA 23 7E DD 77
+R 00 00 00 00
+T CE 04 FB DD 7E FA DD 96 F8 DD 7E FB DD 9E F9 E2
+R 00 00 00 00
+T DC 04 E0 04 EE 80
+R 00 00 00 00 00 02 00 00
+T E0 04
+R 00 00 00 00
+T E0 04 F2 57 05 3E 1E 00 DD 86 F4 4F 3E 1E 00 DD
+R 00 00 00 00 00 03 00 00 09 06 01 00 89 0D 01 00
+T EC 04 8E F5 47 79 DD 86 F2 4F 78 DD 8E F3 47 3E
+R 00 00 00 00
+T FA 04 00 00 DD 86 F4 5F 3E 00 00 DD 8E F5 57 7B
+R 00 00 00 00 09 02 01 00 89 09 01 00
+T 06 05 DD 86 F2 DD 77 FA 7A DD 8E F3 DD 77 FB DD
+R 00 00 00 00
+T 14 05 6E FA DD 66 FB 5E 23 56 7B 02 03 7A 02 DD
+R 00 00 00 00
+T 22 05 6E FA DD 66 FB 4E 23 46 AF B9 98 E2 32 05
+R 00 00 00 00 00 0E 00 00
+T 30 05 EE 80
+R 00 00 00 00
+T 32 05
+R 00 00 00 00
+T 32 05 F2 42 05 0B 0B DD 6E FA DD 66 FB 71 23 70
+R 00 00 00 00 00 03 00 00
+T 40 05 18 0B
+R 00 00 00 00
+T 42 05
+R 00 00 00 00
+T 42 05 DD 6E FA DD 66 FB 36 FF 23 36 03
+R 00 00 00 00
+T 4D 05
+R 00 00 00 00
+T 4D 05 DD 6E F6 DD 66 F7 AF 77 23 77
+R 00 00 00 00
+T 57 05
+R 00 00 00 00
+T 57 05 DD 34 FE C2 2A 04 DD 34 FF C3 2A 04
+R 00 00 00 00 00 06 00 00 00 0C 00 00
+T 63 05
+R 00 00 00 00
+T 63 05 DD 34 FC C2 FF 03 DD 34 FD C3 FF 03
+R 00 00 00 00 00 06 00 00 00 0C 00 00
+T 6F 05
+R 00 00 00 00
+T 6F 05 DD F9 DD E1 C9
+R 00 00 00 00
+T 74 05
+R 00 00 00 00
+T 74 05 CD C5 01 21 01 00 E5 CD 7F 03 26 08 E3 33
+R 00 00 00 00 00 03 00 00 00 0A 00 00
+T 82 05 21 B4 00 E5 2E 8C E5 CD 00 00 F1 F1 33 21
+R 00 00 00 00 00 0A 00 00
+T 90 05 50 00 E5 2E 28 E5 2E 19 E5 21 2C 01 E5 2E
+R 00 00 00 00
+T 9E 05 7C E5 CD 76 00 21 0A 00 39 F9
+R 00 00 00 00 00 05 00 00
+T A8 05
+R 00 00 00 00
+T A8 05 CD 00 00 7D FE 03 20 04 21 00 00 C9
+R 00 00 00 00 02 03 0B 00
+T B4 05
+R 00 00 00 00
+T B4 05 D6 20 20 04 21 01 00 C9
+R 00 00 00 00
+T BC 05
+R 00 00 00 00
+T BC 05 CD E3 03 18 E7
+R 00 00 00 00 00 03 00 00
+T 00 00
+R 00 00 07 00
+T 00 00 00 00 00 00 00 00
+R 00 00 07 00 02 02 09 00 02 04 0E 00 02 06 0A 00
+T 06 00 00 00 00 00 00 00
+R 00 00 07 00 02 02 05 00 02 04 0D 00 02 06 07 00
+T 0C 00 00 00
+R 00 00 07 00 02 02 08 00

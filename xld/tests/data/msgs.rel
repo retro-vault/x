@@ -1,0 +1,629 @@
+;!FILE /home/tomaz/Work/lunatik/build/msgs.asm
+XL2
+H 9 areas 14F global symbols
+M msgs
+O -mz80
+S _rand Ref0000
+S _astro_font Ref0000
+S .__.ABS. Def0000
+S _gputtext Ref0000
+S __modsint Ref0000
+A _CODE size 43D flags 0 addr 0
+S A$msgse/tomaz/Work/lunatik/build/msgs$472 Def0224
+S A$msgse/tomaz/Work/lunatik/build/msgs$463 Def0218
+S A$msgse/tomaz/Work/lunatik/build/msgs$454 Def020C
+S A$msgse/tomaz/Work/lunatik/build/msgs$418 Def01E9
+S A$msgse/tomaz/Work/lunatik/build/msgs$409 Def01DC
+S A$msgse/tomaz/Work/lunatik/build/msgs$355 Def0199
+S A$msgse/tomaz/Work/lunatik/build/msgs$346 Def0188
+S A$msgse/tomaz/Work/lunatik/build/msgs$337 Def0179
+S A$msgse/tomaz/Work/lunatik/build/msgs$292 Def014A
+S A$msgse/tomaz/Work/lunatik/build/msgs$283 Def013B
+S A$msgse/tomaz/Work/lunatik/build/msgs$247 Def0106
+S A$msgse/tomaz/Work/lunatik/build/msgs$238 Def00F9
+S A$msgse/tomaz/Work/lunatik/build/msgs$229 Def00F2
+S A$msgse/tomaz/Work/lunatik/build/msgs$193 Def00B8
+S A$msgse/tomaz/Work/lunatik/build/msgs$184 Def00AA
+S A$msgse/tomaz/Work/lunatik/build/msgs$175 Def009F
+S A$msgse/tomaz/Work/lunatik/build/msgs$157 Def007D
+S A$msgse/tomaz/Work/lunatik/build/msgs$148 Def006B
+S A$msgse/tomaz/Work/lunatik/build/msgs$139 Def0056
+S A$msgse/tomaz/Work/lunatik/build/msgs$464 Def021B
+S A$msgse/tomaz/Work/lunatik/build/msgs$455 Def020F
+S A$msgse/tomaz/Work/lunatik/build/msgs$446 Def01FA
+S A$msgse/tomaz/Work/lunatik/build/msgs$419 Def01EC
+S A$msgse/tomaz/Work/lunatik/build/msgs$392 Def01B5
+S A$msgse/tomaz/Work/lunatik/build/msgs$374 Def01B2
+S A$msgse/tomaz/Work/lunatik/build/msgs$365 Def01A6
+S A$msgse/tomaz/Work/lunatik/build/msgs$356 Def019A
+S A$msgse/tomaz/Work/lunatik/build/msgs$347 Def0189
+S A$msgse/tomaz/Work/lunatik/build/msgs$338 Def017C
+S A$msgse/tomaz/Work/lunatik/build/msgs$293 Def014B
+S A$msgse/tomaz/Work/lunatik/build/msgs$284 Def013C
+S A$msgse/tomaz/Work/lunatik/build/msgs$257 Def010D
+S A$msgse/tomaz/Work/lunatik/build/msgs$239 Def00FC
+S A$msgse/tomaz/Work/lunatik/build/msgs$194 Def00BB
+S A$msgse/tomaz/Work/lunatik/build/msgs$185 Def00AD
+S A$msgse/tomaz/Work/lunatik/build/msgs$176 Def00A0
+S A$msgse/tomaz/Work/lunatik/build/msgs$158 Def007F
+S A$msgse/tomaz/Work/lunatik/build/msgs$149 Def006C
+S Fmsgs$__str_0$0_0$0 Def010E
+S _msg_press_any_key Def01F2
+S A$msgse/tomaz/Work/lunatik/build/msgs$465 Def021D
+S A$msgse/tomaz/Work/lunatik/build/msgs$456 Def0210
+S A$msgse/tomaz/Work/lunatik/build/msgs$447 Def01FD
+S A$msgse/tomaz/Work/lunatik/build/msgs$393 Def01B9
+S A$msgse/tomaz/Work/lunatik/build/msgs$366 Def01A9
+S A$msgse/tomaz/Work/lunatik/build/msgs$357 Def019D
+S A$msgse/tomaz/Work/lunatik/build/msgs$348 Def018A
+S A$msgse/tomaz/Work/lunatik/build/msgs$339 Def017D
+S A$msgse/tomaz/Work/lunatik/build/msgs$294 Def014E
+S A$msgse/tomaz/Work/lunatik/build/msgs$285 Def013D
+S A$msgse/tomaz/Work/lunatik/build/msgs$177 Def00A3
+S Fmsgs$__str_1$0_0$0 Def0227
+S XG$msg_explain$0$0 Def010D
+S A$msgse/tomaz/Work/lunatik/build/msgs$466 Def021E
+S A$msgse/tomaz/Work/lunatik/build/msgs$457 Def0213
+S A$msgse/tomaz/Work/lunatik/build/msgs$448 Def0200
+S A$msgse/tomaz/Work/lunatik/build/msgs$394 Def01BB
+S A$msgse/tomaz/Work/lunatik/build/msgs$367 Def01AB
+S A$msgse/tomaz/Work/lunatik/build/msgs$358 Def019E
+S A$msgse/tomaz/Work/lunatik/build/msgs$349 Def018B
+S A$msgse/tomaz/Work/lunatik/build/msgs$295 Def0151
+S A$msgse/tomaz/Work/lunatik/build/msgs$286 Def0140
+S A$msgse/tomaz/Work/lunatik/build/msgs$277 Def012F
+S A$msgse/tomaz/Work/lunatik/build/msgs$196 Def00BD
+S A$msgse/tomaz/Work/lunatik/build/msgs$169 Def008F
+S Fmsgs$__str_2$0_0$0 Def0244
+S A$msgse/tomaz/Work/lunatik/build/msgs$467 Def0221
+S A$msgse/tomaz/Work/lunatik/build/msgs$458 Def0216
+S A$msgse/tomaz/Work/lunatik/build/msgs$449 Def0201
+S A$msgse/tomaz/Work/lunatik/build/msgs$395 Def01BE
+S A$msgse/tomaz/Work/lunatik/build/msgs$368 Def01AC
+S A$msgse/tomaz/Work/lunatik/build/msgs$359 Def01A1
+S A$msgse/tomaz/Work/lunatik/build/msgs$296 Def0152
+S A$msgse/tomaz/Work/lunatik/build/msgs$287 Def0141
+S A$msgse/tomaz/Work/lunatik/build/msgs$278 Def0132
+S Fmsgs$__str_3$0_0$0 Def0285
+S A$msgse/tomaz/Work/lunatik/build/msgs$477 Def0226
+S A$msgse/tomaz/Work/lunatik/build/msgs$468 Def0223
+S A$msgse/tomaz/Work/lunatik/build/msgs$459 Def0217
+S A$msgse/tomaz/Work/lunatik/build/msgs$396 Def01C1
+S A$msgse/tomaz/Work/lunatik/build/msgs$369 Def01AF
+S A$msgse/tomaz/Work/lunatik/build/msgs$297 Def0153
+S A$msgse/tomaz/Work/lunatik/build/msgs$288 Def0142
+S A$msgse/tomaz/Work/lunatik/build/msgs$279 Def0135
+S A$msgse/tomaz/Work/lunatik/build/msgs$189 Def00B0
+S Fmsgs$__str_4$0_0$0 Def02C3
+S A$msgse/tomaz/Work/lunatik/build/msgs$397 Def01C2
+S A$msgse/tomaz/Work/lunatik/build/msgs$379 Def01B4
+S A$msgse/tomaz/Work/lunatik/build/msgs$298 Def0156
+S A$msgse/tomaz/Work/lunatik/build/msgs$289 Def0143
+S Fmsgs$__str_5$0_0$0 Def02DB
+S A$msgse/tomaz/Work/lunatik/build/msgs$398 Def01C4
+S A$msgse/tomaz/Work/lunatik/build/msgs$299 Def0157
+S Fmsgs$__str_6$0_0$0 Def030B
+S A$msgse/tomaz/Work/lunatik/build/msgs$399 Def01C6
+S Fmsgs$__str_7$0_0$0 Def0341
+S Fmsgs$__str_8$0_0$0 Def034B
+S Fmsgs$__str_9$0_0$0 Def0368
+S XG$msg_success$0$0 Def01B4
+S A$msgse/tomaz/Work/lunatik/build/msgs$90 Def001A
+S A$msgse/tomaz/Work/lunatik/build/msgs$91 Def001C
+S XG$msg_press_any_key$0$0 Def0226
+S A$msgse/tomaz/Work/lunatik/build/msgs$92 Def001F
+S A$msgse/tomaz/Work/lunatik/build/msgs$83 Def000D
+S A$msgse/tomaz/Work/lunatik/build/msgs$74 Def0000
+S A$msgse/tomaz/Work/lunatik/build/msgs$93 Def0020
+S A$msgse/tomaz/Work/lunatik/build/msgs$75 Def0002
+S A$msgse/tomaz/Work/lunatik/build/msgs$94 Def0023
+S A$msgse/tomaz/Work/lunatik/build/msgs$76 Def0006
+S G$msg_the_end$0$0 Def01B5
+S A$msgse/tomaz/Work/lunatik/build/msgs$77 Def0008
+S A$msgse/tomaz/Work/lunatik/build/msgs$87 Def0010
+S A$msgse/tomaz/Work/lunatik/build/msgs$78 Def000B
+S A$msgse/tomaz/Work/lunatik/build/msgs$88 Def0013
+S A$msgse/tomaz/Work/lunatik/build/msgs$79 Def000C
+S A$msgse/tomaz/Work/lunatik/build/msgs$89 Def0016
+S A$msgse/tomaz/Work/lunatik/build/msgs$99 Def0025
+S _msg_the_end Def01B5
+S G$msg_failure$0$0 Def0127
+S C$msgs.c$60$1_0$30 Def0127
+S XG$msg_the_end$0$0 Def01F1
+S C$msgs.c$62$1_0$30 Def012F
+S C$msgs.c$70$1_0$32 Def01B4
+S C$msgs.c$63$1_0$30 Def015F
+S G$msg_explain$0$0 Def0000
+S C$msgs.c$64$1_0$30 Def016D
+S C$msgs.c$50$1_0$26 Def0035
+S C$msgs.c$51$1_0$26 Def0045
+S C$msgs.c$52$1_0$26 Def0055
+S _msg_failure Def0127
+S C$msgs.c$72$1_0$34 Def01B5
+S C$msgs.c$45$0_0$26 Def0000
+S C$msgs.c$80$1_0$36 Def0226
+S C$msgs.c$73$1_0$34 Def01B5
+S C$msgs.c$66$1_0$32 Def016E
+S C$msgs.c$74$1_0$34 Def01DD
+S C$msgs.c$53$2_0$27 Def00F9
+S C$msgs.c$55$1_0$26 Def00A6
+S C$msgs.c$75$1_0$34 Def01F1
+S C$msgs.c$68$1_0$32 Def0176
+S C$msgs.c$46$2_0$26 Def000D
+S Fmsgs$__str_10$0_0$0 Def039F
+S C$msgs.c$69$1_0$32 Def01A6
+S G$msg_success$0$0 Def016E
+S C$msgs.c$57$1_0$26 Def0103
+S C$msgs.c$53$3_0$28 Def008F
+S C$msgs.c$48$1_0$26 Def0010
+S Fmsgs$__str_11$0_0$0 Def03A8
+S C$msgs.c$58$1_0$26 Def010D
+S C$msgs.c$54$3_0$28 Def00C0
+S C$msgs.c$49$1_0$26 Def0025
+S A$msgse/tomaz/Work/lunatik/build/msgs$100 Def0029
+S Fmsgs$__str_12$0_0$0 Def03DE
+S C$msgs.c$55$3_0$28 Def00F3
+S A$msgse/tomaz/Work/lunatik/build/msgs$200 Def00C0
+S A$msgse/tomaz/Work/lunatik/build/msgs$101 Def002B
+S Fmsgs$__str_13$0_0$0 Def03FE
+S C$msgs.c$77$1_0$36 Def01F2
+S G$msg_press_any_key$0$0 Def01F2
+S A$msgse/tomaz/Work/lunatik/build/msgs$300 Def015A
+S A$msgse/tomaz/Work/lunatik/build/msgs$210 Def00D3
+S A$msgse/tomaz/Work/lunatik/build/msgs$201 Def00C3
+S A$msgse/tomaz/Work/lunatik/build/msgs$120 Def0043
+S A$msgse/tomaz/Work/lunatik/build/msgs$102 Def002E
+S Fmsgs$__str_14$0_0$0 Def0416
+S C$msgs.c$78$1_0$36 Def01FA
+S _msg_explain Def0000
+S A$msgse/tomaz/Work/lunatik/build/msgs$400 Def01C9
+S A$msgse/tomaz/Work/lunatik/build/msgs$310 Def0168
+S A$msgse/tomaz/Work/lunatik/build/msgs$301 Def015D
+S A$msgse/tomaz/Work/lunatik/build/msgs$220 Def00E1
+S A$msgse/tomaz/Work/lunatik/build/msgs$211 Def00D6
+S A$msgse/tomaz/Work/lunatik/build/msgs$202 Def00C6
+S A$msgse/tomaz/Work/lunatik/build/msgs$130 Def0050
+S A$msgse/tomaz/Work/lunatik/build/msgs$112 Def0035
+S A$msgse/tomaz/Work/lunatik/build/msgs$103 Def002F
+S Fmsgs$__str_15$0_0$0 Def042E
+S C$msgs.c$79$1_0$36 Def0218
+S A$msgse/tomaz/Work/lunatik/build/msgs$401 Def01CC
+S A$msgse/tomaz/Work/lunatik/build/msgs$320 Def016D
+S A$msgse/tomaz/Work/lunatik/build/msgs$311 Def016A
+S A$msgse/tomaz/Work/lunatik/build/msgs$302 Def015E
+S A$msgse/tomaz/Work/lunatik/build/msgs$221 Def00E4
+S A$msgse/tomaz/Work/lunatik/build/msgs$212 Def00D7
+S A$msgse/tomaz/Work/lunatik/build/msgs$203 Def00C7
+S A$msgse/tomaz/Work/lunatik/build/msgs$140 Def0059
+S A$msgse/tomaz/Work/lunatik/build/msgs$131 Def0051
+S A$msgse/tomaz/Work/lunatik/build/msgs$113 Def0039
+S A$msgse/tomaz/Work/lunatik/build/msgs$104 Def0030
+S A$msgse/tomaz/Work/lunatik/build/msgs$420 Def01EE
+S A$msgse/tomaz/Work/lunatik/build/msgs$402 Def01CD
+S A$msgse/tomaz/Work/lunatik/build/msgs$330 Def016E
+S A$msgse/tomaz/Work/lunatik/build/msgs$240 Def00FE
+S A$msgse/tomaz/Work/lunatik/build/msgs$222 Def00E5
+S A$msgse/tomaz/Work/lunatik/build/msgs$213 Def00D8
+S A$msgse/tomaz/Work/lunatik/build/msgs$204 Def00CA
+S A$msgse/tomaz/Work/lunatik/build/msgs$150 Def006F
+S A$msgse/tomaz/Work/lunatik/build/msgs$141 Def005C
+S A$msgse/tomaz/Work/lunatik/build/msgs$132 Def0052
+S A$msgse/tomaz/Work/lunatik/build/msgs$114 Def003B
+S A$msgse/tomaz/Work/lunatik/build/msgs$105 Def0031
+S XG$msg_failure$0$0 Def016D
+S A$msgse/tomaz/Work/lunatik/build/msgs$430 Def01F1
+S A$msgse/tomaz/Work/lunatik/build/msgs$421 Def01EF
+S A$msgse/tomaz/Work/lunatik/build/msgs$403 Def01D0
+S A$msgse/tomaz/Work/lunatik/build/msgs$340 Def017E
+S A$msgse/tomaz/Work/lunatik/build/msgs$331 Def0170
+S A$msgse/tomaz/Work/lunatik/build/msgs$241 Def0101
+S A$msgse/tomaz/Work/lunatik/build/msgs$223 Def00E6
+S A$msgse/tomaz/Work/lunatik/build/msgs$214 Def00D9
+S A$msgse/tomaz/Work/lunatik/build/msgs$205 Def00CD
+S A$msgse/tomaz/Work/lunatik/build/msgs$160 Def0082
+S A$msgse/tomaz/Work/lunatik/build/msgs$151 Def0072
+S A$msgse/tomaz/Work/lunatik/build/msgs$142 Def005D
+S A$msgse/tomaz/Work/lunatik/build/msgs$133 Def0053
+S A$msgse/tomaz/Work/lunatik/build/msgs$115 Def003E
+S A$msgse/tomaz/Work/lunatik/build/msgs$106 Def0032
+S A$msgse/tomaz/Work/lunatik/build/msgs$440 Def01F2
+S A$msgse/tomaz/Work/lunatik/build/msgs$422 Def01F0
+S A$msgse/tomaz/Work/lunatik/build/msgs$413 Def01DD
+S A$msgse/tomaz/Work/lunatik/build/msgs$404 Def01D1
+S A$msgse/tomaz/Work/lunatik/build/msgs$350 Def018E
+S A$msgse/tomaz/Work/lunatik/build/msgs$341 Def0181
+S A$msgse/tomaz/Work/lunatik/build/msgs$332 Def0174
+S A$msgse/tomaz/Work/lunatik/build/msgs$251 Def0109
+S A$msgse/tomaz/Work/lunatik/build/msgs$233 Def00F3
+S A$msgse/tomaz/Work/lunatik/build/msgs$224 Def00E9
+S A$msgse/tomaz/Work/lunatik/build/msgs$215 Def00DA
+S A$msgse/tomaz/Work/lunatik/build/msgs$206 Def00CE
+S A$msgse/tomaz/Work/lunatik/build/msgs$170 Def0092
+S A$msgse/tomaz/Work/lunatik/build/msgs$161 Def0085
+S A$msgse/tomaz/Work/lunatik/build/msgs$152 Def0073
+S A$msgse/tomaz/Work/lunatik/build/msgs$143 Def0060
+S A$msgse/tomaz/Work/lunatik/build/msgs$125 Def0045
+S A$msgse/tomaz/Work/lunatik/build/msgs$116 Def003F
+S A$msgse/tomaz/Work/lunatik/build/msgs$107 Def0033
+S A$msgse/tomaz/Work/lunatik/build/msgs$450 Def0204
+S A$msgse/tomaz/Work/lunatik/build/msgs$441 Def01F4
+S A$msgse/tomaz/Work/lunatik/build/msgs$414 Def01E1
+S A$msgse/tomaz/Work/lunatik/build/msgs$405 Def01D4
+S A$msgse/tomaz/Work/lunatik/build/msgs$360 Def01A4
+S A$msgse/tomaz/Work/lunatik/build/msgs$351 Def0191
+S A$msgse/tomaz/Work/lunatik/build/msgs$342 Def0182
+S A$msgse/tomaz/Work/lunatik/build/msgs$315 Def016B
+S A$msgse/tomaz/Work/lunatik/build/msgs$306 Def015F
+S A$msgse/tomaz/Work/lunatik/build/msgs$252 Def010B
+S A$msgse/tomaz/Work/lunatik/build/msgs$234 Def00F6
+S A$msgse/tomaz/Work/lunatik/build/msgs$225 Def00EA
+S A$msgse/tomaz/Work/lunatik/build/msgs$216 Def00DB
+S A$msgse/tomaz/Work/lunatik/build/msgs$207 Def00CF
+S A$msgse/tomaz/Work/lunatik/build/msgs$171 Def0093
+S A$msgse/tomaz/Work/lunatik/build/msgs$162 Def0087
+S A$msgse/tomaz/Work/lunatik/build/msgs$153 Def0074
+S A$msgse/tomaz/Work/lunatik/build/msgs$144 Def0063
+S A$msgse/tomaz/Work/lunatik/build/msgs$126 Def0049
+S A$msgse/tomaz/Work/lunatik/build/msgs$117 Def0040
+S A$msgse/tomaz/Work/lunatik/build/msgs$451 Def0207
+S A$msgse/tomaz/Work/lunatik/build/msgs$442 Def01F8
+S A$msgse/tomaz/Work/lunatik/build/msgs$415 Def01E3
+S A$msgse/tomaz/Work/lunatik/build/msgs$406 Def01D5
+S A$msgse/tomaz/Work/lunatik/build/msgs$370 Def01B1
+S A$msgse/tomaz/Work/lunatik/build/msgs$361 Def01A5
+S A$msgse/tomaz/Work/lunatik/build/msgs$352 Def0192
+S A$msgse/tomaz/Work/lunatik/build/msgs$343 Def0183
+S A$msgse/tomaz/Work/lunatik/build/msgs$307 Def0162
+S A$msgse/tomaz/Work/lunatik/build/msgs$280 Def0136
+S A$msgse/tomaz/Work/lunatik/build/msgs$271 Def0127
+S A$msgse/tomaz/Work/lunatik/build/msgs$226 Def00ED
+S A$msgse/tomaz/Work/lunatik/build/msgs$217 Def00DC
+S A$msgse/tomaz/Work/lunatik/build/msgs$208 Def00D1
+S A$msgse/tomaz/Work/lunatik/build/msgs$190 Def00B3
+S A$msgse/tomaz/Work/lunatik/build/msgs$172 Def0096
+S A$msgse/tomaz/Work/lunatik/build/msgs$163 Def008A
+S A$msgse/tomaz/Work/lunatik/build/msgs$154 Def0075
+S A$msgse/tomaz/Work/lunatik/build/msgs$145 Def0064
+S A$msgse/tomaz/Work/lunatik/build/msgs$127 Def004B
+S A$msgse/tomaz/Work/lunatik/build/msgs$118 Def0041
+S A$msgse/tomaz/Work/lunatik/build/msgs$452 Def0208
+S A$msgse/tomaz/Work/lunatik/build/msgs$416 Def01E6
+S A$msgse/tomaz/Work/lunatik/build/msgs$407 Def01D8
+S A$msgse/tomaz/Work/lunatik/build/msgs$353 Def0195
+S A$msgse/tomaz/Work/lunatik/build/msgs$344 Def0184
+S A$msgse/tomaz/Work/lunatik/build/msgs$308 Def0164
+S A$msgse/tomaz/Work/lunatik/build/msgs$290 Def0144
+S A$msgse/tomaz/Work/lunatik/build/msgs$281 Def0137
+S A$msgse/tomaz/Work/lunatik/build/msgs$272 Def0129
+S A$msgse/tomaz/Work/lunatik/build/msgs$227 Def00F0
+S A$msgse/tomaz/Work/lunatik/build/msgs$218 Def00DD
+S A$msgse/tomaz/Work/lunatik/build/msgs$209 Def00D2
+S A$msgse/tomaz/Work/lunatik/build/msgs$191 Def00B4
+S A$msgse/tomaz/Work/lunatik/build/msgs$182 Def00A6
+S A$msgse/tomaz/Work/lunatik/build/msgs$173 Def0099
+S A$msgse/tomaz/Work/lunatik/build/msgs$164 Def008C
+S A$msgse/tomaz/Work/lunatik/build/msgs$155 Def0078
+S A$msgse/tomaz/Work/lunatik/build/msgs$146 Def0067
+S A$msgse/tomaz/Work/lunatik/build/msgs$128 Def004E
+S A$msgse/tomaz/Work/lunatik/build/msgs$119 Def0042
+S _msg_success Def016E
+S A$msgse/tomaz/Work/lunatik/build/msgs$453 Def020B
+S A$msgse/tomaz/Work/lunatik/build/msgs$417 Def01E8
+S A$msgse/tomaz/Work/lunatik/build/msgs$408 Def01DB
+S A$msgse/tomaz/Work/lunatik/build/msgs$354 Def0198
+S A$msgse/tomaz/Work/lunatik/build/msgs$345 Def0187
+S A$msgse/tomaz/Work/lunatik/build/msgs$336 Def0176
+S A$msgse/tomaz/Work/lunatik/build/msgs$309 Def0165
+S A$msgse/tomaz/Work/lunatik/build/msgs$291 Def0147
+S A$msgse/tomaz/Work/lunatik/build/msgs$282 Def013A
+S A$msgse/tomaz/Work/lunatik/build/msgs$273 Def012D
+S A$msgse/tomaz/Work/lunatik/build/msgs$246 Def0103
+S A$msgse/tomaz/Work/lunatik/build/msgs$228 Def00F1
+S A$msgse/tomaz/Work/lunatik/build/msgs$219 Def00DE
+S A$msgse/tomaz/Work/lunatik/build/msgs$192 Def00B7
+S A$msgse/tomaz/Work/lunatik/build/msgs$183 Def00A9
+S A$msgse/tomaz/Work/lunatik/build/msgs$174 Def009C
+S A$msgse/tomaz/Work/lunatik/build/msgs$156 Def007A
+S A$msgse/tomaz/Work/lunatik/build/msgs$147 Def0068
+S A$msgse/tomaz/Work/lunatik/build/msgs$138 Def0055
+S A$msgse/tomaz/Work/lunatik/build/msgs$129 Def004F
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 1C flags 0 addr 0
+S G$demotivational$0_0$0 Def0000
+S _theend Def0012
+S G$theend$0_0$0 Def0012
+S _fuckups Def0014
+S G$fuckups$0_0$0 Def0014
+S _victory Def000C
+S G$victory$0_0$0 Def000C
+S _demotivational Def0000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 1C flags 0 addr 0
+S Fmsgs$__xinit_demotivational$0_0$0 Def0000
+S Fmsgs$__xinit_theend$0_0$0 Def0012
+S Fmsgs$__xinit_fuckups$0_0$0 Def0014
+S Fmsgs$__xinit_victory$0_0$0 Def000C
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 02 00
+T 0C 00
+R 00 00 02 00
+T 0C 00
+R 00 00 02 00
+T 12 00
+R 00 00 02 00
+T 12 00
+R 00 00 02 00
+T 14 00
+R 00 00 02 00
+T 14 00
+R 00 00 02 00
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 21 F6 FF 39 F9 01
+R 00 00 00 00
+T 0E 00 00 00 DD 7E 08 DD 77 FF DD CB FF 46 28 09
+R 00 00 00 00
+T 1C 00 21 00 00 39 01 01 00 36 00
+R 00 00 00 00
+T 25 00
+R 00 00 00 00
+T 25 00 DD CB FF 4E 28 0A 21 00 00 39 59 50 03 19
+R 00 00 00 00
+T 33 00 36 01
+R 00 00 00 00
+T 35 00
+R 00 00 00 00
+T 35 00 DD CB FF 56 28 0A 21 00 00 39 59 50 03 19
+R 00 00 00 00
+T 43 00 36 02
+R 00 00 00 00
+T 45 00
+R 00 00 00 00
+T 45 00 DD CB FF 5E 28 0A 21 00 00 39 59 50 03 19
+R 00 00 00 00
+T 53 00 36 03
+R 00 00 00 00
+T 55 00
+R 00 00 00 00
+T 55 00 C5 DD 6E 06 DD 66 07 E5 DD 6E 04 DD 66 05
+R 00 00 00 00
+T 63 00 E5 21 0E 01 E5 21 00 00 E5 CD 00 00 21
+R 00 00 00 00 00 04 00 00 02 08 01 00 02 0C 03 00
+T 70 00 08 00 39 F9 C1 DD 7E 06 C6 14 DD 77 06 30
+R 00 00 00 00
+T 7E 00 03 DD 34 07
+R 00 00 00 00
+T 82 00
+R 00 00 00 00
+T 82 00 DD 7E 04 C6 14 DD 77 04 30 03 DD 34 05
+R 00 00 00 00
+T 8F 00
+R 00 00 00 00
+T 8F 00 21 00 00 39 DD 75 FA DD 74 FB DD 5E 06 DD
+R 00 00 00 00
+T 9D 00 56 07 AF DD 77 FE DD 77 FF
+R 00 00 00 00
+T A6 00
+R 00 00 00 00
+T A6 00 21 14 00 19 DD 75 FC DD 74 FD DD 7E FE 91
+R 00 00 00 00
+T B4 00 DD 7E FF 98 E2 BD 00 EE 80
+R 00 00 00 00 00 07 00 00
+T BD 00
+R 00 00 00 00
+T BD 00 F2 03 01 DD 7E FA DD 86 FE 6F DD 7E FB DD
+R 00 00 00 00 00 03 00 00
+T CB 00 8E FF 67 6E 26 00 29 D5 11 14 00 19 D1 7E
+R 00 00 00 00 00 0B 02 00
+T D9 00 23 66 6F C5 D5 DD 5E 04 DD 56 05 D5 E5 21
+R 00 00 00 00
+T E7 00 00 00 E5 CD 00 00 21 08 00 39 F9 C1 DD 5E
+R 00 00 00 00 02 02 01 00 02 06 03 00
+T F5 00 FC DD 56 FD DD 34 FE 20 A8 DD 34 FF 18 A3
+R 00 00 00 00
+T 03 01
+R 00 00 00 00
+T 03 01 DD 6E FC DD 66 FD DD F9 DD E1 C9
+R 00 00 00 00
+T 0E 01
+R 00 00 00 00
+T 0E 01 4E 41 20 47 52 4F 42 20 4D 55 20 42 4F 4D
+R 00 00 00 00
+T 1C 01 4F 20 4E 41 50 49 53 41 4C 49 00
+R 00 00 00 00
+T 27 01
+R 00 00 00 00
+T 27 01 DD E5 DD 21 00 00 DD 39 CD 00 00 01 06 00
+R 00 00 00 00 02 0B 00 00
+T 35 01 C5 E5 CD 00 00 F1 F1 29 11 00 00 19 4E 23
+R 00 00 00 00 02 05 04 00 00 0B 02 00
+T 43 01 46 DD 6E 06 DD 66 07 E5 DD 6E 04 DD 66 05
+R 00 00 00 00
+T 51 01 E5 C5 21 00 00 E5 CD 00 00 21 08 00 39 F9
+R 00 00 00 00 02 05 01 00 02 09 03 00
+T 5F 01 DD 7E 06 C6 28 6F DD 7E 07 CE 00 67 DD E1
+R 00 00 00 00
+T 6D 01 C9
+R 00 00 00 00
+T 6E 01
+R 00 00 00 00
+T 6E 01 DD E5 DD 21 00 00 DD 39 CD 00 00 01 03 00
+R 00 00 00 00 02 0B 00 00
+T 7C 01 C5 E5 CD 00 00 F1 F1 29 11 0C 00 19 4E 23
+R 00 00 00 00 02 05 04 00 00 0B 02 00
+T 8A 01 46 DD 6E 06 DD 66 07 E5 DD 6E 04 DD 66 05
+R 00 00 00 00
+T 98 01 E5 C5 21 00 00 E5 CD 00 00 21 08 00 39 F9
+R 00 00 00 00 02 05 01 00 02 09 03 00
+T A6 01 DD 7E 06 C6 28 6F DD 7E 07 CE 00 67 DD E1
+R 00 00 00 00
+T B4 01 C9
+R 00 00 00 00
+T B5 01
+R 00 00 00 00
+T B5 01 FD 21 04 00 FD 39 FD 6E 00 FD 66 01 E5 FD
+R 00 00 00 00
+T C3 01 2B FD 2B FD 6E 00 FD 66 01 E5 2A 12 00 E5
+R 00 00 00 00 00 0D 02 00
+T D1 01 21 00 00 E5 CD 00 00 21 08 00 39 F9 FD 21
+R 00 00 00 00 02 03 01 00 02 07 03 00
+T DF 01 04 00 FD 39 FD 7E 00 C6 28 4F FD 7E 01 CE
+R 00 00 00 00
+T ED 01 00 47 69 60 C9
+R 00 00 00 00
+T F2 01
+R 00 00 00 00
+T F2 01 DD E5 DD 21 00 00 DD 39 DD 6E 06 DD 66 07
+R 00 00 00 00
+T 00 02 E5 DD 6E 04 DD 66 05 E5 21 27 02 E5 21
+R 00 00 00 00 00 0B 00 00
+T 0D 02 00 00 E5 CD 00 00 21 08 00 39 F9 DD 7E 06
+R 00 00 00 00 02 02 01 00 02 06 03 00
+T 1B 02 C6 28 6F DD 7E 07 CE 00 67 DD E1 C9
+R 00 00 00 00
+T 27 02
+R 00 00 00 00
+T 27 02 50 52 49 54 49 53 4E 49 54 45 20 4B 41 54
+R 00 00 00 00
+T 35 02 45 52 4F 4B 4F 4C 49 20 54 49 50 4B 4F 2E
+R 00 00 00 00
+T 43 02 00
+R 00 00 00 00
+T 44 02
+R 00 00 00 00
+T 44 02 42 4F 4C 4A 45 2C 20 4B 4F 54 20 44 41 20
+R 00 00 00 00
+T 52 02 49 5A 56 45 2C 20 44 41 20 4D 55 20 4A 45
+R 00 00 00 00
+T 60 02 20 53 4F 50 52 4F 47 41 20 50 4F 42 45 47
+R 00 00 00 00
+T 6E 02 4E 49 4C 41 20 5A 20 4A 4F 47 41 20 54 52
+R 00 00 00 00
+T 7C 02 45 4E 45 52 4A 45 4D 2E 00
+R 00 00 00 00
+T 85 02
+R 00 00 00 00
+T 85 02 4E 41 52 45 44 49 54 45 20 5A 41 5A 4E 41
+R 00 00 00 00
+T 93 02 4D 45 4B 21 20 4E 4A 45 47 4F 56 45 20 5A
+R 00 00 00 00
+T A1 02 41 44 4E 4A 45 20 42 45 53 45 44 45 20 53
+R 00 00 00 00
+T AF 02 4F 20 42 49 4C 45 3A 20 41 41 41 41 41 2D
+R 00 00 00 00
+T BD 02 41 41 2D 41 2E 00
+R 00 00 00 00
+T C3 02
+R 00 00 00 00
+T C3 02 4B 41 4A 20 4A 45 20 50 41 20 54 4F 20 5A
+R 00 00 00 00
+T D1 02 41 42 4F 42 4E 45 4C 4F 3F 00
+R 00 00 00 00
+T DB 02
+R 00 00 00 00
+T DB 02 4A 41 20 4B 41 4B 4F 20 47 41 20 42 4F 4D
+R 00 00 00 00
+T E9 02 4F 20 50 41 20 5A 44 41 4A 20 53 50 52 41
+R 00 00 00 00
+T F7 02 56 49 4C 49 20 4E 41 5A 41 4A 20 56 20 49
+R 00 00 00 00
+T 05 03 5A 4F 4C 4F 3F 00
+R 00 00 00 00
+T 0B 03
+R 00 00 00 00
+T 0B 03 44 49 52 45 4B 54 4F 52 2C 20 41 4C 49 20
+R 00 00 00 00
+T 19 03 4C 41 48 4B 4F 20 4A 41 5A 20 44 4F 42 49
+R 00 00 00 00
+T 27 03 4D 20 4E 4A 45 47 4F 56 4F 20 50 41 52 4B
+R 00 00 00 00
+T 35 03 49 52 4E 4F 20 4D 45 53 54 4F 3F 00
+R 00 00 00 00
+T 41 03
+R 00 00 00 00
+T 41 03 53 4C 41 56 41 20 4D 55 21 00
+R 00 00 00 00
+T 4B 03
+R 00 00 00 00
+T 4B 03 54 45 4C 45 4D 41 52 4B 2C 20 4C 55 4E 41
+R 00 00 00 00
+T 59 03 54 49 4B 2E 20 54 45 4C 45 4D 41 52 4B 21
+R 00 00 00 00
+T 67 03 00
+R 00 00 00 00
+T 68 03
+R 00 00 00 00
+T 68 03 4D 45 44 41 4C 4A 41 20 4A 45 20 4E 41 20
+R 00 00 00 00
+T 76 03 50 4F 54 49 2C 20 44 45 4E 41 52 4E 41 20
+R 00 00 00 00
+T 84 03 4E 41 47 52 41 44 41 20 50 41 20 53 45 20
+R 00 00 00 00
+T 92 03 4A 45 20 49 5A 47 55 42 49 4C 41 2E 00
+R 00 00 00 00
+T 9F 03
+R 00 00 00 00
+T 9F 03 4D 41 45 53 54 52 4F 21 00
+R 00 00 00 00
+T A8 03
+R 00 00 00 00
+T A8 03 47 45 4E 45 52 41 4C 20 4C 55 4E 41 54 49
+R 00 00 00 00
+T B6 03 4B 2C 20 4D 49 53 49 4A 41 20 4A 45 20 55
+R 00 00 00 00
+T C4 03 53 50 45 4C 41 2E 20 56 52 4E 49 54 45 20
+R 00 00 00 00
+T D2 03 53 45 20 56 20 49 5A 4F 4C 4F 2E 00
+R 00 00 00 00
+T DE 03
+R 00 00 00 00
+T DE 03 50 52 45 56 45 4C 49 4B 20 4E 41 4B 4C 4F
+R 00 00 00 00
+T EC 03 4E 53 4B 49 20 4B 4F 54 20 50 4C 4F 56 49
+R 00 00 00 00
+T FA 03 4C 41 2E 00
+R 00 00 00 00
+T FE 03
+R 00 00 00 00
+T FE 03 50 52 45 56 45 4C 49 4B 41 20 56 45 52 2E
+R 00 00 00 00
+T 0C 04 20 48 49 54 52 4F 53 54 2E 00
+R 00 00 00 00
+T 16 04
+R 00 00 00 00
+T 16 04 50 52 45 56 45 4C 49 4B 41 20 48 4F 52 2E
+R 00 00 00 00
+T 24 04 20 48 49 54 52 4F 53 54 2E 00
+R 00 00 00 00
+T 2E 04
+R 00 00 00 00
+T 2E 04 50 52 45 53 54 52 4D 20 54 45 52 45 4E 2E
+R 00 00 00 00
+T 3C 04 00
+R 00 00 00 00
+T 00 00
+R 00 00 07 00
+T 00 00 44 02 85 02 C3 02
+R 00 00 07 00 00 02 00 00 00 04 00 00 00 06 00 00
+T 06 00 DB 02 0B 03 41 03
+R 00 00 07 00 00 02 00 00 00 04 00 00 00 06 00 00
+T 0C 00
+R 00 00 07 00
+T 0C 00 4B 03 68 03 9F 03
+R 00 00 07 00 00 02 00 00 00 04 00 00 00 06 00 00
+T 12 00
+R 00 00 07 00
+T 12 00 A8 03
+R 00 00 07 00 00 02 00 00
+T 14 00
+R 00 00 07 00
+T 14 00 DE 03 FE 03 16 04
+R 00 00 07 00 00 02 00 00 00 04 00 00 00 06 00 00
+T 1A 00 2E 04
+R 00 00 07 00 00 02 00 00

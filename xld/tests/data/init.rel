@@ -1,0 +1,43 @@
+;!FILE /home/tomaz/Work/lunatik/build/lib/init.asm
+XL2
+H 9 areas 17 global symbols
+M init
+O -mz80
+S __heap Ref0000
+S .__.ABS. Def0000
+A _CODE size 1A flags 0 addr 0
+S C$init.c$20$1_0$11 Def0006
+S C$init.c$21$1_0$11 Def0014
+S C$init.c$22$1_0$11 Def0019
+S G$_memory_init$0$0 Def0000
+S C$init.c$15$0_0$11 Def0000
+S C$init.c$18$1_0$11 Def0000
+S C$init.c$19$1_0$11 Def0000
+S A$inite/tomaz/Work/lunatik/build/lib/init$63 Def0006
+S A$inite/tomaz/Work/lunatik/build/lib/init$82 Def0019
+S A$inite/tomaz/Work/lunatik/build/lib/init$73 Def0014
+S A$inite/tomaz/Work/lunatik/build/lib/init$64 Def0008
+S A$inite/tomaz/Work/lunatik/build/lib/init$74 Def0017
+S A$inite/tomaz/Work/lunatik/build/lib/init$65 Def000A
+S A$inite/tomaz/Work/lunatik/build/lib/init$66 Def000B
+S A$inite/tomaz/Work/lunatik/build/lib/init$67 Def000D
+S A$inite/tomaz/Work/lunatik/build/lib/init$58 Def0000
+S __memory_init Def0000
+S A$inite/tomaz/Work/lunatik/build/lib/init$68 Def000F
+S A$inite/tomaz/Work/lunatik/build/lib/init$59 Def0003
+S A$inite/tomaz/Work/lunatik/build/lib/init$69 Def0010
+S XG$_memory_init$0$0 Def0019
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 21 00 00 22 00 00 3E FB D6 00 00 4F 3E BF
+R 00 00 00 00 02 06 00 00 0B 0B 00 00
+T 0D 00 DE 00 00 47 ED 43 03 00 21 02 00 36 00 C9
+R 00 00 00 00 8B 03 00 00 02 08 00 00 02 0B 00 00

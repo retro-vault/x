@@ -1,0 +1,264 @@
+;!FILE /home/tomaz/Work/lunatik/build/kbd.asm
+XL2
+H 9 areas B4 global symbols
+M kbd
+O -mz80
+S .__.ABS. Def0000
+S ___sdcc_call_hl Ref0000
+S _kbhit Ref0000
+A _CODE size 117 flags 0 addr 0
+S G$kbd_scan$0$0 Def0027
+S A$kbdme/tomaz/Work/lunatik/build/kbd$110 Def0042
+S A$kbdme/tomaz/Work/lunatik/build/kbd$210 Def00AC
+S A$kbdme/tomaz/Work/lunatik/build/kbd$120 Def0052
+S A$kbdme/tomaz/Work/lunatik/build/kbd$111 Def0044
+S A$kbdme/tomaz/Work/lunatik/build/kbd$310 Def0116
+S A$kbdme/tomaz/Work/lunatik/build/kbd$301 Def0113
+S A$kbdme/tomaz/Work/lunatik/build/kbd$211 Def00AF
+S A$kbdme/tomaz/Work/lunatik/build/kbd$121 Def0055
+S A$kbdme/tomaz/Work/lunatik/build/kbd$103 Def0035
+S A$kbdme/tomaz/Work/lunatik/build/kbd$230 Def00C4
+S A$kbdme/tomaz/Work/lunatik/build/kbd$212 Def00B0
+S A$kbdme/tomaz/Work/lunatik/build/kbd$203 Def00A4
+S A$kbdme/tomaz/Work/lunatik/build/kbd$140 Def0066
+S A$kbdme/tomaz/Work/lunatik/build/kbd$122 Def0056
+S A$kbdme/tomaz/Work/lunatik/build/kbd$104 Def0036
+S A$kbdme/tomaz/Work/lunatik/build/kbd$240 Def00D8
+S A$kbdme/tomaz/Work/lunatik/build/kbd$231 Def00C7
+S A$kbdme/tomaz/Work/lunatik/build/kbd$213 Def00B3
+S A$kbdme/tomaz/Work/lunatik/build/kbd$204 Def00A6
+S A$kbdme/tomaz/Work/lunatik/build/kbd$141 Def0067
+S A$kbdme/tomaz/Work/lunatik/build/kbd$123 Def0059
+S A$kbdme/tomaz/Work/lunatik/build/kbd$105 Def0038
+S _kbd_scan Def0027
+S A$kbdme/tomaz/Work/lunatik/build/kbd$250 Def00DE
+S A$kbdme/tomaz/Work/lunatik/build/kbd$232 Def00CA
+S A$kbdme/tomaz/Work/lunatik/build/kbd$214 Def00B6
+S A$kbdme/tomaz/Work/lunatik/build/kbd$151 Def0074
+S A$kbdme/tomaz/Work/lunatik/build/kbd$142 Def006A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$124 Def005A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$115 Def0047
+S A$kbdme/tomaz/Work/lunatik/build/kbd$106 Def003A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$305 Def0114
+S A$kbdme/tomaz/Work/lunatik/build/kbd$260 Def00F2
+S A$kbdme/tomaz/Work/lunatik/build/kbd$251 Def00DF
+S A$kbdme/tomaz/Work/lunatik/build/kbd$233 Def00CB
+S A$kbdme/tomaz/Work/lunatik/build/kbd$224 Def00BF
+S A$kbdme/tomaz/Work/lunatik/build/kbd$215 Def00B7
+S A$kbdme/tomaz/Work/lunatik/build/kbd$143 Def006D
+S A$kbdme/tomaz/Work/lunatik/build/kbd$125 Def005B
+S A$kbdme/tomaz/Work/lunatik/build/kbd$116 Def0048
+S A$kbdme/tomaz/Work/lunatik/build/kbd$107 Def003C
+S A$kbdme/tomaz/Work/lunatik/build/kbd$261 Def00F3
+S A$kbdme/tomaz/Work/lunatik/build/kbd$252 Def00E2
+S A$kbdme/tomaz/Work/lunatik/build/kbd$234 Def00CE
+S A$kbdme/tomaz/Work/lunatik/build/kbd$225 Def00C1
+S A$kbdme/tomaz/Work/lunatik/build/kbd$216 Def00BA
+S A$kbdme/tomaz/Work/lunatik/build/kbd$180 Def0086
+S A$kbdme/tomaz/Work/lunatik/build/kbd$171 Def007D
+S A$kbdme/tomaz/Work/lunatik/build/kbd$144 Def006E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$117 Def004B
+S A$kbdme/tomaz/Work/lunatik/build/kbd$108 Def003E
+S Fkbd$_kbd_exec$0$0 Def0000
+S A$kbdme/tomaz/Work/lunatik/build/kbd$280 Def010C
+S A$kbdme/tomaz/Work/lunatik/build/kbd$271 Def00F9
+S A$kbdme/tomaz/Work/lunatik/build/kbd$253 Def00E5
+S A$kbdme/tomaz/Work/lunatik/build/kbd$235 Def00D1
+S A$kbdme/tomaz/Work/lunatik/build/kbd$217 Def00BB
+S A$kbdme/tomaz/Work/lunatik/build/kbd$208 Def00A8
+S A$kbdme/tomaz/Work/lunatik/build/kbd$190 Def009A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$181 Def0087
+S A$kbdme/tomaz/Work/lunatik/build/kbd$172 Def007E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$163 Def007A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$145 Def0071
+S A$kbdme/tomaz/Work/lunatik/build/kbd$118 Def004E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$109 Def0040
+S A$kbdme/tomaz/Work/lunatik/build/kbd$281 Def010D
+S A$kbdme/tomaz/Work/lunatik/build/kbd$272 Def00FA
+S A$kbdme/tomaz/Work/lunatik/build/kbd$254 Def00E6
+S A$kbdme/tomaz/Work/lunatik/build/kbd$245 Def00DA
+S A$kbdme/tomaz/Work/lunatik/build/kbd$236 Def00D2
+S A$kbdme/tomaz/Work/lunatik/build/kbd$218 Def00BC
+S A$kbdme/tomaz/Work/lunatik/build/kbd$209 Def00A9
+S A$kbdme/tomaz/Work/lunatik/build/kbd$191 Def009B
+S A$kbdme/tomaz/Work/lunatik/build/kbd$182 Def008A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$173 Def0081
+S A$kbdme/tomaz/Work/lunatik/build/kbd$146 Def0072
+S A$kbdme/tomaz/Work/lunatik/build/kbd$137 Def005F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$119 Def004F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$273 Def00FD
+S A$kbdme/tomaz/Work/lunatik/build/kbd$255 Def00E9
+S A$kbdme/tomaz/Work/lunatik/build/kbd$246 Def00DC
+S A$kbdme/tomaz/Work/lunatik/build/kbd$237 Def00D5
+S A$kbdme/tomaz/Work/lunatik/build/kbd$219 Def00BD
+S A$kbdme/tomaz/Work/lunatik/build/kbd$183 Def008D
+S A$kbdme/tomaz/Work/lunatik/build/kbd$174 Def0082
+S A$kbdme/tomaz/Work/lunatik/build/kbd$147 Def0073
+S A$kbdme/tomaz/Work/lunatik/build/kbd$138 Def0060
+S A$kbdme/tomaz/Work/lunatik/build/kbd$129 Def005C
+S A$kbdme/tomaz/Work/lunatik/build/kbd$274 Def0100
+S A$kbdme/tomaz/Work/lunatik/build/kbd$256 Def00EC
+S A$kbdme/tomaz/Work/lunatik/build/kbd$238 Def00D6
+S A$kbdme/tomaz/Work/lunatik/build/kbd$229 Def00C3
+S A$kbdme/tomaz/Work/lunatik/build/kbd$184 Def008E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$175 Def0083
+S A$kbdme/tomaz/Work/lunatik/build/kbd$139 Def0063
+S A$kbdme/tomaz/Work/lunatik/build/kbd$293 Def0110
+S A$kbdme/tomaz/Work/lunatik/build/kbd$275 Def0101
+S A$kbdme/tomaz/Work/lunatik/build/kbd$266 Def00F5
+S A$kbdme/tomaz/Work/lunatik/build/kbd$257 Def00ED
+S A$kbdme/tomaz/Work/lunatik/build/kbd$239 Def00D7
+S A$kbdme/tomaz/Work/lunatik/build/kbd$185 Def0091
+S A$kbdme/tomaz/Work/lunatik/build/kbd$176 Def0084
+S A$kbdme/tomaz/Work/lunatik/build/kbd$285 Def010E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$276 Def0104
+S A$kbdme/tomaz/Work/lunatik/build/kbd$267 Def00F7
+S A$kbdme/tomaz/Work/lunatik/build/kbd$258 Def00F0
+S A$kbdme/tomaz/Work/lunatik/build/kbd$186 Def0094
+S A$kbdme/tomaz/Work/lunatik/build/kbd$159 Def0077
+S A$kbdme/tomaz/Work/lunatik/build/kbd$277 Def0107
+S A$kbdme/tomaz/Work/lunatik/build/kbd$259 Def00F1
+S A$kbdme/tomaz/Work/lunatik/build/kbd$196 Def009E
+S A$kbdme/tomaz/Work/lunatik/build/kbd$187 Def0095
+S C$kbd.c$40$2_0$40 Def0077
+S A$kbdme/tomaz/Work/lunatik/build/kbd$278 Def0108
+S A$kbdme/tomaz/Work/lunatik/build/kbd$197 Def009F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$188 Def0098
+S C$kbd.c$41$2_0$40 Def0077
+S A$kbdme/tomaz/Work/lunatik/build/kbd$279 Def010B
+S A$kbdme/tomaz/Work/lunatik/build/kbd$198 Def00A2
+S A$kbdme/tomaz/Work/lunatik/build/kbd$189 Def0099
+S XG$kbd_scan$0$0 Def0116
+S C$kbd.c$60$2_0$40 Def0110
+S C$kbd.c$42$2_0$40 Def007A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$199 Def00A3
+S C$kbd.c$50$3_0$41 Def00A8
+S C$kbd.c$43$2_0$40 Def007D
+S C$kbd.c$51$3_0$41 Def00BF
+S C$kbd.c$44$2_0$40 Def007D
+S C$kbd.c$35$2_0$40 Def0047
+S C$kbd.c$52$3_0$41 Def00C3
+S C$kbd.c$45$2_0$40 Def0086
+S C$kbd.c$36$2_0$40 Def005C
+S A$kbdme/tomaz/Work/lunatik/build/kbd$60 Def000C
+S C$kbd.c$53$3_0$41 Def00DA
+S C$kbd.c$37$2_0$40 Def005F
+S C$kbd.c$21$1_0$39 Def0027
+S A$kbdme/tomaz/Work/lunatik/build/kbd$70 Def0022
+S A$kbdme/tomaz/Work/lunatik/build/kbd$61 Def000D
+S C$kbd.c$54$3_0$41 Def00DE
+S C$kbd.c$38$2_0$40 Def005F
+S C$kbd.c$31$1_0$39 Def002F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$71 Def0025
+S A$kbdme/tomaz/Work/lunatik/build/kbd$62 Def000F
+S C$kbd.c$55$3_0$41 Def00F5
+S C$kbd.c$39$2_0$40 Def0074
+S C$kbd.c$32$1_0$39 Def0032
+S C$kbd.c$17$0_0$37 Def0000
+S A$kbdme/tomaz/Work/lunatik/build/kbd$90 Def0029
+S A$kbdme/tomaz/Work/lunatik/build/kbd$63 Def0011
+S C$kbd.c$58$2_0$40 Def010E
+S C$kbd.c$56$3_0$41 Def00F9
+S C$kbd.c$33$1_0$39 Def0035
+S A$kbdme/tomaz/Work/lunatik/build/kbd$91 Def002D
+S A$kbdme/tomaz/Work/lunatik/build/kbd$64 Def0014
+S C$kbd.c$61$1_0$39 Def0113
+S C$kbd.c$59$2_0$40 Def0110
+S C$kbd.c$48$3_0$41 Def009E
+S C$kbd.c$18$1_0$37 Def0000
+S A$kbdme/tomaz/Work/lunatik/build/kbd$65 Def0017
+S A$kbdme/tomaz/Work/lunatik/build/kbd$56 Def0000
+S C$kbd.c$62$1_0$39 Def0113
+S C$kbd.c$49$3_0$41 Def00A4
+S C$kbd.c$19$1_0$37 Def0026
+S A$kbdme/tomaz/Work/lunatik/build/kbd$66 Def0018
+S A$kbdme/tomaz/Work/lunatik/build/kbd$57 Def0004
+S C$kbd.c$63$1_0$39 Def0116
+S A$kbdme/tomaz/Work/lunatik/build/kbd$67 Def001A
+S A$kbdme/tomaz/Work/lunatik/build/kbd$58 Def0006
+S A$kbdme/tomaz/Work/lunatik/build/kbd$95 Def002F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$68 Def001C
+S A$kbdme/tomaz/Work/lunatik/build/kbd$59 Def0009
+S A$kbdme/tomaz/Work/lunatik/build/kbd$69 Def001F
+S A$kbdme/tomaz/Work/lunatik/build/kbd$79 Def0026
+S A$kbdme/tomaz/Work/lunatik/build/kbd$89 Def0027
+S XFkbd$_kbd_exec$0$0 Def0026
+S A$kbdme/tomaz/Work/lunatik/build/kbd$99 Def0032
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 FD 21 02 00 FD 39 FD 7E 01 FD B6 00 C8 FD
+R 00 00 00 00
+T 0E 00 23 FD 23 FD 4E 00 FD 46 01 C5 FD 2B FD 2B
+R 00 00 00 00
+T 1C 00 FD 6E 00 FD 66 01 CD 00 00 F1 C9
+R 00 00 00 00 02 09 01 00
+T 27 00
+R 00 00 00 00
+T 27 00 DD E5 DD 21 00 00 DD 39 CD 00 00 11 01 00
+R 00 00 00 00 02 0B 02 00
+T 35 00 7D FE 03 28 3D FE 0A 28 21 FE 1B 28 3B D6
+R 00 00 00 00
+T 43 00 20 C2 10 01 D5 DD 6E 04 DD 66 05 E5 DD 6E
+R 00 00 00 00 00 04 00 00
+T 51 00 0E DD 66 0F E5 CD 00 00 F1 F1 D1 C3 13 01
+R 00 00 00 00 00 08 00 00 00 0E 00 00
+T 5F 00
+R 00 00 00 00
+T 5F 00 D5 DD 6E 04 DD 66 05 E5 DD 6E 10 DD 66 11
+R 00 00 00 00
+T 6D 00 E5 CD 00 00 F1 F1 D1 C3 13 01
+R 00 00 00 00 00 04 00 00 00 0A 00 00
+T 77 00
+R 00 00 00 00
+T 77 00 11 00 00 C3 13 01
+R 00 00 00 00 00 06 00 00
+T 7D 00
+R 00 00 00 00
+T 7D 00 D5 CD 00 00 D1 7C B5 20 18 D5 DD 6E 04 DD
+R 00 00 00 00 02 04 02 00
+T 8B 00 66 05 E5 DD 6E 12 DD 66 13 E5 CD 00 00 F1
+R 00 00 00 00 00 0D 00 00
+T 99 00 F1 D1 C3 13 01
+R 00 00 00 00 00 05 00 00
+T 9E 00
+R 00 00 00 00
+T 9E 00 D5 CD 00 00 D1 7D FE 41 20 17 D5 DD 6E 04
+R 00 00 00 00 02 04 02 00
+T AC 00 DD 66 05 E5 DD 6E 0A DD 66 0B E5 CD 00 00
+R 00 00 00 00 00 0E 00 00
+T BA 00 F1 F1 D1 18 54
+R 00 00 00 00
+T BF 00
+R 00 00 00 00
+T BF 00 FE 42 20 17 D5 DD 6E 04 DD 66 05 E5 DD 6E
+R 00 00 00 00
+T CD 00 0C DD 66 0D E5 CD 00 00 F1 F1 D1 18 39
+R 00 00 00 00 00 08 00 00
+T DA 00
+R 00 00 00 00
+T DA 00 FE 43 20 17 D5 DD 6E 04 DD 66 05 E5 DD 6E
+R 00 00 00 00
+T E8 00 08 DD 66 09 E5 CD 00 00 F1 F1 D1 18 1E
+R 00 00 00 00 00 08 00 00
+T F5 00
+R 00 00 00 00
+T F5 00 D6 44 20 1A D5 DD 6E 04 DD 66 05 E5 DD 6E
+R 00 00 00 00
+T 03 01 06 DD 66 07 E5 CD 00 00 F1 F1 D1 18 03
+R 00 00 00 00 00 08 00 00
+T 10 01
+R 00 00 00 00
+T 10 01 11 01 00
+R 00 00 00 00
+T 13 01
+R 00 00 00 00
+T 13 01 EB DD E1 C9
+R 00 00 00 00

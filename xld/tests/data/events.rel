@@ -1,0 +1,1027 @@
+;!FILE /home/tomaz/Work/lunatik/build/events.asm
+XL2
+H 9 areas 301 global symbols
+M events
+O -mz80
+S _lander_upd_rect Ref0000
+S _lander_calc_thrust Ref0000
+S _abs Ref0000
+S _score_get Ref0000
+S .__.ABS. Def0000
+S _terrain_affected_lines Ref0000
+S _clk_setticks Ref0000
+S _score_set Ref0000
+S _terrain_height Ref0000
+A _CODE size 42C flags 0 addr 0
+S C$events.c$134$1_1$68 Def042B
+S C$events.c$133$1_1$69 Def0416
+S C$events.c$124$1_1$69 Def039E
+S C$events.c$115$1_1$69 Def02AE
+S C$events.c$108$1_0$68 Def0267
+S XG$ev_kbd_space$0$0 Def042B
+S C$events.c$117$1_1$69 Def0306
+S C$events.c$127$1_1$69 Def03CD
+S C$events.c$118$1_1$69 Def0320
+S C$events.c$128$1_1$69 Def03E7
+S C$events.c$119$1_1$69 Def0342
+S XG$ev_clk_gravity$0$0 Def01DA
+S C$events.c$129$1_1$69 Def03FB
+S C$events.c$21$0_0$55 Def0000
+S G$ev_clk_hmove$0$0 Def0000
+S A$eventstomaz/Work/lunatik/build/events$1000 Def0419
+S C$events.c$30$1_0$55 Def007B
+S A$eventstomaz/Work/lunatik/build/events$1001 Def041B
+S C$events.c$61$2_0$60 Def0196
+S _ev_kbd_right Def0223
+S A$eventstomaz/Work/lunatik/build/events$1002 Def041C
+S G$ev_kbd_left$0$0 Def01FB
+S C$events.c$70$1_0$62 Def01DB
+S C$events.c$32$1_0$55 Def0082
+S C$events.c$23$1_0$55 Def0009
+S A$eventstomaz/Work/lunatik/build/events$1012 Def0427
+S A$eventstomaz/Work/lunatik/build/events$1003 Def041F
+S C$events.c$71$1_0$62 Def01DB
+S C$events.c$63$2_0$60 Def01B8
+S C$events.c$40$1_0$57 Def00D6
+S A$eventstomaz/Work/lunatik/build/events$1013 Def0429
+S A$eventstomaz/Work/lunatik/build/events$1004 Def0421
+S C$events.c$72$1_0$62 Def01E8
+S C$events.c$50$1_0$57 Def0147
+S C$events.c$34$1_0$55 Def0093
+S C$events.c$25$1_0$55 Def0049
+S A$eventstomaz/Work/lunatik/build/events$1005 Def0422
+S C$events.c$73$1_0$62 Def01EC
+S C$events.c$65$2_0$60 Def01C1
+S C$events.c$42$1_0$57 Def00DF
+S C$events.c$26$1_0$55 Def0060
+S A$eventstomaz/Work/lunatik/build/events$1006 Def0424
+S C$events.c$81$1_0$64 Def0203
+S C$events.c$74$1_0$62 Def01EC
+S C$events.c$52$1_0$57 Def0150
+S C$events.c$43$1_0$57 Def0113
+S C$events.c$36$1_0$55 Def00AE
+S C$events.c$27$1_0$55 Def0069
+S A$eventstomaz/Work/lunatik/build/events$1007 Def0425
+S C$events.c$82$1_0$64 Def0211
+S C$events.c$75$1_0$62 Def01F1
+S C$events.c$53$1_0$57 Def016B
+S C$events.c$37$1_0$55 Def00D5
+S C$events.c$28$1_0$55 Def0074
+S C$events.c$90$1_0$66 Def0223
+S C$events.c$76$1_0$62 Def01FA
+S C$events.c$59$2_0$60 Def0190
+S C$events.c$45$1_0$57 Def0118
+S A$eventstomaz/Work/lunatik/build/events$1018 Def042B
+S C$events.c$84$1_0$64 Def0215
+S C$events.c$46$1_0$57 Def0139
+S C$events.c$92$1_0$66 Def022B
+S G$ev_clk_thrust$0$0 Def01DB
+S C$events.c$93$1_0$66 Def023A
+S C$events.c$86$1_0$64 Def0217
+S C$events.c$48$1_0$57 Def013E
+S _ev_clk_hmove Def0000
+S C$events.c$87$1_0$64 Def0222
+S C$events.c$56$1_0$59 Def016C
+S XG$ev_kbd_right$0$0 Def024B
+S C$events.c$95$1_0$66 Def023E
+S C$events.c$79$1_0$64 Def01FB
+S G$ev_clk_vmove$0$0 Def00D6
+S C$events.c$67$1_0$59 Def01DA
+S C$events.c$58$1_0$59 Def0175
+S _ev_kbd_left Def01FB
+S C$events.c$97$1_0$66 Def0240
+S A$eventstomaz/Work/lunatik/build/events$100 Def0034
+S C$events.c$98$1_0$66 Def024B
+S A$eventstomaz/Work/lunatik/build/events$200 Def009E
+S A$eventstomaz/Work/lunatik/build/events$110 Def0040
+S A$eventstomaz/Work/lunatik/build/events$210 Def00AD
+S A$eventstomaz/Work/lunatik/build/events$201 Def009F
+S A$eventstomaz/Work/lunatik/build/events$102 Def0036
+S A$eventstomaz/Work/lunatik/build/events$400 Def0182
+S A$eventstomaz/Work/lunatik/build/events$310 Def0121
+S A$eventstomaz/Work/lunatik/build/events$220 Def00BA
+S A$eventstomaz/Work/lunatik/build/events$202 Def00A2
+S A$eventstomaz/Work/lunatik/build/events$130 Def0052
+S A$eventstomaz/Work/lunatik/build/events$112 Def0042
+S A$eventstomaz/Work/lunatik/build/events$103 Def0039
+S A$eventstomaz/Work/lunatik/build/events$410 Def018E
+S A$eventstomaz/Work/lunatik/build/events$401 Def0183
+S A$eventstomaz/Work/lunatik/build/events$320 Def0134
+S A$eventstomaz/Work/lunatik/build/events$311 Def0124
+S A$eventstomaz/Work/lunatik/build/events$230 Def00CC
+S A$eventstomaz/Work/lunatik/build/events$221 Def00BD
+S A$eventstomaz/Work/lunatik/build/events$203 Def00A3
+S A$eventstomaz/Work/lunatik/build/events$131 Def0054
+S A$eventstomaz/Work/lunatik/build/events$113 Def0043
+S A$eventstomaz/Work/lunatik/build/events$104 Def003A
+S A$eventstomaz/Work/lunatik/build/events$510 Def01E6
+S A$eventstomaz/Work/lunatik/build/events$402 Def0184
+S A$eventstomaz/Work/lunatik/build/events$321 Def0135
+S A$eventstomaz/Work/lunatik/build/events$312 Def0125
+S A$eventstomaz/Work/lunatik/build/events$303 Def0118
+S A$eventstomaz/Work/lunatik/build/events$231 Def00CF
+S A$eventstomaz/Work/lunatik/build/events$222 Def00BF
+S A$eventstomaz/Work/lunatik/build/events$204 Def00A4
+S A$eventstomaz/Work/lunatik/build/events$141 Def0060
+S A$eventstomaz/Work/lunatik/build/events$132 Def0055
+S A$eventstomaz/Work/lunatik/build/events$123 Def0049
+S A$eventstomaz/Work/lunatik/build/events$114 Def0044
+S A$eventstomaz/Work/lunatik/build/events$105 Def003B
+S A$eventstomaz/Work/lunatik/build/events$700 Def028A
+S A$eventstomaz/Work/lunatik/build/events$610 Def022E
+S A$eventstomaz/Work/lunatik/build/events$502 Def01DB
+S A$eventstomaz/Work/lunatik/build/events$430 Def01A0
+S A$eventstomaz/Work/lunatik/build/events$403 Def0185
+S A$eventstomaz/Work/lunatik/build/events$322 Def0137
+S A$eventstomaz/Work/lunatik/build/events$313 Def0126
+S A$eventstomaz/Work/lunatik/build/events$304 Def0119
+S A$eventstomaz/Work/lunatik/build/events$232 Def00D0
+S A$eventstomaz/Work/lunatik/build/events$223 Def00C0
+S A$eventstomaz/Work/lunatik/build/events$214 Def00AE
+S A$eventstomaz/Work/lunatik/build/events$205 Def00A6
+S A$eventstomaz/Work/lunatik/build/events$151 Def0069
+S A$eventstomaz/Work/lunatik/build/events$142 Def0061
+S A$eventstomaz/Work/lunatik/build/events$133 Def0057
+S A$eventstomaz/Work/lunatik/build/events$124 Def004A
+S A$eventstomaz/Work/lunatik/build/events$115 Def0045
+S A$eventstomaz/Work/lunatik/build/events$106 Def003C
+S _ev_clk_thrust Def01DB
+S A$eventstomaz/Work/lunatik/build/events$800 Def0327
+S A$eventstomaz/Work/lunatik/build/events$710 Def02A2
+S A$eventstomaz/Work/lunatik/build/events$701 Def028B
+S A$eventstomaz/Work/lunatik/build/events$620 Def023C
+S A$eventstomaz/Work/lunatik/build/events$611 Def0231
+S A$eventstomaz/Work/lunatik/build/events$530 Def01F1
+S A$eventstomaz/Work/lunatik/build/events$503 Def01DC
+S A$eventstomaz/Work/lunatik/build/events$440 Def01AC
+S A$eventstomaz/Work/lunatik/build/events$431 Def01A1
+S A$eventstomaz/Work/lunatik/build/events$404 Def0186
+S A$eventstomaz/Work/lunatik/build/events$314 Def0129
+S A$eventstomaz/Work/lunatik/build/events$305 Def011B
+S A$eventstomaz/Work/lunatik/build/events$260 Def00E2
+S A$eventstomaz/Work/lunatik/build/events$242 Def00D5
+S A$eventstomaz/Work/lunatik/build/events$224 Def00C3
+S A$eventstomaz/Work/lunatik/build/events$215 Def00B1
+S A$eventstomaz/Work/lunatik/build/events$206 Def00A7
+S A$eventstomaz/Work/lunatik/build/events$152 Def006A
+S A$eventstomaz/Work/lunatik/build/events$143 Def0062
+S A$eventstomaz/Work/lunatik/build/events$134 Def0058
+S A$eventstomaz/Work/lunatik/build/events$125 Def004B
+S A$eventstomaz/Work/lunatik/build/events$116 Def0046
+S A$eventstomaz/Work/lunatik/build/events$107 Def003D
+S XG$ev_clk_hmove$0$0 Def00D5
+S A$eventstomaz/Work/lunatik/build/events$900 Def03A4
+S A$eventstomaz/Work/lunatik/build/events$810 Def0337
+S A$eventstomaz/Work/lunatik/build/events$801 Def0328
+S A$eventstomaz/Work/lunatik/build/events$711 Def02A3
+S A$eventstomaz/Work/lunatik/build/events$702 Def028E
+S A$eventstomaz/Work/lunatik/build/events$612 Def0234
+S A$eventstomaz/Work/lunatik/build/events$603 Def0223
+S A$eventstomaz/Work/lunatik/build/events$531 Def01F4
+S A$eventstomaz/Work/lunatik/build/events$504 Def01DD
+S A$eventstomaz/Work/lunatik/build/events$441 Def01AD
+S A$eventstomaz/Work/lunatik/build/events$432 Def01A2
+S A$eventstomaz/Work/lunatik/build/events$423 Def0196
+S A$eventstomaz/Work/lunatik/build/events$414 Def0190
+S A$eventstomaz/Work/lunatik/build/events$405 Def0188
+S A$eventstomaz/Work/lunatik/build/events$360 Def015B
+S A$eventstomaz/Work/lunatik/build/events$351 Def0150
+S A$eventstomaz/Work/lunatik/build/events$333 Def013E
+S A$eventstomaz/Work/lunatik/build/events$315 Def012A
+S A$eventstomaz/Work/lunatik/build/events$306 Def011C
+S A$eventstomaz/Work/lunatik/build/events$270 Def00F4
+S A$eventstomaz/Work/lunatik/build/events$261 Def00E5
+S A$eventstomaz/Work/lunatik/build/events$252 Def00D6
+S A$eventstomaz/Work/lunatik/build/events$225 Def00C5
+S A$eventstomaz/Work/lunatik/build/events$216 Def00B3
+S A$eventstomaz/Work/lunatik/build/events$207 Def00A8
+S A$eventstomaz/Work/lunatik/build/events$180 Def0085
+S A$eventstomaz/Work/lunatik/build/events$171 Def007B
+S A$eventstomaz/Work/lunatik/build/events$162 Def0074
+S A$eventstomaz/Work/lunatik/build/events$153 Def006C
+S A$eventstomaz/Work/lunatik/build/events$144 Def0064
+S A$eventstomaz/Work/lunatik/build/events$135 Def005B
+S A$eventstomaz/Work/lunatik/build/events$126 Def004C
+S A$eventstomaz/Work/lunatik/build/events$117 Def0047
+S A$eventstomaz/Work/lunatik/build/events$108 Def003E
+S A$eventstomaz/Work/lunatik/build/events$910 Def03B1
+S A$eventstomaz/Work/lunatik/build/events$901 Def03A5
+S A$eventstomaz/Work/lunatik/build/events$820 Def0343
+S A$eventstomaz/Work/lunatik/build/events$811 Def033A
+S A$eventstomaz/Work/lunatik/build/events$802 Def0329
+S A$eventstomaz/Work/lunatik/build/events$730 Def02C1
+S A$eventstomaz/Work/lunatik/build/events$712 Def02A4
+S A$eventstomaz/Work/lunatik/build/events$703 Def0291
+S A$eventstomaz/Work/lunatik/build/events$631 Def0240
+S A$eventstomaz/Work/lunatik/build/events$613 Def0235
+S A$eventstomaz/Work/lunatik/build/events$604 Def0225
+S A$eventstomaz/Work/lunatik/build/events$532 Def01F5
+S A$eventstomaz/Work/lunatik/build/events$523 Def01EC
+S A$eventstomaz/Work/lunatik/build/events$514 Def01E8
+S A$eventstomaz/Work/lunatik/build/events$505 Def01DE
+S A$eventstomaz/Work/lunatik/build/events$442 Def01AE
+S A$eventstomaz/Work/lunatik/build/events$433 Def01A3
+S A$eventstomaz/Work/lunatik/build/events$424 Def0197
+S A$eventstomaz/Work/lunatik/build/events$415 Def0191
+S A$eventstomaz/Work/lunatik/build/events$406 Def0189
+S A$eventstomaz/Work/lunatik/build/events$370 Def0167
+S A$eventstomaz/Work/lunatik/build/events$361 Def015E
+S A$eventstomaz/Work/lunatik/build/events$352 Def0151
+S A$eventstomaz/Work/lunatik/build/events$343 Def0147
+S A$eventstomaz/Work/lunatik/build/events$334 Def013F
+S A$eventstomaz/Work/lunatik/build/events$316 Def012D
+S A$eventstomaz/Work/lunatik/build/events$307 Def011D
+S A$eventstomaz/Work/lunatik/build/events$280 Def0106
+S A$eventstomaz/Work/lunatik/build/events$271 Def00F7
+S A$eventstomaz/Work/lunatik/build/events$262 Def00E6
+S A$eventstomaz/Work/lunatik/build/events$253 Def00D8
+S A$eventstomaz/Work/lunatik/build/events$226 Def00C6
+S A$eventstomaz/Work/lunatik/build/events$217 Def00B4
+S A$eventstomaz/Work/lunatik/build/events$208 Def00AB
+S A$eventstomaz/Work/lunatik/build/events$181 Def0087
+S A$eventstomaz/Work/lunatik/build/events$172 Def007C
+S A$eventstomaz/Work/lunatik/build/events$163 Def0075
+S A$eventstomaz/Work/lunatik/build/events$154 Def006D
+S A$eventstomaz/Work/lunatik/build/events$145 Def0065
+S A$eventstomaz/Work/lunatik/build/events$127 Def004D
+S A$eventstomaz/Work/lunatik/build/events$118 Def0048
+S A$eventstomaz/Work/lunatik/build/events$109 Def003F
+S _ev_clk_vmove Def00D6
+S A$eventstomaz/Work/lunatik/build/events$920 Def03C1
+S A$eventstomaz/Work/lunatik/build/events$911 Def03B2
+S A$eventstomaz/Work/lunatik/build/events$902 Def03A6
+S A$eventstomaz/Work/lunatik/build/events$830 Def034E
+S A$eventstomaz/Work/lunatik/build/events$821 Def0344
+S A$eventstomaz/Work/lunatik/build/events$812 Def033D
+S A$eventstomaz/Work/lunatik/build/events$803 Def032B
+S A$eventstomaz/Work/lunatik/build/events$740 Def02CF
+S A$eventstomaz/Work/lunatik/build/events$731 Def02C4
+S A$eventstomaz/Work/lunatik/build/events$713 Def02A5
+S A$eventstomaz/Work/lunatik/build/events$704 Def0294
+S A$eventstomaz/Work/lunatik/build/events$632 Def0243
+S A$eventstomaz/Work/lunatik/build/events$614 Def0236
+S A$eventstomaz/Work/lunatik/build/events$605 Def0229
+S A$eventstomaz/Work/lunatik/build/events$560 Def0209
+S A$eventstomaz/Work/lunatik/build/events$542 Def01FA
+S A$eventstomaz/Work/lunatik/build/events$533 Def01F7
+S A$eventstomaz/Work/lunatik/build/events$524 Def01EE
+S A$eventstomaz/Work/lunatik/build/events$515 Def01EA
+S A$eventstomaz/Work/lunatik/build/events$506 Def01DF
+S A$eventstomaz/Work/lunatik/build/events$470 Def01CA
+S A$eventstomaz/Work/lunatik/build/events$461 Def01C1
+S A$eventstomaz/Work/lunatik/build/events$443 Def01AF
+S A$eventstomaz/Work/lunatik/build/events$434 Def01A4
+S A$eventstomaz/Work/lunatik/build/events$425 Def0198
+S A$eventstomaz/Work/lunatik/build/events$416 Def0192
+S A$eventstomaz/Work/lunatik/build/events$407 Def018A
+S A$eventstomaz/Work/lunatik/build/events$371 Def0169
+S A$eventstomaz/Work/lunatik/build/events$362 Def015F
+S A$eventstomaz/Work/lunatik/build/events$353 Def0152
+S A$eventstomaz/Work/lunatik/build/events$344 Def014A
+S A$eventstomaz/Work/lunatik/build/events$335 Def0140
+S A$eventstomaz/Work/lunatik/build/events$326 Def0139
+S A$eventstomaz/Work/lunatik/build/events$317 Def012F
+S A$eventstomaz/Work/lunatik/build/events$308 Def011F
+S A$eventstomaz/Work/lunatik/build/events$272 Def00F8
+S A$eventstomaz/Work/lunatik/build/events$263 Def00E7
+S A$eventstomaz/Work/lunatik/build/events$254 Def00DC
+S A$eventstomaz/Work/lunatik/build/events$236 Def00D1
+S A$eventstomaz/Work/lunatik/build/events$227 Def00C7
+S A$eventstomaz/Work/lunatik/build/events$218 Def00B7
+S A$eventstomaz/Work/lunatik/build/events$209 Def00AC
+S A$eventstomaz/Work/lunatik/build/events$191 Def0093
+S A$eventstomaz/Work/lunatik/build/events$182 Def0088
+S A$eventstomaz/Work/lunatik/build/events$173 Def007D
+S A$eventstomaz/Work/lunatik/build/events$164 Def0076
+S A$eventstomaz/Work/lunatik/build/events$155 Def006E
+S A$eventstomaz/Work/lunatik/build/events$146 Def0067
+S A$eventstomaz/Work/lunatik/build/events$137 Def005D
+S A$eventstomaz/Work/lunatik/build/events$128 Def004E
+S XG$ev_kbd_left$0$0 Def0222
+S A$eventstomaz/Work/lunatik/build/events$921 Def03C2
+S A$eventstomaz/Work/lunatik/build/events$912 Def03B5
+S A$eventstomaz/Work/lunatik/build/events$903 Def03A7
+S A$eventstomaz/Work/lunatik/build/events$831 Def0350
+S A$eventstomaz/Work/lunatik/build/events$822 Def0345
+S A$eventstomaz/Work/lunatik/build/events$813 Def033F
+S A$eventstomaz/Work/lunatik/build/events$804 Def032C
+S A$eventstomaz/Work/lunatik/build/events$750 Def02E3
+S A$eventstomaz/Work/lunatik/build/events$741 Def02D0
+S A$eventstomaz/Work/lunatik/build/events$732 Def02C5
+S A$eventstomaz/Work/lunatik/build/events$723 Def02AE
+S A$eventstomaz/Work/lunatik/build/events$714 Def02A6
+S A$eventstomaz/Work/lunatik/build/events$705 Def0297
+S A$eventstomaz/Work/lunatik/build/events$633 Def0244
+S A$eventstomaz/Work/lunatik/build/events$615 Def0238
+S A$eventstomaz/Work/lunatik/build/events$561 Def020C
+S A$eventstomaz/Work/lunatik/build/events$552 Def01FB
+S A$eventstomaz/Work/lunatik/build/events$534 Def01F8
+S A$eventstomaz/Work/lunatik/build/events$525 Def01F0
+S A$eventstomaz/Work/lunatik/build/events$507 Def01E2
+S A$eventstomaz/Work/lunatik/build/events$471 Def01CB
+S A$eventstomaz/Work/lunatik/build/events$462 Def01C2
+S A$eventstomaz/Work/lunatik/build/events$453 Def01B8
+S A$eventstomaz/Work/lunatik/build/events$444 Def01B0
+S A$eventstomaz/Work/lunatik/build/events$435 Def01A7
+S A$eventstomaz/Work/lunatik/build/events$426 Def019B
+S A$eventstomaz/Work/lunatik/build/events$417 Def0193
+S A$eventstomaz/Work/lunatik/build/events$408 Def018B
+S A$eventstomaz/Work/lunatik/build/events$363 Def0160
+S A$eventstomaz/Work/lunatik/build/events$354 Def0155
+S A$eventstomaz/Work/lunatik/build/events$345 Def014B
+S A$eventstomaz/Work/lunatik/build/events$336 Def0141
+S A$eventstomaz/Work/lunatik/build/events$327 Def013B
+S A$eventstomaz/Work/lunatik/build/events$318 Def0132
+S A$eventstomaz/Work/lunatik/build/events$309 Def0120
+S A$eventstomaz/Work/lunatik/build/events$282 Def0108
+S A$eventstomaz/Work/lunatik/build/events$273 Def00F9
+S A$eventstomaz/Work/lunatik/build/events$264 Def00EA
+S A$eventstomaz/Work/lunatik/build/events$255 Def00DE
+S A$eventstomaz/Work/lunatik/build/events$237 Def00D3
+S A$eventstomaz/Work/lunatik/build/events$228 Def00C8
+S A$eventstomaz/Work/lunatik/build/events$219 Def00B9
+S A$eventstomaz/Work/lunatik/build/events$192 Def0094
+S A$eventstomaz/Work/lunatik/build/events$183 Def008B
+S A$eventstomaz/Work/lunatik/build/events$174 Def0080
+S A$eventstomaz/Work/lunatik/build/events$165 Def0078
+S A$eventstomaz/Work/lunatik/build/events$156 Def006F
+S A$eventstomaz/Work/lunatik/build/events$129 Def0051
+S A$eventstomaz/Work/lunatik/build/events$940 Def03D8
+S A$eventstomaz/Work/lunatik/build/events$922 Def03C3
+S A$eventstomaz/Work/lunatik/build/events$913 Def03B8
+S A$eventstomaz/Work/lunatik/build/events$904 Def03A8
+S A$eventstomaz/Work/lunatik/build/events$850 Def0364
+S A$eventstomaz/Work/lunatik/build/events$841 Def0359
+S A$eventstomaz/Work/lunatik/build/events$832 Def0352
+S A$eventstomaz/Work/lunatik/build/events$823 Def0346
+S A$eventstomaz/Work/lunatik/build/events$814 Def0340
+S A$eventstomaz/Work/lunatik/build/events$805 Def032E
+S A$eventstomaz/Work/lunatik/build/events$760 Def02F3
+S A$eventstomaz/Work/lunatik/build/events$751 Def02E6
+S A$eventstomaz/Work/lunatik/build/events$742 Def02D3
+S A$eventstomaz/Work/lunatik/build/events$733 Def02C6
+S A$eventstomaz/Work/lunatik/build/events$724 Def02B1
+S A$eventstomaz/Work/lunatik/build/events$715 Def02A7
+S A$eventstomaz/Work/lunatik/build/events$706 Def029A
+S A$eventstomaz/Work/lunatik/build/events$634 Def0246
+S A$eventstomaz/Work/lunatik/build/events$625 Def023E
+S A$eventstomaz/Work/lunatik/build/events$580 Def0217
+S A$eventstomaz/Work/lunatik/build/events$562 Def020D
+S A$eventstomaz/Work/lunatik/build/events$553 Def01FD
+S A$eventstomaz/Work/lunatik/build/events$508 Def01E3
+S A$eventstomaz/Work/lunatik/build/events$472 Def01CC
+S A$eventstomaz/Work/lunatik/build/events$463 Def01C3
+S A$eventstomaz/Work/lunatik/build/events$454 Def01BB
+S A$eventstomaz/Work/lunatik/build/events$445 Def01B1
+S A$eventstomaz/Work/lunatik/build/events$436 Def01A8
+S A$eventstomaz/Work/lunatik/build/events$427 Def019C
+S A$eventstomaz/Work/lunatik/build/events$418 Def0194
+S A$eventstomaz/Work/lunatik/build/events$409 Def018C
+S A$eventstomaz/Work/lunatik/build/events$364 Def0162
+S A$eventstomaz/Work/lunatik/build/events$355 Def0156
+S A$eventstomaz/Work/lunatik/build/events$346 Def014D
+S A$eventstomaz/Work/lunatik/build/events$337 Def0144
+S A$eventstomaz/Work/lunatik/build/events$328 Def013C
+S A$eventstomaz/Work/lunatik/build/events$319 Def0133
+S A$eventstomaz/Work/lunatik/build/events$283 Def010B
+S A$eventstomaz/Work/lunatik/build/events$274 Def00FA
+S A$eventstomaz/Work/lunatik/build/events$265 Def00EB
+S A$eventstomaz/Work/lunatik/build/events$229 Def00C9
+S A$eventstomaz/Work/lunatik/build/events$193 Def0095
+S A$eventstomaz/Work/lunatik/build/events$184 Def008D
+S A$eventstomaz/Work/lunatik/build/events$175 Def0081
+S A$eventstomaz/Work/lunatik/build/events$166 Def0079
+S A$eventstomaz/Work/lunatik/build/events$157 Def0070
+S A$eventstomaz/Work/lunatik/build/events$950 Def03E5
+S A$eventstomaz/Work/lunatik/build/events$941 Def03D9
+S A$eventstomaz/Work/lunatik/build/events$923 Def03C4
+S A$eventstomaz/Work/lunatik/build/events$914 Def03B9
+S A$eventstomaz/Work/lunatik/build/events$905 Def03A9
+S A$eventstomaz/Work/lunatik/build/events$851 Def0367
+S A$eventstomaz/Work/lunatik/build/events$842 Def035A
+S A$eventstomaz/Work/lunatik/build/events$833 Def0353
+S A$eventstomaz/Work/lunatik/build/events$824 Def0347
+S A$eventstomaz/Work/lunatik/build/events$806 Def032F
+S A$eventstomaz/Work/lunatik/build/events$770 Def02FF
+S A$eventstomaz/Work/lunatik/build/events$761 Def02F4
+S A$eventstomaz/Work/lunatik/build/events$752 Def02E7
+S A$eventstomaz/Work/lunatik/build/events$743 Def02D4
+S A$eventstomaz/Work/lunatik/build/events$734 Def02C7
+S A$eventstomaz/Work/lunatik/build/events$725 Def02B3
+S A$eventstomaz/Work/lunatik/build/events$716 Def02A8
+S A$eventstomaz/Work/lunatik/build/events$707 Def029D
+S A$eventstomaz/Work/lunatik/build/events$680 Def0268
+S A$eventstomaz/Work/lunatik/build/events$644 Def024B
+S A$eventstomaz/Work/lunatik/build/events$635 Def0247
+S A$eventstomaz/Work/lunatik/build/events$626 Def023F
+S A$eventstomaz/Work/lunatik/build/events$581 Def021A
+S A$eventstomaz/Work/lunatik/build/events$563 Def020E
+S A$eventstomaz/Work/lunatik/build/events$554 Def0201
+S A$eventstomaz/Work/lunatik/build/events$509 Def01E4
+S A$eventstomaz/Work/lunatik/build/events$473 Def01CD
+S A$eventstomaz/Work/lunatik/build/events$464 Def01C4
+S A$eventstomaz/Work/lunatik/build/events$455 Def01BC
+S A$eventstomaz/Work/lunatik/build/events$446 Def01B2
+S A$eventstomaz/Work/lunatik/build/events$437 Def01A9
+S A$eventstomaz/Work/lunatik/build/events$428 Def019D
+S A$eventstomaz/Work/lunatik/build/events$419 Def0195
+S A$eventstomaz/Work/lunatik/build/events$365 Def0163
+S A$eventstomaz/Work/lunatik/build/events$356 Def0157
+S A$eventstomaz/Work/lunatik/build/events$347 Def014E
+S A$eventstomaz/Work/lunatik/build/events$338 Def0145
+S A$eventstomaz/Work/lunatik/build/events$284 Def010C
+S A$eventstomaz/Work/lunatik/build/events$275 Def00FB
+S A$eventstomaz/Work/lunatik/build/events$266 Def00EC
+S A$eventstomaz/Work/lunatik/build/events$194 Def0098
+S A$eventstomaz/Work/lunatik/build/events$185 Def008E
+S A$eventstomaz/Work/lunatik/build/events$158 Def0072
+S A$eventstomaz/Work/lunatik/build/events$960 Def03EC
+S A$eventstomaz/Work/lunatik/build/events$951 Def03E6
+S A$eventstomaz/Work/lunatik/build/events$942 Def03DA
+S A$eventstomaz/Work/lunatik/build/events$933 Def03CD
+S A$eventstomaz/Work/lunatik/build/events$924 Def03C5
+S A$eventstomaz/Work/lunatik/build/events$915 Def03BC
+S A$eventstomaz/Work/lunatik/build/events$906 Def03AC
+S A$eventstomaz/Work/lunatik/build/events$870 Def037A
+S A$eventstomaz/Work/lunatik/build/events$843 Def035B
+S A$eventstomaz/Work/lunatik/build/events$834 Def0354
+S A$eventstomaz/Work/lunatik/build/events$825 Def0348
+S A$eventstomaz/Work/lunatik/build/events$807 Def0332
+S A$eventstomaz/Work/lunatik/build/events$780 Def0306
+S A$eventstomaz/Work/lunatik/build/events$771 Def0300
+S A$eventstomaz/Work/lunatik/build/events$762 Def02F7
+S A$eventstomaz/Work/lunatik/build/events$753 Def02EA
+S A$eventstomaz/Work/lunatik/build/events$744 Def02D5
+S A$eventstomaz/Work/lunatik/build/events$735 Def02CA
+S A$eventstomaz/Work/lunatik/build/events$726 Def02B6
+S A$eventstomaz/Work/lunatik/build/events$717 Def02AB
+S A$eventstomaz/Work/lunatik/build/events$708 Def029E
+S A$eventstomaz/Work/lunatik/build/events$681 Def026A
+S A$eventstomaz/Work/lunatik/build/events$663 Def0259
+S A$eventstomaz/Work/lunatik/build/events$654 Def024C
+S A$eventstomaz/Work/lunatik/build/events$609 Def022B
+S A$eventstomaz/Work/lunatik/build/events$582 Def021B
+S A$eventstomaz/Work/lunatik/build/events$564 Def020F
+S A$eventstomaz/Work/lunatik/build/events$483 Def01D6
+S A$eventstomaz/Work/lunatik/build/events$474 Def01CF
+S A$eventstomaz/Work/lunatik/build/events$465 Def01C5
+S A$eventstomaz/Work/lunatik/build/events$456 Def01BE
+S A$eventstomaz/Work/lunatik/build/events$447 Def01B5
+S A$eventstomaz/Work/lunatik/build/events$438 Def01AA
+S A$eventstomaz/Work/lunatik/build/events$429 Def019F
+S A$eventstomaz/Work/lunatik/build/events$393 Def0175
+S A$eventstomaz/Work/lunatik/build/events$366 Def0164
+S A$eventstomaz/Work/lunatik/build/events$357 Def0158
+S A$eventstomaz/Work/lunatik/build/events$339 Def0146
+S A$eventstomaz/Work/lunatik/build/events$294 Def0113
+S A$eventstomaz/Work/lunatik/build/events$285 Def010D
+S A$eventstomaz/Work/lunatik/build/events$276 Def00FC
+S A$eventstomaz/Work/lunatik/build/events$267 Def00EF
+S A$eventstomaz/Work/lunatik/build/events$195 Def0099
+S A$eventstomaz/Work/lunatik/build/events$186 Def0090
+S A$eventstomaz/Work/lunatik/build/events$970 Def03F9
+S A$eventstomaz/Work/lunatik/build/events$961 Def03ED
+S A$eventstomaz/Work/lunatik/build/events$943 Def03DB
+S A$eventstomaz/Work/lunatik/build/events$934 Def03D0
+S A$eventstomaz/Work/lunatik/build/events$925 Def03C6
+S A$eventstomaz/Work/lunatik/build/events$916 Def03BD
+S A$eventstomaz/Work/lunatik/build/events$907 Def03AD
+S A$eventstomaz/Work/lunatik/build/events$880 Def038D
+S A$eventstomaz/Work/lunatik/build/events$871 Def037D
+S A$eventstomaz/Work/lunatik/build/events$853 Def0369
+S A$eventstomaz/Work/lunatik/build/events$844 Def035C
+S A$eventstomaz/Work/lunatik/build/events$835 Def0356
+S A$eventstomaz/Work/lunatik/build/events$826 Def034A
+S A$eventstomaz/Work/lunatik/build/events$790 Def031B
+S A$eventstomaz/Work/lunatik/build/events$781 Def0309
+S A$eventstomaz/Work/lunatik/build/events$772 Def0301
+S A$eventstomaz/Work/lunatik/build/events$763 Def02F8
+S A$eventstomaz/Work/lunatik/build/events$754 Def02ED
+S A$eventstomaz/Work/lunatik/build/events$745 Def02D8
+S A$eventstomaz/Work/lunatik/build/events$736 Def02CB
+S A$eventstomaz/Work/lunatik/build/events$727 Def02B9
+S A$eventstomaz/Work/lunatik/build/events$718 Def02AC
+S A$eventstomaz/Work/lunatik/build/events$709 Def02A1
+S A$eventstomaz/Work/lunatik/build/events$682 Def026D
+S A$eventstomaz/Work/lunatik/build/events$673 Def0262
+S A$eventstomaz/Work/lunatik/build/events$664 Def025A
+S A$eventstomaz/Work/lunatik/build/events$655 Def024E
+S A$eventstomaz/Work/lunatik/build/events$619 Def023A
+S A$eventstomaz/Work/lunatik/build/events$583 Def021D
+S A$eventstomaz/Work/lunatik/build/events$574 Def0215
+S A$eventstomaz/Work/lunatik/build/events$484 Def01D8
+S A$eventstomaz/Work/lunatik/build/events$475 Def01D0
+S A$eventstomaz/Work/lunatik/build/events$466 Def01C6
+S A$eventstomaz/Work/lunatik/build/events$457 Def01BF
+S A$eventstomaz/Work/lunatik/build/events$448 Def01B6
+S A$eventstomaz/Work/lunatik/build/events$439 Def01AB
+S A$eventstomaz/Work/lunatik/build/events$394 Def0178
+S A$eventstomaz/Work/lunatik/build/events$376 Def016B
+S A$eventstomaz/Work/lunatik/build/events$358 Def0159
+S A$eventstomaz/Work/lunatik/build/events$295 Def0114
+S A$eventstomaz/Work/lunatik/build/events$286 Def010E
+S A$eventstomaz/Work/lunatik/build/events$277 Def00FD
+S A$eventstomaz/Work/lunatik/build/events$268 Def00F0
+S A$eventstomaz/Work/lunatik/build/events$259 Def00DF
+S A$eventstomaz/Work/lunatik/build/events$196 Def009A
+S A$eventstomaz/Work/lunatik/build/events$187 Def0091
+S A$eventstomaz/Work/lunatik/build/events$980 Def0400
+S A$eventstomaz/Work/lunatik/build/events$971 Def03FA
+S A$eventstomaz/Work/lunatik/build/events$962 Def03EE
+S A$eventstomaz/Work/lunatik/build/events$944 Def03DC
+S A$eventstomaz/Work/lunatik/build/events$935 Def03D3
+S A$eventstomaz/Work/lunatik/build/events$926 Def03C7
+S A$eventstomaz/Work/lunatik/build/events$917 Def03BE
+S A$eventstomaz/Work/lunatik/build/events$908 Def03AE
+S A$eventstomaz/Work/lunatik/build/events$890 Def0397
+S A$eventstomaz/Work/lunatik/build/events$881 Def038E
+S A$eventstomaz/Work/lunatik/build/events$872 Def037E
+S A$eventstomaz/Work/lunatik/build/events$863 Def0373
+S A$eventstomaz/Work/lunatik/build/events$854 Def036C
+S A$eventstomaz/Work/lunatik/build/events$845 Def035D
+S A$eventstomaz/Work/lunatik/build/events$836 Def0357
+S A$eventstomaz/Work/lunatik/build/events$827 Def034B
+S A$eventstomaz/Work/lunatik/build/events$809 Def0334
+S A$eventstomaz/Work/lunatik/build/events$791 Def031D
+S A$eventstomaz/Work/lunatik/build/events$782 Def030B
+S A$eventstomaz/Work/lunatik/build/events$773 Def0302
+S A$eventstomaz/Work/lunatik/build/events$764 Def02F9
+S A$eventstomaz/Work/lunatik/build/events$755 Def02EE
+S A$eventstomaz/Work/lunatik/build/events$746 Def02DB
+S A$eventstomaz/Work/lunatik/build/events$737 Def02CC
+S A$eventstomaz/Work/lunatik/build/events$728 Def02BB
+S A$eventstomaz/Work/lunatik/build/events$719 Def02AD
+S A$eventstomaz/Work/lunatik/build/events$683 Def026E
+S A$eventstomaz/Work/lunatik/build/events$674 Def0263
+S A$eventstomaz/Work/lunatik/build/events$665 Def025B
+S A$eventstomaz/Work/lunatik/build/events$656 Def0252
+S A$eventstomaz/Work/lunatik/build/events$593 Def0222
+S A$eventstomaz/Work/lunatik/build/events$584 Def021E
+S A$eventstomaz/Work/lunatik/build/events$575 Def0216
+S A$eventstomaz/Work/lunatik/build/events$476 Def01D1
+S A$eventstomaz/Work/lunatik/build/events$467 Def01C7
+S A$eventstomaz/Work/lunatik/build/events$449 Def01B7
+S A$eventstomaz/Work/lunatik/build/events$395 Def017B
+S A$eventstomaz/Work/lunatik/build/events$386 Def016C
+S A$eventstomaz/Work/lunatik/build/events$359 Def015A
+S A$eventstomaz/Work/lunatik/build/events$296 Def0115
+S A$eventstomaz/Work/lunatik/build/events$287 Def010F
+S A$eventstomaz/Work/lunatik/build/events$278 Def0100
+S A$eventstomaz/Work/lunatik/build/events$269 Def00F1
+S A$eventstomaz/Work/lunatik/build/events$197 Def009B
+S A$eventstomaz/Work/lunatik/build/events$179 Def0082
+S A$eventstomaz/Work/lunatik/build/events$990 Def040B
+S A$eventstomaz/Work/lunatik/build/events$981 Def0401
+S A$eventstomaz/Work/lunatik/build/events$963 Def03EF
+S A$eventstomaz/Work/lunatik/build/events$945 Def03DD
+S A$eventstomaz/Work/lunatik/build/events$936 Def03D4
+S A$eventstomaz/Work/lunatik/build/events$927 Def03CA
+S A$eventstomaz/Work/lunatik/build/events$918 Def03BF
+S A$eventstomaz/Work/lunatik/build/events$909 Def03B0
+S A$eventstomaz/Work/lunatik/build/events$891 Def0398
+S A$eventstomaz/Work/lunatik/build/events$882 Def038F
+S A$eventstomaz/Work/lunatik/build/events$873 Def037F
+S A$eventstomaz/Work/lunatik/build/events$864 Def0374
+S A$eventstomaz/Work/lunatik/build/events$855 Def036D
+S A$eventstomaz/Work/lunatik/build/events$846 Def035E
+S A$eventstomaz/Work/lunatik/build/events$828 Def034C
+S A$eventstomaz/Work/lunatik/build/events$819 Def0342
+S A$eventstomaz/Work/lunatik/build/events$792 Def031E
+S A$eventstomaz/Work/lunatik/build/events$783 Def030E
+S A$eventstomaz/Work/lunatik/build/events$774 Def0303
+S A$eventstomaz/Work/lunatik/build/events$765 Def02FA
+S A$eventstomaz/Work/lunatik/build/events$756 Def02EF
+S A$eventstomaz/Work/lunatik/build/events$747 Def02DE
+S A$eventstomaz/Work/lunatik/build/events$738 Def02CD
+S A$eventstomaz/Work/lunatik/build/events$729 Def02BE
+S A$eventstomaz/Work/lunatik/build/events$684 Def0270
+S A$eventstomaz/Work/lunatik/build/events$675 Def0264
+S A$eventstomaz/Work/lunatik/build/events$666 Def025C
+S A$eventstomaz/Work/lunatik/build/events$657 Def0254
+S A$eventstomaz/Work/lunatik/build/events$639 Def0249
+S A$eventstomaz/Work/lunatik/build/events$558 Def0203
+S A$eventstomaz/Work/lunatik/build/events$477 Def01D4
+S A$eventstomaz/Work/lunatik/build/events$468 Def01C8
+S A$eventstomaz/Work/lunatik/build/events$396 Def017E
+S A$eventstomaz/Work/lunatik/build/events$387 Def016E
+S A$eventstomaz/Work/lunatik/build/events$297 Def0116
+S A$eventstomaz/Work/lunatik/build/events$288 Def0110
+S A$eventstomaz/Work/lunatik/build/events$279 Def0103
+S A$eventstomaz/Work/lunatik/build/events$198 Def009C
+S A$eventstomaz/Work/lunatik/build/events$991 Def040D
+S A$eventstomaz/Work/lunatik/build/events$982 Def0402
+S A$eventstomaz/Work/lunatik/build/events$964 Def03F0
+S A$eventstomaz/Work/lunatik/build/events$955 Def03E7
+S A$eventstomaz/Work/lunatik/build/events$946 Def03DE
+S A$eventstomaz/Work/lunatik/build/events$937 Def03D5
+S A$eventstomaz/Work/lunatik/build/events$928 Def03CB
+S A$eventstomaz/Work/lunatik/build/events$919 Def03C0
+S A$eventstomaz/Work/lunatik/build/events$892 Def039B
+S A$eventstomaz/Work/lunatik/build/events$883 Def0390
+S A$eventstomaz/Work/lunatik/build/events$874 Def0381
+S A$eventstomaz/Work/lunatik/build/events$865 Def0375
+S A$eventstomaz/Work/lunatik/build/events$856 Def036E
+S A$eventstomaz/Work/lunatik/build/events$847 Def0360
+S A$eventstomaz/Work/lunatik/build/events$829 Def034D
+S A$eventstomaz/Work/lunatik/build/events$784 Def030F
+S A$eventstomaz/Work/lunatik/build/events$775 Def0304
+S A$eventstomaz/Work/lunatik/build/events$766 Def02FB
+S A$eventstomaz/Work/lunatik/build/events$757 Def02F0
+S A$eventstomaz/Work/lunatik/build/events$748 Def02E1
+S A$eventstomaz/Work/lunatik/build/events$739 Def02CE
+S A$eventstomaz/Work/lunatik/build/events$694 Def0280
+S A$eventstomaz/Work/lunatik/build/events$685 Def0273
+S A$eventstomaz/Work/lunatik/build/events$667 Def025F
+S A$eventstomaz/Work/lunatik/build/events$658 Def0257
+S A$eventstomaz/Work/lunatik/build/events$568 Def0211
+S A$eventstomaz/Work/lunatik/build/events$559 Def0206
+S A$eventstomaz/Work/lunatik/build/events$478 Def01D5
+S A$eventstomaz/Work/lunatik/build/events$469 Def01C9
+S A$eventstomaz/Work/lunatik/build/events$397 Def017F
+S A$eventstomaz/Work/lunatik/build/events$388 Def0172
+S A$eventstomaz/Work/lunatik/build/events$298 Def0117
+S A$eventstomaz/Work/lunatik/build/events$289 Def0111
+S A$eventstomaz/Work/lunatik/build/events$199 Def009D
+S XG$ev_clk_thrust$0$0 Def01FA
+S A$eventstomaz/Work/lunatik/build/events$992 Def040E
+S A$eventstomaz/Work/lunatik/build/events$983 Def0403
+S A$eventstomaz/Work/lunatik/build/events$965 Def03F1
+S A$eventstomaz/Work/lunatik/build/events$956 Def03E8
+S A$eventstomaz/Work/lunatik/build/events$947 Def03E0
+S A$eventstomaz/Work/lunatik/build/events$938 Def03D6
+S A$eventstomaz/Work/lunatik/build/events$929 Def03CC
+S A$eventstomaz/Work/lunatik/build/events$893 Def039C
+S A$eventstomaz/Work/lunatik/build/events$884 Def0391
+S A$eventstomaz/Work/lunatik/build/events$875 Def0382
+S A$eventstomaz/Work/lunatik/build/events$866 Def0376
+S A$eventstomaz/Work/lunatik/build/events$857 Def0370
+S A$eventstomaz/Work/lunatik/build/events$848 Def0361
+S A$eventstomaz/Work/lunatik/build/events$785 Def0310
+S A$eventstomaz/Work/lunatik/build/events$776 Def0305
+S A$eventstomaz/Work/lunatik/build/events$767 Def02FC
+S A$eventstomaz/Work/lunatik/build/events$758 Def02F1
+S A$eventstomaz/Work/lunatik/build/events$749 Def02E2
+S A$eventstomaz/Work/lunatik/build/events$695 Def0283
+S A$eventstomaz/Work/lunatik/build/events$686 Def0277
+S A$eventstomaz/Work/lunatik/build/events$668 Def0260
+S A$eventstomaz/Work/lunatik/build/events$659 Def0258
+S A$eventstomaz/Work/lunatik/build/events$569 Def0213
+S A$eventstomaz/Work/lunatik/build/events$398 Def0180
+S A$eventstomaz/Work/lunatik/build/events$389 Def0174
+S G$ev_kbd_space$0$0 Def024C
+S A$eventstomaz/Work/lunatik/build/events$993 Def0411
+S A$eventstomaz/Work/lunatik/build/events$984 Def0406
+S A$eventstomaz/Work/lunatik/build/events$975 Def03FB
+S A$eventstomaz/Work/lunatik/build/events$966 Def03F2
+S A$eventstomaz/Work/lunatik/build/events$957 Def03E9
+S A$eventstomaz/Work/lunatik/build/events$948 Def03E1
+S A$eventstomaz/Work/lunatik/build/events$939 Def03D7
+S A$eventstomaz/Work/lunatik/build/events$894 Def039D
+S A$eventstomaz/Work/lunatik/build/events$885 Def0392
+S A$eventstomaz/Work/lunatik/build/events$876 Def0383
+S A$eventstomaz/Work/lunatik/build/events$867 Def0377
+S A$eventstomaz/Work/lunatik/build/events$858 Def0371
+S A$eventstomaz/Work/lunatik/build/events$849 Def0363
+S A$eventstomaz/Work/lunatik/build/events$786 Def0311
+S A$eventstomaz/Work/lunatik/build/events$768 Def02FD
+S A$eventstomaz/Work/lunatik/build/events$759 Def02F2
+S A$eventstomaz/Work/lunatik/build/events$696 Def0284
+S A$eventstomaz/Work/lunatik/build/events$687 Def0279
+S A$eventstomaz/Work/lunatik/build/events$669 Def0261
+S A$eventstomaz/Work/lunatik/build/events$588 Def0220
+S A$eventstomaz/Work/lunatik/build/events$489 Def01DA
+S A$eventstomaz/Work/lunatik/build/events$399 Def0181
+S A$eventstomaz/Work/lunatik/build/events$994 Def0413
+S A$eventstomaz/Work/lunatik/build/events$985 Def0407
+S A$eventstomaz/Work/lunatik/build/events$976 Def03FC
+S A$eventstomaz/Work/lunatik/build/events$967 Def03F4
+S A$eventstomaz/Work/lunatik/build/events$958 Def03EA
+S A$eventstomaz/Work/lunatik/build/events$949 Def03E2
+S A$eventstomaz/Work/lunatik/build/events$886 Def0393
+S A$eventstomaz/Work/lunatik/build/events$877 Def0386
+S A$eventstomaz/Work/lunatik/build/events$868 Def0378
+S A$eventstomaz/Work/lunatik/build/events$787 Def0313
+S A$eventstomaz/Work/lunatik/build/events$769 Def02FE
+S A$eventstomaz/Work/lunatik/build/events$697 Def0285
+S A$eventstomaz/Work/lunatik/build/events$688 Def027A
+S A$eventstomaz/Work/lunatik/build/events$679 Def0267
+S XG$ev_clk_vmove$0$0 Def016B
+S A$eventstomaz/Work/lunatik/build/events$995 Def0414
+S A$eventstomaz/Work/lunatik/build/events$977 Def03FD
+S A$eventstomaz/Work/lunatik/build/events$968 Def03F5
+S A$eventstomaz/Work/lunatik/build/events$959 Def03EB
+S A$eventstomaz/Work/lunatik/build/events$887 Def0394
+S A$eventstomaz/Work/lunatik/build/events$878 Def0389
+S A$eventstomaz/Work/lunatik/build/events$869 Def0379
+S A$eventstomaz/Work/lunatik/build/events$797 Def0320
+S A$eventstomaz/Work/lunatik/build/events$788 Def0315
+S A$eventstomaz/Work/lunatik/build/events$698 Def0288
+S A$eventstomaz/Work/lunatik/build/events$689 Def027D
+S G$ev_clk_gravity$0$0 Def016C
+S A$eventstomaz/Work/lunatik/build/events$978 Def03FE
+S A$eventstomaz/Work/lunatik/build/events$969 Def03F6
+S A$eventstomaz/Work/lunatik/build/events$888 Def0395
+S A$eventstomaz/Work/lunatik/build/events$879 Def038A
+S A$eventstomaz/Work/lunatik/build/events$798 Def0323
+S A$eventstomaz/Work/lunatik/build/events$789 Def0318
+S A$eventstomaz/Work/lunatik/build/events$699 Def0289
+S A$eventstomaz/Work/lunatik/build/events$80 Def0018
+S A$eventstomaz/Work/lunatik/build/events$979 Def03FF
+S A$eventstomaz/Work/lunatik/build/events$898 Def039E
+S A$eventstomaz/Work/lunatik/build/events$889 Def0396
+S A$eventstomaz/Work/lunatik/build/events$799 Def0326
+S A$eventstomaz/Work/lunatik/build/events$90 Def0028
+S A$eventstomaz/Work/lunatik/build/events$81 Def0019
+S A$eventstomaz/Work/lunatik/build/events$989 Def0408
+S A$eventstomaz/Work/lunatik/build/events$899 Def03A1
+S A$eventstomaz/Work/lunatik/build/events$91 Def0029
+S A$eventstomaz/Work/lunatik/build/events$82 Def001A
+S A$eventstomaz/Work/lunatik/build/events$73 Def0009
+S A$eventstomaz/Work/lunatik/build/events$999 Def0416
+S A$eventstomaz/Work/lunatik/build/events$92 Def002A
+S A$eventstomaz/Work/lunatik/build/events$83 Def001B
+S A$eventstomaz/Work/lunatik/build/events$74 Def000C
+S A$eventstomaz/Work/lunatik/build/events$93 Def002B
+S A$eventstomaz/Work/lunatik/build/events$84 Def001C
+S A$eventstomaz/Work/lunatik/build/events$75 Def000F
+S A$eventstomaz/Work/lunatik/build/events$66 Def0000
+S A$eventstomaz/Work/lunatik/build/events$94 Def002C
+S A$eventstomaz/Work/lunatik/build/events$85 Def001F
+S A$eventstomaz/Work/lunatik/build/events$76 Def0012
+S A$eventstomaz/Work/lunatik/build/events$67 Def0002
+S A$eventstomaz/Work/lunatik/build/events$95 Def002D
+S A$eventstomaz/Work/lunatik/build/events$86 Def0021
+S A$eventstomaz/Work/lunatik/build/events$77 Def0015
+S A$eventstomaz/Work/lunatik/build/events$68 Def0006
+S A$eventstomaz/Work/lunatik/build/events$96 Def002E
+S A$eventstomaz/Work/lunatik/build/events$87 Def0022
+S A$eventstomaz/Work/lunatik/build/events$78 Def0016
+S A$eventstomaz/Work/lunatik/build/events$69 Def0008
+S A$eventstomaz/Work/lunatik/build/events$97 Def002F
+S A$eventstomaz/Work/lunatik/build/events$88 Def0025
+S A$eventstomaz/Work/lunatik/build/events$79 Def0017
+S _ev_kbd_space Def024C
+S A$eventstomaz/Work/lunatik/build/events$98 Def0030
+S A$eventstomaz/Work/lunatik/build/events$89 Def0027
+S A$eventstomaz/Work/lunatik/build/events$99 Def0031
+S _ev_clk_gravity Def016C
+S C$events.c$101$1_0$68 Def024C
+S G$ev_kbd_right$0$0 Def0223
+S C$events.c$120$1_1$69 Def0359
+S C$events.c$104$1_0$68 Def0259
+S C$events.c$112$1_1$69 Def0280
+S C$events.c$105$1_0$68 Def0262
+S C$events.c$132$1_1$69 Def0408
+S C$events.c$123$1_1$69 Def0373
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 F5 DD 7E 04 DD 77
+R 00 00 00 00
+T 0E 00 FE DD 7E 05 DD 77 FF E1 E5 23 23 5E 23 56
+R 00 00 00 00
+T 1C 00 DD 7E FE C6 07 4F DD 7E FF CE 00 47 69 60
+R 00 00 00 00
+T 2A 00 7E 23 66 6F AF BB 9A E2 36 00 EE 80
+R 00 00 00 00 00 0A 00 00
+T 36 00
+R 00 00 00 00
+T 36 00 F2 42 00 EB 13 69 60 73 23 72 18 07
+R 00 00 00 00 00 03 00 00
+T 42 00
+R 00 00 00 00
+T 42 00 EB 1B 69 60 73 23 72
+R 00 00 00 00
+T 49 00
+R 00 00 00 00
+T 49 00 69 60 5E 23 56 21 20 00 19 3E F5 BD 3E 03
+R 00 00 00 00
+T 57 00 9C E2 5D 00 EE 80
+R 00 00 00 00 00 04 00 00
+T 5D 00
+R 00 00 00 00
+T 5D 00 F2 69 00 69 60 36 0A 23 36 00 18 12
+R 00 00 00 00 00 03 00 00
+T 69 00
+R 00 00 00 00
+T 69 00 7B D6 0A 7A 17 3F 1F DE 80 30 07 69 60 36
+R 00 00 00 00
+T 77 00 D5 23 36 03
+R 00 00 00 00
+T 7B 00
+R 00 00 00 00
+T 7B 00 C5 C5 CD 00 00 F1 C1 DD 7E FE C6 36 6F DD
+R 00 00 00 00 02 05 00 00
+T 89 00 7E FF CE 00 67 36 01 23 36 00 E1 E5 11
+R 00 00 00 00
+T 96 00 39 00 19 5E 23 56 C5 C5 D5 CD 00 00 F1 E3
+R 00 00 00 00 02 0C 08 00
+T A4 00 3E 01 F5 33 CD 00 00 F1 33 C1 DD 7E FE C6
+R 00 00 00 00 02 07 07 00
+T B2 00 12 5F DD 7E FF CE 00 57 DD 7E FE C6 10 6F
+R 00 00 00 00
+T C0 00 DD 7E FF CE 00 67 D5 E5 C5 CD 00 00 21
+R 00 00 00 00 02 0C 05 00
+T CD 00 06 00 39 F9 DD F9 DD E1 C9
+R 00 00 00 00
+T D6 00
+R 00 00 00 00
+T D6 00 DD E5 DD 21 00 00 DD 39 F5 DD 4E 04 DD 46
+R 00 00 00 00
+T E4 00 05 69 60 11 04 00 19 7E DD 77 FE 23 7E DD
+R 00 00 00 00
+T F2 00 77 FF 21 09 00 09 5E 23 56 2B AF DD BE FE
+R 00 00 00 00
+T 00 01 DD 9E FF E2 08 01 EE 80
+R 00 00 00 00 00 06 00 00
+T 08 01
+R 00 00 00 00
+T 08 01 F2 13 01 13 7A 73 23 77 2B 18 05
+R 00 00 00 00 00 03 00 00
+T 13 01
+R 00 00 00 00
+T 13 01 1B 73 23 72 2B
+R 00 00 00 00
+T 18 01
+R 00 00 00 00
+T 18 01 79 C6 07 5F 78 CE 00 57 7E DD 77 FE 23 7E
+R 00 00 00 00
+T 26 01 DD 77 FF 2B DD 7E FE D6 2A DD 7E FF 17 3F
+R 00 00 00 00
+T 34 01 1F DE 80 30 05 36 2A 23 36 00
+R 00 00 00 00
+T 3E 01
+R 00 00 00 00
+T 3E 01 C5 D5 D5 CD 00 00 F1 D1 C1 21 36 00 09 36
+R 00 00 00 00 02 06 00 00
+T 4C 01 01 23 36 00 69 60 01 39 00 09 4E 23 46 D5
+R 00 00 00 00
+T 5A 01 C5 CD 00 00 F1 E3 3E 01 F5 33 CD 00 00 DD
+R 00 00 00 00 02 04 08 00 02 0D 07 00
+T 68 01 F9 DD E1 C9
+R 00 00 00 00
+T 6C 01
+R 00 00 00 00
+T 6C 01 DD E5 DD 21 00 00 DD 39 F5 DD 4E 04 DD 46
+R 00 00 00 00
+T 7A 01 05 21 04 00 09 E3 E1 E5 5E 23 56 7B D6 0A
+R 00 00 00 00
+T 88 01 7A 17 3F 1F DE 80 30 46 13 E1 E5 73 23 72
+R 00 00 00 00
+T 96 01 C5 D5 CD 00 00 F1 C1 3E 0A 95 5F 69 60 C5
+R 00 00 00 00 02 05 02 00
+T A4 01 01 30 00 09 C1 56 23 66 C5 7B F5 33 6A E5
+R 00 00 00 00
+T B2 01 CD 00 00 F1 33 C1 21 36 00 09 36 01 23 36
+R 00 00 00 00 02 03 06 00
+T C0 01 00 E1 E5 4E 23 46 69 60 29 29 09 29 E5 3E
+R 00 00 00 00
+T CE 01 03 F5 33 CD 00 00 F1 33
+R 00 00 00 00 02 06 07 00
+T D6 01
+R 00 00 00 00
+T D6 01 DD F9 DD E1 C9
+R 00 00 00 00
+T DB 01
+R 00 00 00 00
+T DB 01 D1 C1 C5 D5 21 06 00 09 7E FE 01 20 04 36
+R 00 00 00 00
+T E9 01 02 18 05
+R 00 00 00 00
+T EC 01
+R 00 00 00 00
+T EC 01 D6 02 20 01 77
+R 00 00 00 00
+T F1 01
+R 00 00 00 00
+T F1 01 21 36 00 09 36 01 23 36 00 C9
+R 00 00 00 00
+T FB 01
+R 00 00 00 00
+T FB 01 DD E5 DD 21 00 00 DD 39 DD 4E 04 DD 46 05
+R 00 00 00 00
+T 09 02 21 0F 00 09 7E B7 20 04 36 17 18 02
+R 00 00 00 00
+T 15 02
+R 00 00 00 00
+T 15 02 3D 77
+R 00 00 00 00
+T 17 02
+R 00 00 00 00
+T 17 02 21 36 00 09 36 01 23 36 00 DD E1 C9
+R 00 00 00 00
+T 23 02
+R 00 00 00 00
+T 23 02 DD E5 DD 21 00 00 DD 39 DD 4E 04 DD 46 05
+R 00 00 00 00
+T 31 02 21 0F 00 09 7E FE 17 20 04 36 00 18 02
+R 00 00 00 00
+T 3E 02
+R 00 00 00 00
+T 3E 02 3C 77
+R 00 00 00 00
+T 40 02
+R 00 00 00 00
+T 40 02 21 36 00 09 36 01 23 36 00 DD E1 C9
+R 00 00 00 00
+T 4C 02
+R 00 00 00 00
+T 4C 02 DD E5 DD 21 00 00 DD 39 21 F6 FF 39 F9 AF
+R 00 00 00 00
+T 5A 02 F5 33 CD 00 00 33 4D 44 78 B1 CA 27 04 79
+R 00 00 00 00 02 05 03 00 00 0D 00 00
+T 68 02 C6 F6 DD 77 F8 78 CE FF DD 77 F9 DD CB F9
+R 00 00 00 00
+T 76 02 7E 28 07 AF DD 77 F8 DD 77 F9
+R 00 00 00 00
+T 80 02
+R 00 00 00 00
+T 80 02 21 01 00 39 EB 21 00 00 39 4D 44 DD 7E 04
+R 00 00 00 00
+T 8E 02 DD 77 FA DD 7E 05 DD 77 FB DD 6E FA DD 66
+R 00 00 00 00
+T 9C 02 FB C5 01 0F 00 09 C1 7E D5 C5 F5 33 CD
+R 00 00 00 00
+T A9 02 00 00 F1 F1 33 DD 7E FA C6 04 DD 77 FC DD
+R 00 00 00 00 02 02 01 00
+T B7 02 7E FB CE 00 DD 77 FD DD 6E FC DD 66 FD 4E
+R 00 00 00 00
+T C5 02 23 46 DD 7E F7 5F 17 9F 57 79 93 DD 77 FE
+R 00 00 00 00
+T D3 02 78 9A DD 77 FF DD 6E FC DD 66 FD DD 7E FE
+R 00 00 00 00
+T E1 02 77 23 DD 7E FF 77 DD 4E FA DD 46 FB 03 03
+R 00 00 00 00
+T EF 02 69 60 5E 23 56 DD 7E F6 6F 17 9F 67 7B 95
+R 00 00 00 00
+T FD 02 5F 7A 9C 57 69 60 73 23 72 DD 7E FE D6 F6
+R 00 00 00 00
+T 0B 03 DD 7E FF 17 3F 1F DE 7F 30 0B DD 6E FC DD
+R 00 00 00 00
+T 19 03 66 FD 36 F6 23 36 FF
+R 00 00 00 00
+T 20 03
+R 00 00 00 00
+T 20 03 DD 6E FC DD 66 FD 5E 23 56 3E 0A BB 3E 00
+R 00 00 00 00
+T 2E 03 9A E2 34 03 EE 80
+R 00 00 00 00 00 04 00 00
+T 34 03
+R 00 00 00 00
+T 34 03 F2 42 03 DD 6E FC DD 66 FD 36 0A 23 36 00
+R 00 00 00 00 00 03 00 00
+T 42 03
+R 00 00 00 00
+T 42 03 69 60 5E 23 56 7B D6 F6 7A 17 3F 1F DE 7F
+R 00 00 00 00
+T 50 03 30 07 69 60 36 F6 23 36 FF
+R 00 00 00 00
+T 59 03
+R 00 00 00 00
+T 59 03 69 60 5E 23 56 3E 0A BB 3E 00 9A E2 69 03
+R 00 00 00 00 00 0E 00 00
+T 67 03 EE 80
+R 00 00 00 00
+T 69 03
+R 00 00 00 00
+T 69 03 F2 73 03 69 60 36 0A 23 36 00
+R 00 00 00 00 00 03 00 00
+T 73 03
+R 00 00 00 00
+T 73 03 69 60 5E 23 56 C5 D5 CD 00 00 F1 C1 3E 0A
+R 00 00 00 00 02 0A 02 00
+T 81 03 95 5F DD 6E FA DD 66 FB C5 01 2E 00 09 C1
+R 00 00 00 00
+T 8F 03 56 23 66 C5 7B F5 33 6A E5 CD 00 00 F1 33
+R 00 00 00 00 02 0C 06 00
+T 9D 03 C1 DD 6E FC DD 66 FD 5E 23 56 C5 D5 CD
+R 00 00 00 00
+T AA 03 00 00 F1 C1 3E 0A 95 5F DD 6E FA DD 66 FB
+R 00 00 00 00 02 02 02 00
+T B8 03 C5 01 30 00 09 C1 56 23 66 C5 7B F5 33 6A
+R 00 00 00 00
+T C6 03 E5 CD 00 00 F1 33 C1 DD 6E FC DD 66 FD 5E
+R 00 00 00 00 02 04 06 00
+T D4 03 23 56 6B 62 29 29 19 29 C5 E5 3E 03 F5 33
+R 00 00 00 00
+T E2 03 CD 00 00 F1 33 E1 4E 23 46 69 60 29 29 09
+R 00 00 00 00 02 03 07 00
+T F0 03 29 E5 3E 02 F5 33 CD 00 00 F1 33 C1 E1 E5
+R 00 00 00 00 02 09 07 00
+T FE 03 C5 E5 AF F5 33 CD 00 00 F1 33 DD 7E FA C6
+R 00 00 00 00 02 08 07 00
+T 0C 04 06 6F DD 7E FB CE 00 67 36 01 DD 7E FA C6
+R 00 00 00 00
+T 1A 04 36 6F DD 7E FB CE 00 67 36 01 23 36 00
+R 00 00 00 00
+T 27 04
+R 00 00 00 00
+T 27 04 DD F9 DD E1 C9
+R 00 00 00 00

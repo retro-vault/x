@@ -1,0 +1,224 @@
+;!FILE /home/tomaz/Work/lunatik/build/lib/gfillrect.asm
+XL2
+H 9 areas 94 global symbols
+M gfillrect
+O -mz80
+S _gdrawline Ref0000
+S .__.ABS. Def0000
+A _CODE size 118 flags 0 addr 0
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$223 Def0115
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$214 Def0109
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$205 Def00FF
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$160 Def00B8
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$151 Def00AB
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$142 Def009E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$133 Def0090
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$124 Def0087
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$115 Def0077
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$106 Def0069
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$215 Def010C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$206 Def0100
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$152 Def00AC
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$143 Def009F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$134 Def0093
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$125 Def0088
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$116 Def0078
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$107 Def006C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$216 Def010E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$207 Def0101
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$180 Def00D1
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$171 Def00BC
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$153 Def00AD
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$144 Def00A0
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$126 Def0089
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$117 Def0079
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$108 Def006F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$217 Def0111
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$208 Def0104
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$190 Def00E2
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$181 Def00D4
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$172 Def00BF
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$154 Def00AE
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$145 Def00A1
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$136 Def0095
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$127 Def008A
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$118 Def007A
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$109 Def0072
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$209 Def0107
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$191 Def00E5
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$182 Def00D7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$173 Def00C2
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$164 Def00B9
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$155 Def00AF
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$146 Def00A4
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$128 Def008B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$119 Def007B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$228 Def0117
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$192 Def00E6
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$183 Def00DA
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$174 Def00C3
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$165 Def00BA
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$156 Def00B0
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$147 Def00A7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$129 Def008C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$193 Def00E7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$175 Def00C6
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$157 Def00B3
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$148 Def00A8
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$194 Def00E8
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$185 Def00DC
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$176 Def00C7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$158 Def00B6
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$149 Def00A9
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$195 Def00EB
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$177 Def00C8
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$159 Def00B7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$196 Def00EE
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$178 Def00CB
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$197 Def00EF
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$179 Def00CE
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$198 Def00F0
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$189 Def00DF
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$199 Def00F1
+S G$gfillrect$0$0 Def0000
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$70 Def0024
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$80 Def0037
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$71 Def0026
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$62 Def000D
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$53 Def0000
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$90 Def004F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$81 Def0039
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$72 Def0029
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$63 Def0010
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$54 Def0002
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$91 Def0050
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$82 Def003C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$73 Def002A
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$64 Def0013
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$55 Def0006
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$83 Def003F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$74 Def002B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$65 Def0016
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$56 Def0008
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$84 Def0041
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$75 Def002C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$66 Def0019
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$57 Def000B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$85 Def0044
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$76 Def002F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$67 Def001C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$58 Def000C
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$95 Def0053
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$86 Def0047
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$77 Def0030
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$68 Def001E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$96 Def0056
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$87 Def004A
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$78 Def0031
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$69 Def0021
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$97 Def0058
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$88 Def004B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$79 Def0034
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$98 Def005B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$89 Def004E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$99 Def005E
+S _gfillrect Def0000
+S XG$gfillrect$0$0 Def0117
+S C$gfillrect.c$21$1_0$15 Def0117
+S C$gfillrect.c$14$0_0$15 Def0000
+S C$gfillrect.c$20$2_0$17 Def00DF
+S C$gfillrect.c$15$1_0$15 Def0063
+S C$gfillrect.c$16$1_0$15 Def0053
+S C$gfillrect.c$16$2_0$16 Def00B9
+S C$gfillrect.c$17$2_0$16 Def0098
+S C$gfillrect.c$19$2_0$17 Def0109
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$100 Def0060
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$200 Def00F4
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$210 Def0108
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$201 Def00F7
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$120 Def007E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$111 Def0074
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$202 Def00F8
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$130 Def008D
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$121 Def0081
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$203 Def00F9
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$140 Def0098
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$131 Def008E
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$122 Def0084
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$104 Def0063
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$222 Def0113
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$204 Def00FC
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$150 Def00AA
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$141 Def009B
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$132 Def008F
+S A$gfillrectaz/Work/lunatik/build/lib/gfillrect$105 Def0066
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 21 F4 FF 39 F9 DD
+R 00 00 00 00
+T 0E 00 7E 04 DD 77 F8 DD 7E 05 DD 77 F9 DD 7E F8
+R 00 00 00 00
+T 1C 00 C6 06 DD 77 F4 DD 7E F9 CE 00 DD 77 F5 E1
+R 00 00 00 00
+T 2A 00 E5 7E DD 77 FE 23 7E DD 77 FF DD 7E F8 C6
+R 00 00 00 00
+T 38 00 02 DD 77 FA DD 7E F9 CE 00 DD 77 FB DD 6E
+R 00 00 00 00
+T 46 00 FA DD 66 FB 7E DD 77 F6 23 7E DD 77 F7 DD
+R 00 00 00 00
+T 54 00 7E F8 C6 04 DD 77 FC DD 7E F9 CE 00 DD 77
+R 00 00 00 00
+T 62 00 FD DD 7E F6 DD 96 FE DD 7E F7 DD 9E FF E2
+R 00 00 00 00
+T 70 00 74 00 EE 80
+R 00 00 00 00 00 02 00 00
+T 74 00
+R 00 00 00 00
+T 74 00 F2 BC 00 D1 C1 C5 D5 DD 7E FC DD 77 FE DD
+R 00 00 00 00 00 03 00 00
+T 82 00 7E FD DD 77 FF
+R 00 00 00 00
+T 87 00
+R 00 00 00 00
+T 87 00 E1 E5 5E 23 56 7B 91 7A 98 E2 95 00 EE 80
+R 00 00 00 00 00 0C 00 00
+T 95 00
+R 00 00 00 00
+T 95 00 FA 13 01 DD 6E FE DD 66 FF 5E 23 56 DD 6E
+R 00 00 00 00 00 03 00 00
+T A3 00 F8 DD 66 F9 7E 23 66 6F C5 C5 D5 C5 E5 CD
+R 00 00 00 00
+T B1 00 00 00 21 08 00 39 F9 C1 03 18 CB
+R 00 00 00 00 02 02 00 00
+T BC 00
+R 00 00 00 00
+T BC 00
+R 00 00 00 00
+T BC 00 DD 6E FA DD 66 FB 7E DD 77 F6 23 7E DD 77
+R 00 00 00 00
+T CA 00 F7 DD 7E FE DD 96 F6 DD 7E FF DD 9E F7 E2
+R 00 00 00 00
+T D8 00 DC 00 EE 80
+R 00 00 00 00 00 02 00 00
+T DC 00
+R 00 00 00 00
+T DC 00 F2 13 01 DD 6E FC DD 66 FD 5E 23 56 DD 6E
+R 00 00 00 00 00 03 00 00
+T EA 00 F8 DD 66 F9 4E 23 46 DD 6E FE DD 66 FF E5
+R 00 00 00 00
+T F8 00 D5 DD 6E FE DD 66 FF E5 C5 CD 00 00 21
+R 00 00 00 00 02 0C 00 00
+T 05 01 08 00 39 F9 DD 34 FE 20 AE DD 34 FF 18 A9
+R 00 00 00 00
+T 13 01
+R 00 00 00 00
+T 13 01 DD F9 DD E1 C9
+R 00 00 00 00

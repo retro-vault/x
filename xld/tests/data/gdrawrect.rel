@@ -1,0 +1,188 @@
+;!FILE /home/tomaz/Work/lunatik/build/lib/gdrawrect.asm
+XL2
+H 9 areas 8A global symbols
+M gdrawrect
+O -mz80
+S _gdrawline Ref0000
+S .__.ABS. Def0000
+A _CODE size E2 flags 0 addr 0
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$100 Def005B
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$110 Def006A
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$101 Def005C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$120 Def007A
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$111 Def006D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$130 Def0088
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$121 Def007B
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$112 Def0070
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$140 Def0097
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$131 Def0089
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$122 Def007E
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$113 Def0073
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$150 Def00A9
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$141 Def0098
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$132 Def008C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$123 Def0081
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$114 Def0074
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$105 Def005D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$160 Def00B7
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$151 Def00AA
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$142 Def0099
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$133 Def008F
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$124 Def0082
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$115 Def0075
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$106 Def0060
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$170 Def00C2
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$161 Def00B8
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$152 Def00AB
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$143 Def009A
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$134 Def0090
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$125 Def0083
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$116 Def0076
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$107 Def0062
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$180 Def00D0
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$171 Def00C5
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$153 Def00AC
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$144 Def009D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$126 Def0084
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$117 Def0077
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$108 Def0065
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$181 Def00D1
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$172 Def00C8
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$154 Def00AD
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$145 Def00A0
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$127 Def0085
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$118 Def0078
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$109 Def0068
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$182 Def00D2
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$173 Def00C9
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$155 Def00AE
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$146 Def00A1
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$128 Def0086
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$119 Def0079
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$192 Def00DD
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$183 Def00D3
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$174 Def00CA
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$165 Def00B9
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$156 Def00AF
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$147 Def00A2
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$138 Def0091
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$129 Def0087
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$193 Def00DF
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$184 Def00D4
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$175 Def00CB
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$166 Def00BC
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$157 Def00B0
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$148 Def00A3
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$139 Def0094
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$185 Def00D5
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$176 Def00CC
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$167 Def00BF
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$158 Def00B1
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$149 Def00A6
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$186 Def00D8
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$177 Def00CD
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$168 Def00C0
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$159 Def00B4
+S G$gdrawrect$0$0 Def0000
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$187 Def00DB
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$178 Def00CE
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$169 Def00C1
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$188 Def00DC
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$179 Def00CF
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$198 Def00E1
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$70 Def0024
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$80 Def003A
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$71 Def0026
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$62 Def000D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$53 Def0000
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$90 Def004D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$81 Def003D
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$72 Def0029
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$63 Def0010
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$54 Def0002
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$91 Def004E
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$82 Def003F
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$73 Def002C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$64 Def0013
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$55 Def0006
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$92 Def004F
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$83 Def0042
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$74 Def002F
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$65 Def0016
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$56 Def0008
+S _gdrawrect Def0000
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$93 Def0050
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$84 Def0045
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$75 Def0030
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$66 Def0019
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$57 Def000B
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$94 Def0051
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$85 Def0048
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$76 Def0031
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$67 Def001C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$58 Def000C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$95 Def0052
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$86 Def0049
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$77 Def0032
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$68 Def001E
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$96 Def0053
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$87 Def004A
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$78 Def0035
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$69 Def0021
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$97 Def0054
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$88 Def004B
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$79 Def0037
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$98 Def0055
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$89 Def004C
+S A$gdrawrectaz/Work/lunatik/build/lib/gdrawrect$99 Def0058
+S XG$gdrawrect$0$0 Def00E1
+S C$gdrawrect.c$14$0_0$15 Def0000
+S C$gdrawrect.c$15$1_0$15 Def000D
+S C$gdrawrect.c$16$1_0$15 Def005D
+S C$gdrawrect.c$17$1_0$15 Def0091
+S C$gdrawrect.c$18$1_0$15 Def00B9
+S C$gdrawrect.c$19$1_0$15 Def00E1
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 21 F8 FF 39 F9 DD
+R 00 00 00 00
+T 0E 00 7E 04 DD 77 F8 DD 7E 05 DD 77 F9 DD 7E F8
+R 00 00 00 00
+T 1C 00 C6 02 DD 77 FA DD 7E F9 CE 00 DD 77 FB DD
+R 00 00 00 00
+T 2A 00 6E FA DD 66 FB 4E 23 46 DD 7E F8 C6 04 DD
+R 00 00 00 00
+T 38 00 77 FC DD 7E F9 CE 00 DD 77 FD DD 6E FC DD
+R 00 00 00 00
+T 46 00 66 FD 5E 23 56 E1 E5 7E 23 66 6F C5 D5 C5
+R 00 00 00 00
+T 54 00 E5 CD 00 00 21 08 00 39 F9 DD 7E F8 C6 06
+R 00 00 00 00 02 04 00 00
+T 62 00 DD 77 FE DD 7E F9 CE 00 DD 77 FF DD 6E FE
+R 00 00 00 00
+T 70 00 DD 66 FF 5E 23 56 E1 E5 4E 23 46 DD 6E FA
+R 00 00 00 00
+T 7E 00 DD 66 FB 7E 23 66 6F D5 C5 E5 C5 CD 00 00
+R 00 00 00 00 02 0E 00 00
+T 8C 00 21 08 00 39 F9 DD 6E FE DD 66 FF 5E 23 56
+R 00 00 00 00
+T 9A 00 DD 6E FC DD 66 FD 4E 23 46 DD 6E FA DD 66
+R 00 00 00 00
+T A8 00 FB 7E 23 66 6F D5 C5 E5 C5 CD 00 00 21
+R 00 00 00 00 02 0C 00 00
+T B5 00 08 00 39 F9 DD 6E FE DD 66 FF 4E 23 46 DD
+R 00 00 00 00
+T C3 00 6E FC DD 66 FD 5E 23 56 E1 E5 7E 23 66 6F
+R 00 00 00 00
+T D1 00 C5 D5 C5 E5 CD 00 00 21 08 00 39 F9 DD F9
+R 00 00 00 00 02 07 00 00
+T DF 00 DD E1 C9
+R 00 00 00 00

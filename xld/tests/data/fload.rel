@@ -1,0 +1,620 @@
+;!FILE /home/tomaz/Work/lunatik/build/lib/fload.asm
+XL2
+H 9 areas 1CA global symbols
+M fload
+O -mz80
+S _free Ref0000
+S _bdos Ref0000
+S _calloc Ref0000
+S _bdosret Ref0000
+S _malloc Ref0000
+S .__.ABS. Def0000
+S _fparse Ref0000
+S _memcpy Ref0000
+A _CODE size 318 flags 0 addr 0
+S C$fload.c$83$2_2$26 Def017F
+S C$fload.c$78$1_2$24 Def0161
+S C$fload.c$69$1_2$24 Def0106
+S C$fload.c$93$2_2$27 Def019E
+S C$fload.c$94$2_2$27 Def01C0
+S C$fload.c$89$1_2$24 Def0184
+S C$fload.c$95$2_2$27 Def01C9
+S C$fload.c$96$2_2$27 Def01DF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$100 Def0042
+S A$fload/tomaz/Work/lunatik/build/lib/fload$200 Def00D5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$300 Def015E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$201 Def00D6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$120 Def0060
+S A$fload/tomaz/Work/lunatik/build/lib/fload$111 Def0051
+S A$fload/tomaz/Work/lunatik/build/lib/fload$301 Def015F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$220 Def00ED
+S A$fload/tomaz/Work/lunatik/build/lib/fload$202 Def00D7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$121 Def0063
+S A$fload/tomaz/Work/lunatik/build/lib/fload$112 Def0054
+S A$fload/tomaz/Work/lunatik/build/lib/fload$500 Def025F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$410 Def01E4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$320 Def0174
+S A$fload/tomaz/Work/lunatik/build/lib/fload$302 Def0160
+S A$fload/tomaz/Work/lunatik/build/lib/fload$230 Def00FB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$221 Def00F0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$212 Def00DD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$140 Def007A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$131 Def006A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$113 Def0057
+S A$fload/tomaz/Work/lunatik/build/lib/fload$104 Def0045
+S A$fload/tomaz/Work/lunatik/build/lib/fload$600 Def02F6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$510 Def0270
+S A$fload/tomaz/Work/lunatik/build/lib/fload$501 Def0260
+S A$fload/tomaz/Work/lunatik/build/lib/fload$411 Def01E5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$330 Def0181
+S A$fload/tomaz/Work/lunatik/build/lib/fload$321 Def0177
+S A$fload/tomaz/Work/lunatik/build/lib/fload$231 Def00FE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$222 Def00F3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$150 Def0085
+S A$fload/tomaz/Work/lunatik/build/lib/fload$132 Def006D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$105 Def0048
+S A$fload/tomaz/Work/lunatik/build/lib/fload$520 Def0280
+S A$fload/tomaz/Work/lunatik/build/lib/fload$502 Def0261
+S A$fload/tomaz/Work/lunatik/build/lib/fload$430 Def0201
+S A$fload/tomaz/Work/lunatik/build/lib/fload$412 Def01E8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$403 Def01DF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$340 Def018A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$322 Def0178
+S A$fload/tomaz/Work/lunatik/build/lib/fload$313 Def0169
+S A$fload/tomaz/Work/lunatik/build/lib/fload$250 Def0115
+S A$fload/tomaz/Work/lunatik/build/lib/fload$232 Def0101
+S A$fload/tomaz/Work/lunatik/build/lib/fload$223 Def00F4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$160 Def009A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$151 Def0088
+S A$fload/tomaz/Work/lunatik/build/lib/fload$133 Def006E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$106 Def004B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$521 Def0281
+S A$fload/tomaz/Work/lunatik/build/lib/fload$503 Def0263
+S A$fload/tomaz/Work/lunatik/build/lib/fload$440 Def0212
+S A$fload/tomaz/Work/lunatik/build/lib/fload$422 Def01F2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$404 Def01E0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$341 Def018B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$323 Def0179
+S A$fload/tomaz/Work/lunatik/build/lib/fload$314 Def016C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$251 Def0117
+S A$fload/tomaz/Work/lunatik/build/lib/fload$233 Def0103
+S A$fload/tomaz/Work/lunatik/build/lib/fload$224 Def00F5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$206 Def00D8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$170 Def00A6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$161 Def009D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$152 Def008B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$134 Def0070
+S A$fload/tomaz/Work/lunatik/build/lib/fload$125 Def0064
+S A$fload/tomaz/Work/lunatik/build/lib/fload$107 Def004E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$621 Def030D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$540 Def029E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$522 Def0284
+S A$fload/tomaz/Work/lunatik/build/lib/fload$504 Def0264
+S A$fload/tomaz/Work/lunatik/build/lib/fload$450 Def0221
+S A$fload/tomaz/Work/lunatik/build/lib/fload$441 Def0215
+S A$fload/tomaz/Work/lunatik/build/lib/fload$432 Def0204
+S A$fload/tomaz/Work/lunatik/build/lib/fload$423 Def01F5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$405 Def01E1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$360 Def01A4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$342 Def018C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$324 Def017C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$315 Def016F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$270 Def012C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$261 Def0120
+S A$fload/tomaz/Work/lunatik/build/lib/fload$252 Def0118
+S A$fload/tomaz/Work/lunatik/build/lib/fload$243 Def010A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$216 Def00E1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$207 Def00D9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$171 Def00A7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$162 Def009E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$153 Def008C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$144 Def007D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$135 Def0071
+S A$fload/tomaz/Work/lunatik/build/lib/fload$126 Def0067
+S A$fload/tomaz/Work/lunatik/build/lib/fload$117 Def0059
+S A$fload/tomaz/Work/lunatik/build/lib/fload$622 Def0310
+S A$fload/tomaz/Work/lunatik/build/lib/fload$613 Def0302
+S A$fload/tomaz/Work/lunatik/build/lib/fload$550 Def02B3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$541 Def02A1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$523 Def0287
+S A$fload/tomaz/Work/lunatik/build/lib/fload$505 Def0267
+S A$fload/tomaz/Work/lunatik/build/lib/fload$460 Def0232
+S A$fload/tomaz/Work/lunatik/build/lib/fload$451 Def0222
+S A$fload/tomaz/Work/lunatik/build/lib/fload$442 Def0216
+S A$fload/tomaz/Work/lunatik/build/lib/fload$433 Def0207
+S A$fload/tomaz/Work/lunatik/build/lib/fload$424 Def01F8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$370 Def01B8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$361 Def01A6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$352 Def0196
+S A$fload/tomaz/Work/lunatik/build/lib/fload$343 Def018E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$316 Def0170
+S A$fload/tomaz/Work/lunatik/build/lib/fload$307 Def0161
+S A$fload/tomaz/Work/lunatik/build/lib/fload$280 Def013C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$271 Def012D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$262 Def0121
+S A$fload/tomaz/Work/lunatik/build/lib/fload$253 Def0119
+S A$fload/tomaz/Work/lunatik/build/lib/fload$244 Def010B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$217 Def00E4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$208 Def00DA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$190 Def00C4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$181 Def00B1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$172 Def00AA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$154 Def008F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$145 Def0080
+S A$fload/tomaz/Work/lunatik/build/lib/fload$136 Def0072
+S A$fload/tomaz/Work/lunatik/build/lib/fload$118 Def005C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$614 Def0305
+S A$fload/tomaz/Work/lunatik/build/lib/fload$605 Def02F7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$560 Def02C5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$551 Def02B6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$542 Def02A4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$533 Def0292
+S A$fload/tomaz/Work/lunatik/build/lib/fload$524 Def0288
+S A$fload/tomaz/Work/lunatik/build/lib/fload$515 Def0273
+S A$fload/tomaz/Work/lunatik/build/lib/fload$506 Def0268
+S A$fload/tomaz/Work/lunatik/build/lib/fload$461 Def0233
+S A$fload/tomaz/Work/lunatik/build/lib/fload$452 Def0225
+S A$fload/tomaz/Work/lunatik/build/lib/fload$434 Def020A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$425 Def01FB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$416 Def01EB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$380 Def01C7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$371 Def01BA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$362 Def01A8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$353 Def0199
+S A$fload/tomaz/Work/lunatik/build/lib/fload$344 Def018F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$317 Def0171
+S A$fload/tomaz/Work/lunatik/build/lib/fload$308 Def0164
+S A$fload/tomaz/Work/lunatik/build/lib/fload$290 Def014C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$272 Def012F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$263 Def0122
+S A$fload/tomaz/Work/lunatik/build/lib/fload$254 Def011C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$245 Def010C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$218 Def00E7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$191 Def00C5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$182 Def00B4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$155 Def0092
+S A$fload/tomaz/Work/lunatik/build/lib/fload$146 Def0083
+S A$fload/tomaz/Work/lunatik/build/lib/fload$137 Def0075
+S A$fload/tomaz/Work/lunatik/build/lib/fload$119 Def005F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$633 Def0317
+S A$fload/tomaz/Work/lunatik/build/lib/fload$615 Def0308
+S A$fload/tomaz/Work/lunatik/build/lib/fload$606 Def02FA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$570 Def02CC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$552 Def02B9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$525 Def0289
+S A$fload/tomaz/Work/lunatik/build/lib/fload$516 Def0276
+S A$fload/tomaz/Work/lunatik/build/lib/fload$507 Def0269
+S A$fload/tomaz/Work/lunatik/build/lib/fload$462 Def0234
+S A$fload/tomaz/Work/lunatik/build/lib/fload$453 Def0228
+S A$fload/tomaz/Work/lunatik/build/lib/fload$435 Def020B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$417 Def01EE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$390 Def01D0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$381 Def01C8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$372 Def01BC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$363 Def01AA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$354 Def019C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$345 Def0190
+S A$fload/tomaz/Work/lunatik/build/lib/fload$318 Def0172
+S A$fload/tomaz/Work/lunatik/build/lib/fload$309 Def0167
+S A$fload/tomaz/Work/lunatik/build/lib/fload$291 Def014D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$273 Def0130
+S A$fload/tomaz/Work/lunatik/build/lib/fload$255 Def011D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$246 Def010D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$237 Def0106
+S A$fload/tomaz/Work/lunatik/build/lib/fload$228 Def00F6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$219 Def00EA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$192 Def00C6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$183 Def00B5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$156 Def0095
+S A$fload/tomaz/Work/lunatik/build/lib/fload$138 Def0076
+S A$fload/tomaz/Work/lunatik/build/lib/fload$616 Def0309
+S A$fload/tomaz/Work/lunatik/build/lib/fload$607 Def02FD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$580 Def02D9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$526 Def028C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$517 Def0279
+S A$fload/tomaz/Work/lunatik/build/lib/fload$508 Def026C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$490 Def0254
+S A$fload/tomaz/Work/lunatik/build/lib/fload$481 Def0246
+S A$fload/tomaz/Work/lunatik/build/lib/fload$472 Def023A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$454 Def0229
+S A$fload/tomaz/Work/lunatik/build/lib/fload$436 Def020C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$418 Def01F0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$391 Def01D3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$373 Def01BE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$364 Def01AC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$346 Def0193
+S A$fload/tomaz/Work/lunatik/build/lib/fload$328 Def017F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$319 Def0173
+S A$fload/tomaz/Work/lunatik/build/lib/fload$292 Def014E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$274 Def0132
+S A$fload/tomaz/Work/lunatik/build/lib/fload$256 Def011E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$247 Def010E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$238 Def0107
+S A$fload/tomaz/Work/lunatik/build/lib/fload$229 Def00F9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$193 Def00C9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$184 Def00B6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$157 Def0096
+S A$fload/tomaz/Work/lunatik/build/lib/fload$139 Def0077
+S G$fload$0$0 Def0000
+S A$fload/tomaz/Work/lunatik/build/lib/fload$617 Def030C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$608 Def02FE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$590 Def02E3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$581 Def02DA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$527 Def028F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$518 Def027A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$509 Def026D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$491 Def0257
+S A$fload/tomaz/Work/lunatik/build/lib/fload$482 Def0249
+S A$fload/tomaz/Work/lunatik/build/lib/fload$473 Def023C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$455 Def022B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$446 Def0219
+S A$fload/tomaz/Work/lunatik/build/lib/fload$437 Def020D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$392 Def01D4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$365 Def01AE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$347 Def0194
+S A$fload/tomaz/Work/lunatik/build/lib/fload$338 Def0184
+S A$fload/tomaz/Work/lunatik/build/lib/fload$329 Def0180
+S A$fload/tomaz/Work/lunatik/build/lib/fload$293 Def014F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$284 Def013D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$275 Def0133
+S A$fload/tomaz/Work/lunatik/build/lib/fload$257 Def011F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$248 Def0111
+S A$fload/tomaz/Work/lunatik/build/lib/fload$239 Def0108
+S A$fload/tomaz/Work/lunatik/build/lib/fload$194 Def00CC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$185 Def00B7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$176 Def00AD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$167 Def009F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$158 Def0098
+S A$fload/tomaz/Work/lunatik/build/lib/fload$627 Def0313
+S A$fload/tomaz/Work/lunatik/build/lib/fload$609 Def0301
+S A$fload/tomaz/Work/lunatik/build/lib/fload$591 Def02E6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$582 Def02DD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$546 Def02A7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$537 Def0295
+S A$fload/tomaz/Work/lunatik/build/lib/fload$528 Def0290
+S A$fload/tomaz/Work/lunatik/build/lib/fload$519 Def027D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$492 Def025A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$483 Def024C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$474 Def023D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$456 Def022C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$447 Def021C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$438 Def020E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$429 Def01FE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$393 Def01D6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$366 Def01B0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$348 Def0195
+S A$fload/tomaz/Work/lunatik/build/lib/fload$339 Def0187
+S A$fload/tomaz/Work/lunatik/build/lib/fload$294 Def0152
+S A$fload/tomaz/Work/lunatik/build/lib/fload$285 Def0140
+S A$fload/tomaz/Work/lunatik/build/lib/fload$276 Def0134
+S A$fload/tomaz/Work/lunatik/build/lib/fload$267 Def0125
+S A$fload/tomaz/Work/lunatik/build/lib/fload$249 Def0114
+S A$fload/tomaz/Work/lunatik/build/lib/fload$195 Def00CD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$186 Def00B8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$177 Def00AE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$168 Def00A2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$159 Def0099
+S A$fload/tomaz/Work/lunatik/build/lib/fload$628 Def0315
+S A$fload/tomaz/Work/lunatik/build/lib/fload$592 Def02E8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$583 Def02DE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$574 Def02CE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$547 Def02AA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$538 Def0298
+S A$fload/tomaz/Work/lunatik/build/lib/fload$529 Def0291
+S A$fload/tomaz/Work/lunatik/build/lib/fload$493 Def025B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$484 Def024D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$475 Def0240
+S A$fload/tomaz/Work/lunatik/build/lib/fload$466 Def0235
+S A$fload/tomaz/Work/lunatik/build/lib/fload$457 Def022D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$448 Def021F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$439 Def0211
+S A$fload/tomaz/Work/lunatik/build/lib/fload$394 Def01D7
+S A$fload/tomaz/Work/lunatik/build/lib/fload$385 Def01C9
+S A$fload/tomaz/Work/lunatik/build/lib/fload$367 Def01B2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$358 Def019E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$295 Def0153
+S A$fload/tomaz/Work/lunatik/build/lib/fload$286 Def0143
+S A$fload/tomaz/Work/lunatik/build/lib/fload$277 Def0137
+S A$fload/tomaz/Work/lunatik/build/lib/fload$268 Def0128
+S A$fload/tomaz/Work/lunatik/build/lib/fload$196 Def00CF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$187 Def00BB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$169 Def00A3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$593 Def02EB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$584 Def02DF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$575 Def02CF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$557 Def02BC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$548 Def02AD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$539 Def029B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$494 Def025C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$485 Def0250
+S A$fload/tomaz/Work/lunatik/build/lib/fload$476 Def0242
+S A$fload/tomaz/Work/lunatik/build/lib/fload$467 Def0236
+S A$fload/tomaz/Work/lunatik/build/lib/fload$458 Def0230
+S A$fload/tomaz/Work/lunatik/build/lib/fload$449 Def0220
+S A$fload/tomaz/Work/lunatik/build/lib/fload$395 Def01D8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$386 Def01CA
+S A$fload/tomaz/Work/lunatik/build/lib/fload$377 Def01C0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$368 Def01B4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$359 Def01A1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$296 Def0154
+S A$fload/tomaz/Work/lunatik/build/lib/fload$287 Def0145
+S A$fload/tomaz/Work/lunatik/build/lib/fload$278 Def013A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$269 Def012B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$197 Def00D0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$188 Def00BE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$594 Def02ED
+S A$fload/tomaz/Work/lunatik/build/lib/fload$576 Def02D2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$558 Def02BF
+S A$fload/tomaz/Work/lunatik/build/lib/fload$549 Def02B0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$486 Def0253
+S A$fload/tomaz/Work/lunatik/build/lib/fload$477 Def0243
+S A$fload/tomaz/Work/lunatik/build/lib/fload$468 Def0237
+S A$fload/tomaz/Work/lunatik/build/lib/fload$459 Def0231
+S A$fload/tomaz/Work/lunatik/build/lib/fload$396 Def01DB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$387 Def01CB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$378 Def01C3
+S A$fload/tomaz/Work/lunatik/build/lib/fload$369 Def01B6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$297 Def0157
+S A$fload/tomaz/Work/lunatik/build/lib/fload$288 Def0148
+S A$fload/tomaz/Work/lunatik/build/lib/fload$279 Def013B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$198 Def00D1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$189 Def00C1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$595 Def02EE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$577 Def02D5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$568 Def02C8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$559 Def02C2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$397 Def01DC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$388 Def01CC
+S A$fload/tomaz/Work/lunatik/build/lib/fload$379 Def01C6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$298 Def0158
+S A$fload/tomaz/Work/lunatik/build/lib/fload$289 Def014B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$199 Def00D4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$596 Def02F0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$578 Def02D6
+S A$fload/tomaz/Work/lunatik/build/lib/fload$569 Def02CB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$398 Def01DD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$389 Def01CD
+S A$fload/tomaz/Work/lunatik/build/lib/fload$299 Def015B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$597 Def02F1
+S A$fload/tomaz/Work/lunatik/build/lib/fload$579 Def02D8
+S A$fload/tomaz/Work/lunatik/build/lib/fload$498 Def025D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$399 Def01DE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$598 Def02F2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$589 Def02E0
+S A$fload/tomaz/Work/lunatik/build/lib/fload$499 Def025E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$60 Def0002
+S A$fload/tomaz/Work/lunatik/build/lib/fload$599 Def02F5
+S A$fload/tomaz/Work/lunatik/build/lib/fload$70 Def0011
+S A$fload/tomaz/Work/lunatik/build/lib/fload$61 Def0006
+S A$fload/tomaz/Work/lunatik/build/lib/fload$80 Def001F
+S A$fload/tomaz/Work/lunatik/build/lib/fload$62 Def0008
+S C$fload.c$110$2_4$30 Def0273
+S A$fload/tomaz/Work/lunatik/build/lib/fload$90 Def002E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$81 Def0020
+S A$fload/tomaz/Work/lunatik/build/lib/fload$63 Def000B
+S C$fload.c$111$2_4$30 Def0292
+S _fload Def0000
+S A$fload/tomaz/Work/lunatik/build/lib/fload$91 Def0031
+S A$fload/tomaz/Work/lunatik/build/lib/fload$82 Def0023
+S A$fload/tomaz/Work/lunatik/build/lib/fload$64 Def000C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$92 Def0032
+S A$fload/tomaz/Work/lunatik/build/lib/fload$74 Def0014
+S C$fload.c$113$2_4$30 Def0295
+S A$fload/tomaz/Work/lunatik/build/lib/fload$93 Def0035
+S A$fload/tomaz/Work/lunatik/build/lib/fload$75 Def0017
+S C$fload.c$114$2_4$30 Def02A7
+S C$fload.c$100$2_2$28 Def01E4
+S A$fload/tomaz/Work/lunatik/build/lib/fload$94 Def0038
+S A$fload/tomaz/Work/lunatik/build/lib/fload$76 Def0018
+S C$fload.c$101$1_3$28 Def01EB
+S A$fload/tomaz/Work/lunatik/build/lib/fload$95 Def0039
+S A$fload/tomaz/Work/lunatik/build/lib/fload$86 Def0026
+S A$fload/tomaz/Work/lunatik/build/lib/fload$77 Def001A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$68 Def000D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$59 Def0000
+S C$fload.c$137$1_3$20 Def0317
+S C$fload.c$120$1_3$28 Def02C8
+S C$fload.c$107$2_4$30 Def023A
+S C$fload.c$102$1_3$28 Def01F2
+S A$fload/tomaz/Work/lunatik/build/lib/fload$96 Def003C
+S A$fload/tomaz/Work/lunatik/build/lib/fload$87 Def0029
+S A$fload/tomaz/Work/lunatik/build/lib/fload$78 Def001B
+S A$fload/tomaz/Work/lunatik/build/lib/fload$69 Def000E
+S C$fload.c$130$1_3$28 Def02F7
+S C$fload.c$108$2_4$30 Def025D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$97 Def003D
+S A$fload/tomaz/Work/lunatik/build/lib/fload$88 Def002A
+S A$fload/tomaz/Work/lunatik/build/lib/fload$79 Def001E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$98 Def003E
+S A$fload/tomaz/Work/lunatik/build/lib/fload$89 Def002B
+S C$fload.c$123$1_3$28 Def02C8
+S C$fload.c$103$2_3$29 Def01FE
+S A$fload/tomaz/Work/lunatik/build/lib/fload$99 Def003F
+S C$fload.c$133$1_3$28 Def0302
+S C$fload.c$124$1_3$28 Def02CE
+S C$fload.c$105$2_3$29 Def0219
+S C$fload.c$106$2_3$29 Def0235
+S C$fload.c$40$1_0$20 Def0014
+S XG$fload$0$0 Def0317
+S C$fload.c$136$1_3$28 Def030D
+S C$fload.c$127$1_3$28 Def02E0
+S C$fload.c$118$1_3$28 Def02BC
+S C$fload.c$34$0_0$20 Def0000
+S C$fload.c$50$1_1$22 Def006A
+S C$fload.c$44$1_0$20 Def0051
+S C$fload.c$51$1_1$22 Def007D
+S C$fload.c$45$2_0$21 Def0059
+S C$fload.c$37$2_0$20 Def000D
+S C$fload.c$72$1_3$20 Def00F6
+S C$fload.c$60$1_2$24 Def00AD
+S C$fload.c$52$2_1$23 Def0085
+S C$fload.c$46$2_0$21 Def0064
+S C$fload.c$45$1_3$20 Def0045
+S C$fload.c$70$2_2$25 Def010A
+S C$fload.c$63$1_2$24 Def00B1
+S C$fload.c$71$2_2$25 Def0120
+S C$fload.c$64$1_2$24 Def00D8
+S C$fload.c$92$1_2$24 Def0196
+S C$fload.c$72$2_2$25 Def0125
+S C$fload.c$56$1_2$24 Def009F
+S C$fload.c$69$1_3$20 Def0254
+S C$fload.c$84$1_2$24 Def0184
+S C$fload.c$66$1_2$24 Def00DD
+S C$fload.c$82$2_2$26 Def0169
+S C$fload.c$74$2_2$25 Def013D
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 21 E7 FF 39 F9 AF
+R 00 00 00 00
+T 0E 00 DD 77 EC DD 77 ED 21 24 00 E5 2E 01 E5 CD
+R 00 00 00 00
+T 1C 00 00 00 F1 F1 DD 75 FC DD 74 FD 21 00 00 39
+R 00 00 00 00 02 02 02 00
+T 2A 00 E5 DD 6E FC DD 66 FD E5 DD 6E 04 DD 66 05
+R 00 00 00 00
+T 38 00 E5 CD 00 00 F1 F1 F1 DD 75 FE DD 74 FF DD
+R 00 00 00 00 02 04 06 00
+T 46 00 7E FC DD 77 EE DD 7E FD DD 77 EF DD 7E FF
+R 00 00 00 00
+T 54 00 DD B6 FE 28 11 DD 6E EE DD 66 EF E5 CD
+R 00 00 00 00
+T 61 00 00 00 F1 21 00 00 C3 13 03
+R 00 00 00 00 02 02 00 00 00 09 00 00
+T 6A 00
+R 00 00 00 00
+T 6A 00 21 FF 00 E5 3E 20 F5 33 CD 00 00 F1 33 DD
+R 00 00 00 00 02 0B 01 00
+T 78 00 75 FF DD 75 F0 DD 7E E7 DD 96 F0 28 1A DD
+R 00 00 00 00
+T 86 00 7E E7 DD 77 FE AF DD 77 FF DD 6E FE DD 66
+R 00 00 00 00
+T 94 00 FF E5 3E 20 F5 33 CD 00 00 F1 33
+R 00 00 00 00 02 09 01 00
+T 9F 00
+R 00 00 00 00
+T 9F 00 21 80 00 E5 CD 00 00 F1 DD 75 F1 DD 74 F2
+R 00 00 00 00 02 07 04 00
+T AD 00 AF DD 77 F3 21 01 00 39 EB 4B 42 DD 7E FC
+R 00 00 00 00
+T BB 00 DD 77 F4 DD 7E FD DD 77 F5 D5 C5 DD 6E F4
+R 00 00 00 00
+T C9 00 DD 66 F5 E5 3E 0F F5 33 CD 00 00 F1 F1 33
+R 00 00 00 00 02 0B 03 00
+T D7 00 D1 1A 3C CA C8 02 DD 36 F3 01 DD 7E 0A DD
+R 00 00 00 00 00 06 00 00
+T E5 00 77 F6 DD 7E 0B DD 77 F7 DD 6E F6 DD 66 F7
+R 00 00 00 00
+T F3 00 4E 23 46 DD 7E FC C6 21 DD 77 FE DD 7E FD
+R 00 00 00 00
+T 01 01 CE 00 DD 77 FF 78 B1 20 57 4B 42 D5 C5 DD
+R 00 00 00 00
+T 0F 01 6E F4 DD 66 F5 E5 3E 23 F5 33 CD 00 00 F1
+R 00 00 00 00 02 0D 03 00
+T 1D 01 F1 33 D1 1A 3C CA C8 02 DD 6E FE DD 66 FF
+R 00 00 00 00 00 08 00 00
+T 2B 01 4E AF CB 1F 41 CB 18 1F 4F DD 6E F6 DD 66
+R 00 00 00 00
+T 39 01 F7 71 23 70 DD 7E 09 DD B6 08 28 1C DD 6E
+R 00 00 00 00
+T 47 01 F6 DD 66 F7 4E 23 46 79 DD 96 08 4F 78 DD
+R 00 00 00 00
+T 55 01 9E 09 47 DD 6E F6 DD 66 F7 71 23 70
+R 00 00 00 00
+T 61 01
+R 00 00 00 00
+T 61 01 DD 7E 07 DD B6 06 20 1B DD 6E F6 DD 66 F7
+R 00 00 00 00
+T 6F 01 4E 23 46 D5 C5 CD 00 00 F1 D1 DD 75 06 DD
+R 00 00 00 00 02 08 04 00
+T 7D 01 74 07 7C B5 CA C8 02
+R 00 00 00 00 00 07 00 00
+T 84 01
+R 00 00 00 00
+T 84 01 DD 4E F1 DD 46 F2 D5 C5 3E 1A F5 33 CD
+R 00 00 00 00
+T 91 01 00 00 F1 33 D1 DD 7E 09 DD B6 08 28 46 DD
+R 00 00 00 00 02 02 01 00
+T 9F 01 4E 08 DD 46 09 CB 38 CB 19 CB 38 CB 19 CB
+R 00 00 00 00
+T AD 01 38 CB 19 CB 38 CB 19 CB 38 CB 19 CB 38 CB
+R 00 00 00 00
+T BB 01 19 CB 38 CB 19 DD 6E FE DD 66 FF 71 23 70
+R 00 00 00 00
+T C9 01 4B 42 D5 C5 DD 6E F4 DD 66 F5 E5 3E 21 F5
+R 00 00 00 00
+T D7 01 33 CD 00 00 F1 F1 33 D1 1A 3C CA C8 02
+R 00 00 00 00 02 04 03 00 00 0D 00 00
+T E4 01
+R 00 00 00 00
+T E4 01 AF DD 77 FC DD 77 FD DD 4E 08 CB B9 06 00
+R 00 00 00 00
+T F2 01 DD 7E 06 DD 77 FE DD 7E 07 DD 77 FF DD 73
+R 00 00 00 00
+T 00 02 F8 DD 72 F9
+R 00 00 00 00
+T 04 02
+R 00 00 00 00
+T 04 02 DD 6E F6 DD 66 F7 7E 23 66 6F DD 7E FC 95
+R 00 00 00 00
+T 12 02 DD 7E FD 9C D2 BC 02 DD 6E F8 DD 66 F9 C5
+R 00 00 00 00 00 07 00 00
+T 20 02 D5 E5 DD 6E F4 DD 66 F5 E5 3E 14 F5 33 CD
+R 00 00 00 00
+T 2E 02 00 00 F1 F1 33 D1 C1 1A B7 C2 C8 02 3E 80
+R 00 00 00 00 02 02 03 00 00 0C 00 00
+T 3C 02 91 DD 77 FA 3E 00 98 DD 77 FB DD 7E FC DD
+R 00 00 00 00
+T 4A 02 86 FA 4F DD 7E FD DD 8E FB 47 DD 6E F6 DD
+R 00 00 00 00
+T 58 02 66 F7 7E 23 66 6F 91 7C 98 30 10 7D DD 96
+R 00 00 00 00
+T 66 02 FC 4F 7C DD 9E FD 47 DD 71 FA DD 70 FB
+R 00 00 00 00
+T 73 02
+R 00 00 00 00
+T 73 02 DD 4E FE DD 46 FF D5 DD 6E FA DD 66 FB E5
+R 00 00 00 00
+T 81 02 DD 6E F1 DD 66 F2 E5 C5 CD 00 00 21 06 00
+R 00 00 00 00 02 0B 07 00
+T 8F 02 39 F9 D1 01 00 00 DD 7E FE DD 86 FA DD 77
+R 00 00 00 00
+T 9D 02 FE DD 7E FF DD 8E FB DD 77 FF DD 7E FA DD
+R 00 00 00 00
+T AB 02 86 FC DD 77 FC DD 7E FB DD 8E FD DD 77 FD
+R 00 00 00 00
+T B9 02 C3 04 02
+R 00 00 00 00 00 03 00 00
+T BC 02
+R 00 00 00 00
+T BC 02 DD 7E 06 DD 77 EC DD 7E 07 DD 77 ED
+R 00 00 00 00
+T C8 02
+R 00 00 00 00
+T C8 02 DD 7E F3 B7 28 12 D5 DD 6E F4 DD 66 F5 E5
+R 00 00 00 00
+T D6 02 3E 10 F5 33 CD 00 00 F1 F1 33
+R 00 00 00 00 02 07 03 00
+T E0 02
+R 00 00 00 00
+T E0 02 DD 7E E7 DD 96 F0 28 0F DD 4E F0 06 00 C5
+R 00 00 00 00
+T EE 02 3E 20 F5 33 CD 00 00 F1 33
+R 00 00 00 00 02 07 01 00
+T F7 02
+R 00 00 00 00
+T F7 02 DD 6E EE DD 66 EF E5 CD 00 00 F1 DD 6E F1
+R 00 00 00 00 02 0A 00 00
+T 05 03 DD 66 F2 E5 CD 00 00 F1 DD 6E EC DD 66 ED
+R 00 00 00 00 02 07 00 00
+T 13 03
+R 00 00 00 00
+T 13 03 DD F9 DD E1 C9
+R 00 00 00 00

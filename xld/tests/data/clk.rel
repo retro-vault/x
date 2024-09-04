@@ -1,0 +1,236 @@
+;!FILE /home/tomaz/Work/lunatik/build/clk.asm
+XL2
+H 9 areas 9A global symbols
+M clk
+O -mz80
+S .__.ABS. Def0000
+S ___sdcc_call_hl Ref0000
+A _CODE size B6 flags 0 addr 0
+S A$clkme/tomaz/Work/lunatik/build/clk$88 Def0028
+S A$clkme/tomaz/Work/lunatik/build/clk$79 Def001E
+S A$clkme/tomaz/Work/lunatik/build/clk$98 Def0032
+S A$clkme/tomaz/Work/lunatik/build/clk$89 Def002A
+S A$clkme/tomaz/Work/lunatik/build/clk$99 Def0035
+S XG$clk_clr$0$0 Def00B5
+S G$clk_setticks$0$0 Def00A4
+S G$clk_tick$0$0 Def0055
+S A$clkme/tomaz/Work/lunatik/build/clk$100 Def0037
+S G$clk_attach$0$0 Def0000
+S A$clkme/tomaz/Work/lunatik/build/clk$200 Def0090
+S A$clkme/tomaz/Work/lunatik/build/clk$101 Def0038
+S _clk_setticks Def00A4
+S A$clkme/tomaz/Work/lunatik/build/clk$210 Def0099
+S A$clkme/tomaz/Work/lunatik/build/clk$201 Def0091
+S A$clkme/tomaz/Work/lunatik/build/clk$102 Def0039
+S _clk_tick Def0055
+S A$clkme/tomaz/Work/lunatik/build/clk$211 Def009A
+S A$clkme/tomaz/Work/lunatik/build/clk$202 Def0094
+S A$clkme/tomaz/Work/lunatik/build/clk$103 Def003A
+S C$clk.c$30$1_0$12 Def0032
+S C$clk.c$22$0_0$12 Def0000
+S A$clkme/tomaz/Work/lunatik/build/clk$212 Def009B
+S A$clkme/tomaz/Work/lunatik/build/clk$203 Def0095
+S A$clkme/tomaz/Work/lunatik/build/clk$131 Def0052
+S A$clkme/tomaz/Work/lunatik/build/clk$122 Def004E
+S A$clkme/tomaz/Work/lunatik/build/clk$113 Def0045
+S A$clkme/tomaz/Work/lunatik/build/clk$104 Def003B
+S A$clkme/tomaz/Work/lunatik/build/clk$204 Def0096
+S A$clkme/tomaz/Work/lunatik/build/clk$114 Def0048
+S A$clkme/tomaz/Work/lunatik/build/clk$105 Def003C
+S C$clk.c$40$1_1$12 Def0054
+S A$clkme/tomaz/Work/lunatik/build/clk$250 Def00AE
+S A$clkme/tomaz/Work/lunatik/build/clk$223 Def009F
+S A$clkme/tomaz/Work/lunatik/build/clk$115 Def004A
+S A$clkme/tomaz/Work/lunatik/build/clk$106 Def003F
+S A$clkme/tomaz/Work/lunatik/build/clk$242 Def00A4
+S A$clkme/tomaz/Work/lunatik/build/clk$224 Def00A1
+S A$clkme/tomaz/Work/lunatik/build/clk$170 Def0072
+S A$clkme/tomaz/Work/lunatik/build/clk$116 Def004B
+S A$clkme/tomaz/Work/lunatik/build/clk$107 Def0040
+S C$clk.c$25$1_0$12 Def0008
+S A$clkme/tomaz/Work/lunatik/build/clk$243 Def00A5
+S A$clkme/tomaz/Work/lunatik/build/clk$171 Def0073
+S A$clkme/tomaz/Work/lunatik/build/clk$162 Def0067
+S A$clkme/tomaz/Work/lunatik/build/clk$153 Def005E
+S A$clkme/tomaz/Work/lunatik/build/clk$126 Def0051
+S A$clkme/tomaz/Work/lunatik/build/clk$117 Def004C
+S A$clkme/tomaz/Work/lunatik/build/clk$108 Def0041
+S C$clk.c$54$1_0$20 Def00A4
+S C$clk.c$53$2_0$20 Def00A4
+S C$clk.c$33$1_1$13 Def0045
+S A$clkme/tomaz/Work/lunatik/build/clk$280 Def00B5
+S A$clkme/tomaz/Work/lunatik/build/clk$271 Def00B0
+S A$clkme/tomaz/Work/lunatik/build/clk$244 Def00A6
+S A$clkme/tomaz/Work/lunatik/build/clk$217 Def009C
+S A$clkme/tomaz/Work/lunatik/build/clk$190 Def0082
+S A$clkme/tomaz/Work/lunatik/build/clk$172 Def0074
+S A$clkme/tomaz/Work/lunatik/build/clk$163 Def0068
+S A$clkme/tomaz/Work/lunatik/build/clk$136 Def0054
+S A$clkme/tomaz/Work/lunatik/build/clk$118 Def004D
+S A$clkme/tomaz/Work/lunatik/build/clk$109 Def0044
+S C$clk.c$55$1_0$20 Def00AF
+S A$clkme/tomaz/Work/lunatik/build/clk$272 Def00B3
+S A$clkme/tomaz/Work/lunatik/build/clk$245 Def00A7
+S A$clkme/tomaz/Work/lunatik/build/clk$218 Def009D
+S A$clkme/tomaz/Work/lunatik/build/clk$209 Def0098
+S A$clkme/tomaz/Work/lunatik/build/clk$191 Def0083
+S A$clkme/tomaz/Work/lunatik/build/clk$173 Def0075
+S A$clkme/tomaz/Work/lunatik/build/clk$164 Def006A
+S A$clkme/tomaz/Work/lunatik/build/clk$155 Def0060
+S A$clkme/tomaz/Work/lunatik/build/clk$146 Def0055
+S C$clk.c$28$1_0$12 Def0014
+S A$clkme/tomaz/Work/lunatik/build/clk$246 Def00A8
+S A$clkme/tomaz/Work/lunatik/build/clk$192 Def0084
+S A$clkme/tomaz/Work/lunatik/build/clk$183 Def007D
+S A$clkme/tomaz/Work/lunatik/build/clk$174 Def0076
+S A$clkme/tomaz/Work/lunatik/build/clk$165 Def006B
+S A$clkme/tomaz/Work/lunatik/build/clk$156 Def0063
+S A$clkme/tomaz/Work/lunatik/build/clk$147 Def0057
+S C$clk.c$51$2_0$16 Def00A3
+S C$clk.c$42$1_1$16 Def0055
+S C$clk.c$36$1_1$13 Def004E
+S C$clk.c$29$1_0$12 Def0025
+S A$clkme/tomaz/Work/lunatik/build/clk$247 Def00A9
+S A$clkme/tomaz/Work/lunatik/build/clk$229 Def00A3
+S A$clkme/tomaz/Work/lunatik/build/clk$193 Def0085
+S A$clkme/tomaz/Work/lunatik/build/clk$184 Def007E
+S A$clkme/tomaz/Work/lunatik/build/clk$175 Def0077
+S A$clkme/tomaz/Work/lunatik/build/clk$166 Def006C
+S A$clkme/tomaz/Work/lunatik/build/clk$157 Def0064
+S A$clkme/tomaz/Work/lunatik/build/clk$148 Def005B
+S C$clk.c$57$1_0$21 Def00B0
+S G$clk_clr$0$0 Def00B0
+S _clk_attach Def0000
+S A$clkme/tomaz/Work/lunatik/build/clk$248 Def00AC
+S A$clkme/tomaz/Work/lunatik/build/clk$194 Def0086
+S A$clkme/tomaz/Work/lunatik/build/clk$185 Def007F
+S A$clkme/tomaz/Work/lunatik/build/clk$176 Def0078
+S A$clkme/tomaz/Work/lunatik/build/clk$167 Def006D
+S A$clkme/tomaz/Work/lunatik/build/clk$158 Def0065
+S A$clkme/tomaz/Work/lunatik/build/clk$149 Def005D
+S C$clk.c$58$1_0$21 Def00B0
+S XG$clk_setticks$0$0 Def00AF
+S C$clk.c$44$2_0$16 Def009C
+S A$clkme/tomaz/Work/lunatik/build/clk$258 Def00AF
+S A$clkme/tomaz/Work/lunatik/build/clk$249 Def00AD
+S A$clkme/tomaz/Work/lunatik/build/clk$195 Def0087
+S A$clkme/tomaz/Work/lunatik/build/clk$177 Def0079
+S A$clkme/tomaz/Work/lunatik/build/clk$168 Def0070
+S C$clk.c$59$1_0$21 Def00B5
+S XG$clk_tick$0$0 Def00A3
+S C$clk.c$39$1_1$13 Def0051
+S A$clkme/tomaz/Work/lunatik/build/clk$196 Def0088
+S A$clkme/tomaz/Work/lunatik/build/clk$178 Def007A
+S A$clkme/tomaz/Work/lunatik/build/clk$169 Def0071
+S C$clk.c$44$3_0$17 Def005E
+S A$clkme/tomaz/Work/lunatik/build/clk$197 Def0089
+S A$clkme/tomaz/Work/lunatik/build/clk$179 Def007B
+S C$clk.c$45$3_0$17 Def0067
+S A$clkme/tomaz/Work/lunatik/build/clk$198 Def008C
+S A$clkme/tomaz/Work/lunatik/build/clk$189 Def0081
+S A$clkme/tomaz/Work/lunatik/build/clk$199 Def008F
+S C$clk.c$46$4_0$18 Def007D
+S C$clk.c$49$3_0$17 Def0098
+S C$clk.c$47$4_0$18 Def0081
+S A$clkme/tomaz/Work/lunatik/build/clk$70 Def000F
+S A$clkme/tomaz/Work/lunatik/build/clk$61 Def0000
+S A$clkme/tomaz/Work/lunatik/build/clk$80 Def0020
+S A$clkme/tomaz/Work/lunatik/build/clk$71 Def0012
+S A$clkme/tomaz/Work/lunatik/build/clk$62 Def0002
+S A$clkme/tomaz/Work/lunatik/build/clk$90 Def002B
+S A$clkme/tomaz/Work/lunatik/build/clk$81 Def0021
+S A$clkme/tomaz/Work/lunatik/build/clk$63 Def0006
+S XG$clk_attach$0$0 Def0054
+S _clk_clr Def00B0
+S A$clkme/tomaz/Work/lunatik/build/clk$91 Def002C
+S A$clkme/tomaz/Work/lunatik/build/clk$82 Def0022
+S A$clkme/tomaz/Work/lunatik/build/clk$92 Def002D
+S A$clkme/tomaz/Work/lunatik/build/clk$83 Def0023
+S A$clkme/tomaz/Work/lunatik/build/clk$93 Def002E
+S A$clkme/tomaz/Work/lunatik/build/clk$94 Def0031
+S A$clkme/tomaz/Work/lunatik/build/clk$76 Def0014
+S A$clkme/tomaz/Work/lunatik/build/clk$67 Def0008
+S A$clkme/tomaz/Work/lunatik/build/clk$77 Def0017
+S A$clkme/tomaz/Work/lunatik/build/clk$68 Def000B
+S A$clkme/tomaz/Work/lunatik/build/clk$87 Def0025
+S A$clkme/tomaz/Work/lunatik/build/clk$78 Def001B
+S A$clkme/tomaz/Work/lunatik/build/clk$69 Def000D
+A _DATA size 14 flags 0 addr 0
+S Fclk$_clkh$0_0$0 Def0000
+A _INITIALIZED size 1 flags 0 addr 0
+S Fclk$_clkhlen$0_0$0 Def0000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 1 flags 0 addr 0
+S Fclk$__xinit__clkhlen$0_0$0 Def0000
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 01 00
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 3A 00 00 D6 05 38
+R 00 00 00 00 00 0B 02 00
+T 0E 00 05 21 00 00 18 3E
+R 00 00 00 00
+T 14 00
+R 00 00 00 00
+T 14 00 01 00 00 FD 21 00 00 FD 6E 00 26 00 29 29
+R 00 00 00 00 00 03 01 00 00 07 02 00
+T 22 00 09 36 00 FD 6E 00 26 00 29 29 09 23 DD 7E
+R 00 00 00 00
+T 30 00 04 77 FD 6E 00 26 00 29 29 09 23 23 DD 7E
+R 00 00 00 00
+T 3E 00 05 77 23 DD 7E 06 77 FD 6E 00 26 00 29 29
+R 00 00 00 00
+T 4C 00 09 EB FD 34 00 EB
+R 00 00 00 00
+T 52 00
+R 00 00 00 00
+T 52 00 DD E1 C9
+R 00 00 00 00
+T 55 00
+R 00 00 00 00
+T 55 00 DD E5 DD 21 00 00 DD 39 F5 0E 00
+R 00 00 00 00
+T 60 00
+R 00 00 00 00
+T 60 00 21 00 00 79 96 30 38 69 26 00 29 29 EB 21
+R 00 00 00 00 00 03 02 00
+T 6E 00 00 00 19 E3 E1 E5 46 E1 E5 23 5E 78 93 38
+R 00 00 00 00 00 02 01 00
+T 7C 00 1B E1 E5 36 00 E1 E5 23 23 46 23 66 C5 DD
+R 00 00 00 00
+T 8A 00 5E 04 DD 56 05 D5 68 CD 00 00 F1 C1 18 04
+R 00 00 00 00 02 0A 01 00
+T 98 00
+R 00 00 00 00
+T 98 00 04 E1 E5 70
+R 00 00 00 00
+T 9C 00
+R 00 00 00 00
+T 9C 00 0C 18 C1
+R 00 00 00 00
+T 9F 00
+R 00 00 00 00
+T 9F 00 DD F9 DD E1 C9
+R 00 00 00 00
+T A4 00
+R 00 00 00 00
+T A4 00 D1 C1 C5 D5 03 21 04 00 39 7E 02 C9
+R 00 00 00 00
+T B0 00
+R 00 00 00 00
+T B0 00 21 00 00 36 00 C9
+R 00 00 00 00 00 03 02 00
+T 00 00
+R 00 00 07 00
+T 00 00 00
+R 00 00 07 00

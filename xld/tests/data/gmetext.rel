@@ -1,0 +1,174 @@
+;!FILE /home/tomaz/Work/lunatik/build/lib/gmetext.asm
+XL2
+H 9 areas 7A global symbols
+M gmetext
+O -mz80
+S .__.ABS. Def0000
+A _CODE size C7 flags 0 addr 0
+S G$gmetext$0$0 Def0000
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$100 Def0047
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$110 Def0050
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$101 Def0048
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$120 Def0059
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$111 Def0051
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$102 Def0049
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$130 Def006B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$121 Def005C
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$112 Def0052
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$103 Def004C
+S _gmetext Def0000
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$140 Def0078
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$131 Def006E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$113 Def0053
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$150 Def008A
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$141 Def007B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$132 Def0071
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$114 Def0054
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$160 Def0099
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$151 Def008B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$142 Def007D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$133 Def0072
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$170 Def00A8
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$161 Def009A
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$152 Def008C
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$143 Def007E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$134 Def0073
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$125 Def005F
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$107 Def004D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$171 Def00AB
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$162 Def009B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$153 Def008D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$144 Def0080
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$126 Def0062
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$108 Def004E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$190 Def00C2
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$172 Def00AD
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$163 Def009C
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$154 Def0090
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$145 Def0081
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$127 Def0065
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$118 Def0055
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$109 Def004F
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$191 Def00C4
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$182 Def00B8
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$173 Def00AE
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$164 Def009F
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$146 Def0084
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$128 Def0068
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$119 Def0058
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$183 Def00BB
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$174 Def00AF
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$165 Def00A2
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$147 Def0087
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$138 Def0075
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$184 Def00BD
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$175 Def00B2
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$166 Def00A3
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$148 Def0088
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$139 Def0076
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$185 Def00C0
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$176 Def00B5
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$167 Def00A4
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$158 Def0093
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$149 Def0089
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$177 Def00B6
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$168 Def00A6
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$159 Def0096
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$196 Def00C6
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$178 Def00B7
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$169 Def00A7
+S XG$gmetext$0$0 Def00C6
+S C$gmetext.c$22$0_0$15 Def0000
+S C$gmetext.c$30$1_1$15 Def005F
+S C$gmetext.c$23$1_0$15 Def000D
+S C$gmetext.c$24$1_0$15 Def0013
+S C$gmetext.c$25$1_0$15 Def0019
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$61 Def000D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$52 Def0000
+S C$gmetext.c$31$2_1$17 Def0075
+S C$gmetext.c$26$1_0$15 Def0022
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$62 Def0010
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$53 Def0002
+S C$gmetext.c$35$1_1$15 Def00C6
+S C$gmetext.c$32$2_1$17 Def0093
+S C$gmetext.c$27$1_0$15 Def004D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$90 Def0036
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$72 Def0019
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$54 Def0006
+S C$gmetext.c$33$2_1$17 Def00B8
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$91 Def0037
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$82 Def0022
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$73 Def001A
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$55 Def0008
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$92 Def0038
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$83 Def0025
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$74 Def001B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$56 Def000B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$93 Def0039
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$84 Def0028
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$75 Def001C
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$66 Def0013
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$57 Def000C
+S C$gmetext.c$29$1_1$16 Def0055
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$94 Def003A
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$85 Def002B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$76 Def001D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$67 Def0014
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$95 Def003B
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$86 Def002E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$77 Def001E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$68 Def0016
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$96 Def003D
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$87 Def0031
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$78 Def001F
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$97 Def003E
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$88 Def0034
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$98 Def0041
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$89 Def0035
+S A$gmetextomaz/Work/lunatik/build/lib/gmetext$99 Def0044
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 21 F6 FF 39 F9 DD
+R 00 00 00 00
+T 0E 00 4E 04 DD 46 05 0A E6 0F DD 77 F6 69 60 23
+R 00 00 00 00
+T 1C 00 23 23 7E DD 77 F7 DD 7E 08 DD 77 F8 DD 7E
+R 00 00 00 00
+T 2A 00 09 DD 77 F9 DD 5E F8 DD 56 F9 13 13 69 60
+R 00 00 00 00
+T 38 00 23 23 6E 26 00 23 DD 75 FE DD 74 FF DD 7E
+R 00 00 00 00
+T 46 00 FE 12 13 DD 7E FF 12 D1 E1 E5 D5 AF 77 23
+R 00 00 00 00
+T 54 00 77 21 05 00 09 DD 75 FA DD 74 FB DD 7E 06
+R 00 00 00 00
+T 62 00 DD 77 FE DD 7E 07 DD 77 FF
+R 00 00 00 00
+T 6B 00
+R 00 00 00 00
+T 6B 00 DD 6E FE DD 66 FF 7E B7 28 4D 6F 26 00 DD
+R 00 00 00 00
+T 79 00 5E F7 16 00 BF ED 52 29 DD 5E FA DD 56 FB
+R 00 00 00 00
+T 87 00 19 7E 23 66 6F 09 DD 75 FC DD 74 FD DD 6E
+R 00 00 00 00
+T 95 00 F8 DD 66 F9 5E 23 56 DD 6E FC DD 66 FD 23
+R 00 00 00 00
+T A3 00 6E 26 00 23 19 DD 5E F6 16 00 19 EB DD 6E
+R 00 00 00 00
+T B1 00 F8 DD 66 F9 73 23 72 DD 34 FE 20 AE DD 34
+R 00 00 00 00
+T BF 00 FF 18 A9
+R 00 00 00 00
+T C2 00
+R 00 00 00 00
+T C2 00 DD F9 DD E1 C9
+R 00 00 00 00

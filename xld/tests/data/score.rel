@@ -1,0 +1,548 @@
+;!FILE /home/tomaz/Work/lunatik/build/score.asm
+XL2
+H 9 areas 17A global symbols
+M score
+O -mz80
+S _gfillrect Ref0000
+S _astro_font Ref0000
+S .__.ABS. Def0000
+S _gputtext Ref0000
+S _gsetcolor Ref0000
+S _scorez Ref0000
+A _CODE size 293 flags 0 addr 0
+S C$score.c$34$1_0$21 Def004B
+S C$score.c$52$1_0$24 Def0218
+S C$score.c$51$2_0$24 Def0210
+S C$score.c$36$2_0$21 Def01FF
+S C$score.c$43$3_0$22 Def0189
+S C$score.c$30$1_0$19 Def0028
+S G$score_get$0$0 Def023E
+S C$score.c$53$1_0$24 Def0235
+S C$score.c$44$3_0$22 Def0191
+S C$score.c$37$2_0$21 Def0091
+S C$score.c$31$1_0$19 Def0009
+S C$score.c$54$1_0$24 Def023D
+S C$score.c$45$3_0$22 Def019B
+S C$score.c$36$3_0$22 Def0058
+S C$score.c$32$1_0$19 Def004A
+S C$score.c$46$3_0$22 Def01A3
+S C$score.c$25$0_0$19 Def0000
+S C$score.c$49$2_0$21 Def020F
+S C$score.c$47$3_0$22 Def01F0
+S C$score.c$38$4_0$22 Def00D4
+S C$score.c$56$1_0$26 Def023E
+S A$score/tomaz/Work/lunatik/build/score$200 Def00C6
+S C$score.c$57$1_0$26 Def0246
+S C$score.c$28$1_0$19 Def0035
+S A$score/tomaz/Work/lunatik/build/score$300 Def0179
+S A$score/tomaz/Work/lunatik/build/score$201 Def00C9
+S A$score/tomaz/Work/lunatik/build/score$120 Def0044
+S A$score/tomaz/Work/lunatik/build/score$111 Def0035
+S C$score.c$58$1_0$26 Def025F
+S C$score.c$29$1_0$19 Def0030
+S A$score/tomaz/Work/lunatik/build/score$310 Def0187
+S A$score/tomaz/Work/lunatik/build/score$301 Def017C
+S A$score/tomaz/Work/lunatik/build/score$220 Def00E7
+S A$score/tomaz/Work/lunatik/build/score$211 Def00D4
+S A$score/tomaz/Work/lunatik/build/score$202 Def00CA
+S A$score/tomaz/Work/lunatik/build/score$121 Def0045
+S A$score/tomaz/Work/lunatik/build/score$112 Def0036
+S A$score/tomaz/Work/lunatik/build/score$103 Def0030
+S A$score/tomaz/Work/lunatik/build/score$311 Def0188
+S A$score/tomaz/Work/lunatik/build/score$302 Def017D
+S A$score/tomaz/Work/lunatik/build/score$230 Def00F9
+S A$score/tomaz/Work/lunatik/build/score$221 Def00E8
+S A$score/tomaz/Work/lunatik/build/score$212 Def00D7
+S A$score/tomaz/Work/lunatik/build/score$203 Def00CB
+S A$score/tomaz/Work/lunatik/build/score$131 Def004A
+S A$score/tomaz/Work/lunatik/build/score$113 Def0037
+S A$score/tomaz/Work/lunatik/build/score$104 Def0031
+S A$score/tomaz/Work/lunatik/build/score$420 Def0212
+S A$score/tomaz/Work/lunatik/build/score$330 Def019B
+S A$score/tomaz/Work/lunatik/build/score$303 Def017E
+S A$score/tomaz/Work/lunatik/build/score$240 Def010B
+S A$score/tomaz/Work/lunatik/build/score$231 Def00FC
+S A$score/tomaz/Work/lunatik/build/score$222 Def00E9
+S A$score/tomaz/Work/lunatik/build/score$213 Def00D8
+S A$score/tomaz/Work/lunatik/build/score$204 Def00CC
+S A$score/tomaz/Work/lunatik/build/score$150 Def0058
+S A$score/tomaz/Work/lunatik/build/score$141 Def004B
+S A$score/tomaz/Work/lunatik/build/score$114 Def0038
+S A$score/tomaz/Work/lunatik/build/score$105 Def0032
+S A$score/tomaz/Work/lunatik/build/score$430 Def0222
+S A$score/tomaz/Work/lunatik/build/score$421 Def0216
+S A$score/tomaz/Work/lunatik/build/score$403 Def020B
+S A$score/tomaz/Work/lunatik/build/score$340 Def01A9
+S A$score/tomaz/Work/lunatik/build/score$331 Def019D
+S A$score/tomaz/Work/lunatik/build/score$304 Def017F
+S A$score/tomaz/Work/lunatik/build/score$250 Def0121
+S A$score/tomaz/Work/lunatik/build/score$241 Def010E
+S A$score/tomaz/Work/lunatik/build/score$232 Def00FF
+S A$score/tomaz/Work/lunatik/build/score$223 Def00EA
+S A$score/tomaz/Work/lunatik/build/score$214 Def00DB
+S A$score/tomaz/Work/lunatik/build/score$205 Def00CF
+S A$score/tomaz/Work/lunatik/build/score$160 Def0072
+S A$score/tomaz/Work/lunatik/build/score$151 Def005B
+S A$score/tomaz/Work/lunatik/build/score$142 Def004D
+S A$score/tomaz/Work/lunatik/build/score$115 Def0039
+S A$score/tomaz/Work/lunatik/build/score$106 Def0033
+S A$score/tomaz/Work/lunatik/build/score$440 Def0230
+S A$score/tomaz/Work/lunatik/build/score$431 Def0223
+S A$score/tomaz/Work/lunatik/build/score$404 Def020D
+S A$score/tomaz/Work/lunatik/build/score$350 Def01BB
+S A$score/tomaz/Work/lunatik/build/score$341 Def01AA
+S A$score/tomaz/Work/lunatik/build/score$332 Def019E
+S A$score/tomaz/Work/lunatik/build/score$323 Def0191
+S A$score/tomaz/Work/lunatik/build/score$305 Def0182
+S A$score/tomaz/Work/lunatik/build/score$260 Def0139
+S A$score/tomaz/Work/lunatik/build/score$251 Def0124
+S A$score/tomaz/Work/lunatik/build/score$242 Def010F
+S A$score/tomaz/Work/lunatik/build/score$233 Def0102
+S A$score/tomaz/Work/lunatik/build/score$224 Def00EB
+S A$score/tomaz/Work/lunatik/build/score$215 Def00DE
+S A$score/tomaz/Work/lunatik/build/score$170 Def0089
+S A$score/tomaz/Work/lunatik/build/score$161 Def0075
+S A$score/tomaz/Work/lunatik/build/score$152 Def005C
+S A$score/tomaz/Work/lunatik/build/score$143 Def0051
+S A$score/tomaz/Work/lunatik/build/score$125 Def0046
+S A$score/tomaz/Work/lunatik/build/score$116 Def003A
+S A$score/tomaz/Work/lunatik/build/score$107 Def0034
+S G$score_set$0$0 Def0210
+S _score_get Def023E
+S A$score/tomaz/Work/lunatik/build/score$441 Def0231
+S A$score/tomaz/Work/lunatik/build/score$432 Def0224
+S A$score/tomaz/Work/lunatik/build/score$360 Def01CF
+S A$score/tomaz/Work/lunatik/build/score$351 Def01BE
+S A$score/tomaz/Work/lunatik/build/score$342 Def01AD
+S A$score/tomaz/Work/lunatik/build/score$333 Def019F
+S A$score/tomaz/Work/lunatik/build/score$324 Def0194
+S A$score/tomaz/Work/lunatik/build/score$315 Def0189
+S A$score/tomaz/Work/lunatik/build/score$306 Def0183
+S A$score/tomaz/Work/lunatik/build/score$270 Def014C
+S A$score/tomaz/Work/lunatik/build/score$261 Def013A
+S A$score/tomaz/Work/lunatik/build/score$252 Def0126
+S A$score/tomaz/Work/lunatik/build/score$243 Def0110
+S A$score/tomaz/Work/lunatik/build/score$234 Def0103
+S A$score/tomaz/Work/lunatik/build/score$225 Def00EC
+S A$score/tomaz/Work/lunatik/build/score$216 Def00E1
+S A$score/tomaz/Work/lunatik/build/score$207 Def00D1
+S A$score/tomaz/Work/lunatik/build/score$180 Def0098
+S A$score/tomaz/Work/lunatik/build/score$171 Def008C
+S A$score/tomaz/Work/lunatik/build/score$162 Def0078
+S A$score/tomaz/Work/lunatik/build/score$153 Def005F
+S A$score/tomaz/Work/lunatik/build/score$144 Def0053
+S A$score/tomaz/Work/lunatik/build/score$126 Def0048
+S A$score/tomaz/Work/lunatik/build/score$117 Def003D
+S G$score_draw_label$0$0 Def0000
+S A$score/tomaz/Work/lunatik/build/score$442 Def0234
+S A$score/tomaz/Work/lunatik/build/score$433 Def0225
+S A$score/tomaz/Work/lunatik/build/score$370 Def01DB
+S A$score/tomaz/Work/lunatik/build/score$361 Def01D0
+S A$score/tomaz/Work/lunatik/build/score$352 Def01C1
+S A$score/tomaz/Work/lunatik/build/score$343 Def01AE
+S A$score/tomaz/Work/lunatik/build/score$334 Def01A2
+S A$score/tomaz/Work/lunatik/build/score$325 Def0197
+S A$score/tomaz/Work/lunatik/build/score$316 Def018B
+S A$score/tomaz/Work/lunatik/build/score$307 Def0184
+S A$score/tomaz/Work/lunatik/build/score$280 Def015B
+S A$score/tomaz/Work/lunatik/build/score$271 Def014E
+S A$score/tomaz/Work/lunatik/build/score$262 Def013D
+S A$score/tomaz/Work/lunatik/build/score$253 Def0129
+S A$score/tomaz/Work/lunatik/build/score$244 Def0111
+S A$score/tomaz/Work/lunatik/build/score$235 Def0104
+S A$score/tomaz/Work/lunatik/build/score$226 Def00EF
+S A$score/tomaz/Work/lunatik/build/score$217 Def00E4
+S A$score/tomaz/Work/lunatik/build/score$190 Def00AB
+S A$score/tomaz/Work/lunatik/build/score$181 Def0099
+S A$score/tomaz/Work/lunatik/build/score$163 Def0079
+S A$score/tomaz/Work/lunatik/build/score$154 Def0062
+S A$score/tomaz/Work/lunatik/build/score$145 Def0056
+S A$score/tomaz/Work/lunatik/build/score$118 Def003E
+S A$score/tomaz/Work/lunatik/build/score$452 Def023B
+S A$score/tomaz/Work/lunatik/build/score$434 Def0226
+S A$score/tomaz/Work/lunatik/build/score$425 Def0218
+S A$score/tomaz/Work/lunatik/build/score$380 Def01EF
+S A$score/tomaz/Work/lunatik/build/score$371 Def01DE
+S A$score/tomaz/Work/lunatik/build/score$362 Def01D1
+S A$score/tomaz/Work/lunatik/build/score$353 Def01C4
+S A$score/tomaz/Work/lunatik/build/score$344 Def01AF
+S A$score/tomaz/Work/lunatik/build/score$326 Def0198
+S A$score/tomaz/Work/lunatik/build/score$317 Def018C
+S A$score/tomaz/Work/lunatik/build/score$308 Def0185
+S A$score/tomaz/Work/lunatik/build/score$290 Def0167
+S A$score/tomaz/Work/lunatik/build/score$281 Def015C
+S A$score/tomaz/Work/lunatik/build/score$272 Def014F
+S A$score/tomaz/Work/lunatik/build/score$263 Def0140
+S A$score/tomaz/Work/lunatik/build/score$254 Def012C
+S A$score/tomaz/Work/lunatik/build/score$245 Def0114
+S A$score/tomaz/Work/lunatik/build/score$236 Def0105
+S A$score/tomaz/Work/lunatik/build/score$227 Def00F1
+S A$score/tomaz/Work/lunatik/build/score$218 Def00E5
+S A$score/tomaz/Work/lunatik/build/score$191 Def00AE
+S A$score/tomaz/Work/lunatik/build/score$182 Def009A
+S A$score/tomaz/Work/lunatik/build/score$173 Def008E
+S A$score/tomaz/Work/lunatik/build/score$164 Def007C
+S A$score/tomaz/Work/lunatik/build/score$155 Def0065
+S A$score/tomaz/Work/lunatik/build/score$146 Def0057
+S A$score/tomaz/Work/lunatik/build/score$119 Def0041
+S A$score/tomaz/Work/lunatik/build/score$480 Def0252
+S A$score/tomaz/Work/lunatik/build/score$435 Def0227
+S A$score/tomaz/Work/lunatik/build/score$426 Def021B
+S A$score/tomaz/Work/lunatik/build/score$390 Def01FE
+S A$score/tomaz/Work/lunatik/build/score$372 Def01E1
+S A$score/tomaz/Work/lunatik/build/score$363 Def01D2
+S A$score/tomaz/Work/lunatik/build/score$354 Def01C7
+S A$score/tomaz/Work/lunatik/build/score$345 Def01B2
+S A$score/tomaz/Work/lunatik/build/score$318 Def018D
+S A$score/tomaz/Work/lunatik/build/score$309 Def0186
+S A$score/tomaz/Work/lunatik/build/score$291 Def0168
+S A$score/tomaz/Work/lunatik/build/score$282 Def015D
+S A$score/tomaz/Work/lunatik/build/score$273 Def0150
+S A$score/tomaz/Work/lunatik/build/score$264 Def0141
+S A$score/tomaz/Work/lunatik/build/score$255 Def012E
+S A$score/tomaz/Work/lunatik/build/score$246 Def0116
+S A$score/tomaz/Work/lunatik/build/score$237 Def0106
+S A$score/tomaz/Work/lunatik/build/score$228 Def00F4
+S A$score/tomaz/Work/lunatik/build/score$219 Def00E6
+S A$score/tomaz/Work/lunatik/build/score$192 Def00B0
+S A$score/tomaz/Work/lunatik/build/score$183 Def009B
+S A$score/tomaz/Work/lunatik/build/score$156 Def0068
+S A$score/tomaz/Work/lunatik/build/score$481 Def0253
+S A$score/tomaz/Work/lunatik/build/score$436 Def0228
+S A$score/tomaz/Work/lunatik/build/score$427 Def021E
+S A$score/tomaz/Work/lunatik/build/score$409 Def020F
+S A$score/tomaz/Work/lunatik/build/score$373 Def01E2
+S A$score/tomaz/Work/lunatik/build/score$364 Def01D3
+S A$score/tomaz/Work/lunatik/build/score$355 Def01C8
+S A$score/tomaz/Work/lunatik/build/score$346 Def01B5
+S A$score/tomaz/Work/lunatik/build/score$319 Def0190
+S A$score/tomaz/Work/lunatik/build/score$292 Def0169
+S A$score/tomaz/Work/lunatik/build/score$283 Def015E
+S A$score/tomaz/Work/lunatik/build/score$274 Def0151
+S A$score/tomaz/Work/lunatik/build/score$265 Def0142
+S A$score/tomaz/Work/lunatik/build/score$256 Def0131
+S A$score/tomaz/Work/lunatik/build/score$247 Def0119
+S A$score/tomaz/Work/lunatik/build/score$238 Def0107
+S A$score/tomaz/Work/lunatik/build/score$229 Def00F7
+S A$score/tomaz/Work/lunatik/build/score$193 Def00B3
+S A$score/tomaz/Work/lunatik/build/score$184 Def009C
+S A$score/tomaz/Work/lunatik/build/score$166 Def007F
+S A$score/tomaz/Work/lunatik/build/score$157 Def006B
+S A$score/tomaz/Work/lunatik/build/score$482 Def0254
+S A$score/tomaz/Work/lunatik/build/score$473 Def0246
+S A$score/tomaz/Work/lunatik/build/score$446 Def0235
+S A$score/tomaz/Work/lunatik/build/score$437 Def022B
+S A$score/tomaz/Work/lunatik/build/score$428 Def0220
+S A$score/tomaz/Work/lunatik/build/score$419 Def0210
+S A$score/tomaz/Work/lunatik/build/score$374 Def01E3
+S A$score/tomaz/Work/lunatik/build/score$365 Def01D4
+S A$score/tomaz/Work/lunatik/build/score$356 Def01CB
+S A$score/tomaz/Work/lunatik/build/score$347 Def01B8
+S A$score/tomaz/Work/lunatik/build/score$338 Def01A3
+S A$score/tomaz/Work/lunatik/build/score$293 Def016A
+S A$score/tomaz/Work/lunatik/build/score$284 Def015F
+S A$score/tomaz/Work/lunatik/build/score$275 Def0152
+S A$score/tomaz/Work/lunatik/build/score$266 Def0143
+S A$score/tomaz/Work/lunatik/build/score$257 Def0134
+S A$score/tomaz/Work/lunatik/build/score$248 Def011C
+S A$score/tomaz/Work/lunatik/build/score$239 Def0108
+S A$score/tomaz/Work/lunatik/build/score$194 Def00B6
+S A$score/tomaz/Work/lunatik/build/score$185 Def009D
+S A$score/tomaz/Work/lunatik/build/score$167 Def0081
+S A$score/tomaz/Work/lunatik/build/score$158 Def006E
+S A$score/tomaz/Work/lunatik/build/score$492 Def025D
+S A$score/tomaz/Work/lunatik/build/score$483 Def0255
+S A$score/tomaz/Work/lunatik/build/score$474 Def0249
+S A$score/tomaz/Work/lunatik/build/score$447 Def0238
+S A$score/tomaz/Work/lunatik/build/score$438 Def022C
+S A$score/tomaz/Work/lunatik/build/score$429 Def0221
+S A$score/tomaz/Work/lunatik/build/score$384 Def01F0
+S A$score/tomaz/Work/lunatik/build/score$375 Def01E4
+S A$score/tomaz/Work/lunatik/build/score$366 Def01D7
+S A$score/tomaz/Work/lunatik/build/score$357 Def01CC
+S A$score/tomaz/Work/lunatik/build/score$348 Def01B9
+S A$score/tomaz/Work/lunatik/build/score$339 Def01A6
+S A$score/tomaz/Work/lunatik/build/score$294 Def016D
+S A$score/tomaz/Work/lunatik/build/score$285 Def0162
+S A$score/tomaz/Work/lunatik/build/score$276 Def0153
+S A$score/tomaz/Work/lunatik/build/score$267 Def0146
+S A$score/tomaz/Work/lunatik/build/score$258 Def0137
+S A$score/tomaz/Work/lunatik/build/score$249 Def011E
+S A$score/tomaz/Work/lunatik/build/score$195 Def00B8
+S A$score/tomaz/Work/lunatik/build/score$186 Def00A0
+S A$score/tomaz/Work/lunatik/build/score$177 Def0091
+S A$score/tomaz/Work/lunatik/build/score$168 Def0084
+S A$score/tomaz/Work/lunatik/build/score$159 Def0071
+S A$score/tomaz/Work/lunatik/build/score$484 Def0258
+S A$score/tomaz/Work/lunatik/build/score$475 Def024C
+S A$score/tomaz/Work/lunatik/build/score$457 Def023D
+S A$score/tomaz/Work/lunatik/build/score$448 Def0239
+S A$score/tomaz/Work/lunatik/build/score$439 Def022F
+S A$score/tomaz/Work/lunatik/build/score$385 Def01F3
+S A$score/tomaz/Work/lunatik/build/score$376 Def01E7
+S A$score/tomaz/Work/lunatik/build/score$367 Def01D8
+S A$score/tomaz/Work/lunatik/build/score$358 Def01CD
+S A$score/tomaz/Work/lunatik/build/score$349 Def01BA
+S A$score/tomaz/Work/lunatik/build/score$295 Def016F
+S A$score/tomaz/Work/lunatik/build/score$286 Def0163
+S A$score/tomaz/Work/lunatik/build/score$277 Def0154
+S A$score/tomaz/Work/lunatik/build/score$268 Def0148
+S A$score/tomaz/Work/lunatik/build/score$259 Def0138
+S A$score/tomaz/Work/lunatik/build/score$196 Def00BB
+S A$score/tomaz/Work/lunatik/build/score$187 Def00A3
+S A$score/tomaz/Work/lunatik/build/score$178 Def0094
+S A$score/tomaz/Work/lunatik/build/score$169 Def0086
+S A$score/tomaz/Work/lunatik/build/score$485 Def0259
+S A$score/tomaz/Work/lunatik/build/score$476 Def024E
+S A$score/tomaz/Work/lunatik/build/score$467 Def023E
+S A$score/tomaz/Work/lunatik/build/score$395 Def01FF
+S A$score/tomaz/Work/lunatik/build/score$386 Def01F6
+S A$score/tomaz/Work/lunatik/build/score$377 Def01E8
+S A$score/tomaz/Work/lunatik/build/score$368 Def01D9
+S A$score/tomaz/Work/lunatik/build/score$359 Def01CE
+S A$score/tomaz/Work/lunatik/build/score$296 Def0170
+S A$score/tomaz/Work/lunatik/build/score$287 Def0164
+S A$score/tomaz/Work/lunatik/build/score$278 Def0157
+S A$score/tomaz/Work/lunatik/build/score$269 Def0149
+S A$score/tomaz/Work/lunatik/build/score$197 Def00BE
+S A$score/tomaz/Work/lunatik/build/score$188 Def00A6
+S A$score/tomaz/Work/lunatik/build/score$179 Def0097
+S Fscore$__str_0$0_0$0 Def0260
+S G$score_draw_board$0$0 Def004B
+S A$score/tomaz/Work/lunatik/build/score$486 Def025A
+S A$score/tomaz/Work/lunatik/build/score$477 Def024F
+S A$score/tomaz/Work/lunatik/build/score$468 Def0240
+S A$score/tomaz/Work/lunatik/build/score$396 Def0202
+S A$score/tomaz/Work/lunatik/build/score$387 Def01F7
+S A$score/tomaz/Work/lunatik/build/score$378 Def01EB
+S A$score/tomaz/Work/lunatik/build/score$369 Def01DA
+S A$score/tomaz/Work/lunatik/build/score$297 Def0173
+S A$score/tomaz/Work/lunatik/build/score$288 Def0165
+S A$score/tomaz/Work/lunatik/build/score$279 Def015A
+S A$score/tomaz/Work/lunatik/build/score$198 Def00C0
+S A$score/tomaz/Work/lunatik/build/score$189 Def00A8
+S Fscore$__str_1$0_0$0 Def0267
+S A$score/tomaz/Work/lunatik/build/score$487 Def025B
+S A$score/tomaz/Work/lunatik/build/score$478 Def0250
+S A$score/tomaz/Work/lunatik/build/score$469 Def0244
+S A$score/tomaz/Work/lunatik/build/score$397 Def0205
+S A$score/tomaz/Work/lunatik/build/score$388 Def01F8
+S A$score/tomaz/Work/lunatik/build/score$379 Def01EE
+S A$score/tomaz/Work/lunatik/build/score$298 Def0175
+S A$score/tomaz/Work/lunatik/build/score$289 Def0166
+S A$score/tomaz/Work/lunatik/build/score$199 Def00C3
+S Fscore$__str_2$0_0$0 Def026E
+S A$score/tomaz/Work/lunatik/build/score$497 Def025F
+S A$score/tomaz/Work/lunatik/build/score$488 Def025C
+S A$score/tomaz/Work/lunatik/build/score$479 Def0251
+S A$score/tomaz/Work/lunatik/build/score$398 Def0208
+S A$score/tomaz/Work/lunatik/build/score$389 Def01FB
+S A$score/tomaz/Work/lunatik/build/score$299 Def0176
+S Fscore$__str_3$0_0$0 Def0278
+S XG$score_get$0$0 Def025F
+S _score_set Def0210
+S Fscore$__str_4$0_0$0 Def0282
+S _score_draw_label Def0000
+S Fscore$__str_5$0_0$0 Def028A
+S A$score/tomaz/Work/lunatik/build/score$70 Def000C
+S A$score/tomaz/Work/lunatik/build/score$80 Def0019
+S A$score/tomaz/Work/lunatik/build/score$71 Def000F
+S A$score/tomaz/Work/lunatik/build/score$62 Def0000
+S A$score/tomaz/Work/lunatik/build/score$81 Def001A
+S A$score/tomaz/Work/lunatik/build/score$72 Def0011
+S A$score/tomaz/Work/lunatik/build/score$63 Def0002
+S A$score/tomaz/Work/lunatik/build/score$82 Def001B
+S A$score/tomaz/Work/lunatik/build/score$73 Def0012
+S A$score/tomaz/Work/lunatik/build/score$64 Def0006
+S A$score/tomaz/Work/lunatik/build/score$92 Def0028
+S A$score/tomaz/Work/lunatik/build/score$83 Def001E
+S A$score/tomaz/Work/lunatik/build/score$74 Def0013
+S A$score/tomaz/Work/lunatik/build/score$65 Def0008
+S A$score/tomaz/Work/lunatik/build/score$93 Def0029
+S A$score/tomaz/Work/lunatik/build/score$84 Def001F
+S A$score/tomaz/Work/lunatik/build/score$75 Def0014
+S A$score/tomaz/Work/lunatik/build/score$94 Def002A
+S A$score/tomaz/Work/lunatik/build/score$85 Def0020
+S A$score/tomaz/Work/lunatik/build/score$76 Def0015
+S _score_draw_board Def004B
+S A$score/tomaz/Work/lunatik/build/score$95 Def002B
+S A$score/tomaz/Work/lunatik/build/score$86 Def0023
+S A$score/tomaz/Work/lunatik/build/score$77 Def0016
+S A$score/tomaz/Work/lunatik/build/score$96 Def002C
+S A$score/tomaz/Work/lunatik/build/score$87 Def0024
+S A$score/tomaz/Work/lunatik/build/score$78 Def0017
+S A$score/tomaz/Work/lunatik/build/score$69 Def0009
+S A$score/tomaz/Work/lunatik/build/score$97 Def002D
+S A$score/tomaz/Work/lunatik/build/score$88 Def0025
+S A$score/tomaz/Work/lunatik/build/score$79 Def0018
+S XG$score_set$0$0 Def023D
+S A$score/tomaz/Work/lunatik/build/score$98 Def002E
+S XG$score_draw_label$0$0 Def004A
+S A$score/tomaz/Work/lunatik/build/score$99 Def002F
+S XG$score_draw_board$0$0 Def020F
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 48 flags 0 addr 0
+S Fscore$scoreboard$0_0$0 Def0000
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 48 flags 0 addr 0
+S Fscore$__xinit_scoreboard$0_0$0 Def0000
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 02 00
+T 00 00
+R 00 00 00 00
+T 00 00 DD E5 DD 21 00 00 DD 39 F5 01 00 00 DD 5E
+R 00 00 00 00 00 0C 02 00
+T 0E 00 04 16 00 6B 62 29 19 29 29 09 EB 6B 62 01
+R 00 00 00 00
+T 1C 00 05 00 09 7E DD 77 FE 23 7E DD 77 FF 6B 62
+R 00 00 00 00
+T 2A 00 23 23 23 4E 23 46 EB 23 5E 23 56 E1 E5 E5
+R 00 00 00 00
+T 38 00 C5 D5 21 00 00 E5 CD 00 00 21 08 00 39 F9
+R 00 00 00 00 02 05 01 00 02 09 03 00
+T 46 00 DD F9 DD E1 C9
+R 00 00 00 00
+T 4B 00
+R 00 00 00 00
+T 4B 00 DD E5 DD 21 00 00 DD 39 21 DC FF 39 F9 21
+R 00 00 00 00
+T 59 00 0A 00 39 DD 75 EE DD 74 EF DD 7E EE DD 77
+R 00 00 00 00
+T 67 00 F0 DD 7E EF DD 77 F1 21 00 00 39 DD 75 F2
+R 00 00 00 00
+T 75 00 DD 74 F3 AF DD 77 FE DD 77 FF
+R 00 00 00 00
+T 7F 00
+R 00 00 00 00
+T 7F 00 3E 05 DD BE FE 3E 00 DD 9E FF E2 8E 00 EE
+R 00 00 00 00 00 0D 00 00
+T 8D 00 80
+R 00 00 00 00
+T 8E 00
+R 00 00 00 00
+T 8E 00 FA 0B 02 DD 4E FE DD 46 FF 69 60 29 09 29
+R 00 00 00 00 00 03 00 00
+T 9C 00 29 DD 75 FC DD 74 FD DD 7E FC C6 00 00 DD
+R 00 00 00 00 09 0D 02 00
+T A9 00 77 F4 DD 7E FD CE 00 00 DD 77 F5 DD 7E F4
+R 00 00 00 00 89 08 02 00
+T B6 00 C6 0B DD 77 F6 DD 7E F5 CE 00 DD 77 F7 DD
+R 00 00 00 00
+T C4 00 6E F6 DD 66 F7 4E AF 91 E2 D1 00 EE 80
+R 00 00 00 00 00 0B 00 00
+T D1 00
+R 00 00 00 00
+T D1 00 F2 FF 01 21 0A 00 39 DD 75 FC DD 74 FD DD
+R 00 00 00 00 00 03 00 00
+T DF 00 4E F4 DD 46 F5 03 03 03 69 60 5E 23 56 DD
+R 00 00 00 00
+T ED 00 7E F4 C6 09 DD 77 F8 DD 7E F5 CE 00 DD 77
+R 00 00 00 00
+T FB 00 F9 DD 6E F8 DD 66 F9 7E 23 66 6F 19 EB DD
+R 00 00 00 00
+T 09 01 6E FC DD 66 FD 73 23 72 DD 7E EE C6 02 DD
+R 00 00 00 00
+T 17 01 77 FA DD 7E EF CE 00 DD 77 FB DD 7E F4 C6
+R 00 00 00 00
+T 25 01 05 DD 77 FC DD 7E F5 CE 00 DD 77 FD DD 6E
+R 00 00 00 00
+T 33 01 FC DD 66 FD 5E 23 56 DD 6E FA DD 66 FB 73
+R 00 00 00 00
+T 41 01 23 72 DD 7E EE C6 04 5F DD 7E EF CE 00 57
+R 00 00 00 00
+T 4F 01 69 60 4E 23 46 DD 6E F8 DD 66 F9 7E 23 66
+R 00 00 00 00
+T 5D 01 6F 09 01 46 00 09 4D 44 79 12 13 78 12 DD
+R 00 00 00 00
+T 6B 01 7E EE C6 06 4F DD 7E EF CE 00 47 DD 6E FC
+R 00 00 00 00
+T 79 01 DD 66 FD 5E 23 56 21 10 00 19 EB 7B 02 03
+R 00 00 00 00
+T 87 01 7A 02 3E 02 F5 33 CD 00 00 33 DD 4E F0 DD
+R 00 00 00 00 02 09 04 00
+T 95 01 46 F1 C5 CD 00 00 26 01 E3 33 CD 00 00 33
+R 00 00 00 00 02 06 00 00 02 0D 04 00
+T A3 01 DD 6E FA DD 66 FB 7E DD 77 FC 23 7E DD 77
+R 00 00 00 00
+T B1 01 FD DD 6E EE DD 66 EF 4E 23 46 DD 5E F2 DD
+R 00 00 00 00
+T BF 01 56 F3 DD 6E F4 DD 66 F5 C5 01 07 00 09 C1
+R 00 00 00 00
+T CD 01 7E 23 66 6F C5 D5 E5 CD 00 00 F1 F1 EB C1
+R 00 00 00 00 02 0A 05 00
+T DB 01 DD 6E FC DD 66 FD E5 C5 D5 21 00 00 E5 CD
+R 00 00 00 00 02 0C 01 00
+T E9 01 00 00 21 08 00 39 F9 DD 6E F6 DD 66 F7 7E
+R 00 00 00 00 02 02 03 00
+T F7 01 3D DD 6E F6 DD 66 F7 77
+R 00 00 00 00
+T FF 01
+R 00 00 00 00
+T FF 01 DD 34 FE C2 7F 00 DD 34 FF C3 7F 00
+R 00 00 00 00 00 06 00 00 00 0C 00 00
+T 0B 02
+R 00 00 00 00
+T 0B 02 DD F9 DD E1 C9
+R 00 00 00 00
+T 10 02
+R 00 00 00 00
+T 10 02 DD E5 DD 21 00 00 DD 39 01 00 00 DD 5E 04
+R 00 00 00 00 00 0B 02 00
+T 1E 02 16 00 6B 62 29 19 29 29 09 EB 21 07 00 19
+R 00 00 00 00
+T 2C 02 DD 7E 05 77 23 DD 7E 06 77 21 0B 00 19 36
+R 00 00 00 00
+T 3A 02 02 DD E1 C9
+R 00 00 00 00
+T 3E 02
+R 00 00 00 00
+T 3E 02 DD E5 DD 21 00 00 DD 39 01 00 00 DD 5E 04
+R 00 00 00 00 00 0B 02 00
+T 4C 02 16 00 6B 62 29 19 29 29 09 11 07 00 19 4E
+R 00 00 00 00
+T 5A 02 23 66 69 DD E1 C9
+R 00 00 00 00
+T 60 02
+R 00 00 00 00
+T 60 02 47 4F 52 49 56 4F 00
+R 00 00 00 00
+T 67 02
+R 00 00 00 00
+T 67 02 44 4F 20 54 41 4C 00
+R 00 00 00 00
+T 6E 02
+R 00 00 00 00
+T 6E 02 48 4F 52 2E 48 49 54 52 2E 00
+R 00 00 00 00
+T 78 02
+R 00 00 00 00
+T 78 02 56 45 52 2E 48 49 54 52 2E 00
+R 00 00 00 00
+T 82 02
+R 00 00 00 00
+T 82 02 50 4F 53 4B 55 53 49 00
+R 00 00 00 00
+T 8A 02
+R 00 00 00 00
+T 8A 02 52 45 5A 55 4C 54 41 54 00
+R 00 00 00 00
+T 00 00
+R 00 00 07 00
+T 00 00 01 60 02 32 00 00 00 00 00 50 00 02 02
+R 00 00 07 00 00 03 00 00
+T 0D 00 67 02 32 00 10 00 00 00 50 00 02 04 6E 02
+R 00 00 07 00 00 02 00 00 00 0E 00 00
+T 1B 00 90 01 00 00 00 00 64 00 02 08 78 02 90 01
+R 00 00 07 00 00 0C 00 00
+T 29 00 10 00 00 00 64 00 02 10 82 02 EE 02 00 00
+R 00 00 07 00 00 0A 00 00
+T 37 00 00 00 64 00 02 20 8A 02 EE 02 10 00 00 00
+R 00 00 07 00 00 08 00 00
+T 45 00 64 00 02
+R 00 00 07 00

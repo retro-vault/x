@@ -1,0 +1,19 @@
+XL2
+H 1 areas 3 global symbols
+M string
+S .__.ABS. Def0000
+A _CODE size 29 flags 0 addr 0
+S _memset Def0011
+S _memcpy Def0000
+T 00 00
+R 00 00 00 00
+T 00 00 D9 E1 D9 D1 E1 C1 C5 E5 D5 D5 ED B0 E1 D9
+R 00 00 00 00
+T 0E 00 E5 D9 C9
+R 00 00 00 00
+T 11 00
+R 00 00 00 00
+T 11 00 D9 E1 D9 E1 D1 C1 C5 D5 E5 D9 E5 D9 E5 78
+R 00 00 00 00
+T 1F 00 B1 C8 73 E5 D1 13 ED B0 E1 C9
+R 00 00 00 00
