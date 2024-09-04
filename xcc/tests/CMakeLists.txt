@@ -1,4 +1,4 @@
-project(xc)
+project(xcc)
 
 # Include files.
 include_directories(${GTEST_PATH}/include)

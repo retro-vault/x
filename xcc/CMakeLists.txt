@@ -2,16 +2,14 @@ cmake_minimum_required(VERSION 3.2)
 
 set (CMAKE_CXX_STANDARD 20)
 
-project(xas
+project(xcc
     VERSION 1.0
-    DESCRIPTION "x assembler."
+    DESCRIPTION "x C compiler."
     LANGUAGES CXX)
 
 # Use latest C++.
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-
 
 # Debug buld (for now)
 set(CMAKE_BUILD_TYPE "Debug")

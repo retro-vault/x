@@ -1,4 +1,4 @@
-project(xc)
+project(xld)
 
 # Fetch googletest.
 include(FetchContent)
