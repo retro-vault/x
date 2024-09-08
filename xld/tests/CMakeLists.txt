@@ -7,9 +7,11 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 # Test executable.
 add_executable(tests 
     main.cpp 
-    rel_tests.cpp
-    ${CMAKE_SOURCE_DIR}/src/rel_file.cpp  
-    ${CMAKE_SOURCE_DIR}/src/rel_file.h
+    postrack_test.cpp
+    ${CMAKE_SOURCE_DIR}/src/bookmark.cpp  
+    ${CMAKE_SOURCE_DIR}/src/bookmark.h
+    ${CMAKE_SOURCE_DIR}/src/postrack.cpp  
+    ${CMAKE_SOURCE_DIR}/src/postrack.h
 )
 
 # Link in google tests.
