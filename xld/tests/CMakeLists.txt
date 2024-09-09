@@ -8,10 +8,10 @@ include_directories(${CMAKE_SOURCE_DIR}/src)
 add_executable(tests 
     main.cpp 
     postrack_test.cpp
+    mmap_file_test.cpp
     ${CMAKE_SOURCE_DIR}/src/bookmark.cpp  
-    ${CMAKE_SOURCE_DIR}/src/bookmark.h
     ${CMAKE_SOURCE_DIR}/src/postrack.cpp  
-    ${CMAKE_SOURCE_DIR}/src/postrack.h
+    ${CMAKE_SOURCE_DIR}/src/mmap_file.cpp  
 )
 
 # Link in google tests.

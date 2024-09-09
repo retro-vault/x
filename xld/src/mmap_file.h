@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <cstring>
 #include <stdexcept>
+#include <ios>
 
 class mmap_file {
 public:
