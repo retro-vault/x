@@ -9,9 +9,11 @@ add_executable(tests
     main.cpp 
     postrack_test.cpp
     mmap_file_test.cpp
+    mmap_streambuf_test.cpp 
     ${CMAKE_SOURCE_DIR}/src/bookmark.cpp  
     ${CMAKE_SOURCE_DIR}/src/postrack.cpp  
     ${CMAKE_SOURCE_DIR}/src/mmap_file.cpp  
+    ${CMAKE_SOURCE_DIR}/src/mmap_streambuf.cpp  
 )
 
 # Link in google tests.
